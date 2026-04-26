@@ -1,0 +1,2 @@
+# money
+echo 123;
