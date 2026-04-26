@@ -1,2 +1,1 @@
 # money
-echo 123;
