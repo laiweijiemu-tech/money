@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block title %}市场首页 - {{ portal_title }}{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div>
+    <p class="eyebrow">股票门户 MVP</p>
+    <h1>一个能直接查看 A 股市场脉搏的入口</h1>
+    <p class="hero-copy">
+      首页聚合市场样本、同花顺热度、龙虎榜和热门题材，并且支持直接跳转到个股详情页。
+    </p>
+  </div>
+  <form class="search-card" action="{{ url_for('stock_search') }}" method="get">
+    <label for="q">查股票</label>
+    <input id="q" name="q" type="text" placeholder="输入代码或名称，例如 000001 / 贵州茅台">
+    <button type="submit">立即搜索</button>
+    <p class="search-hint">当前交易日：{{ latest_trade_date_display }}</p>
+  </form>
+</section>
+
+<section class="summary-grid">
+  {% for item in market_summary %}
+  <article class="summary-card">
+    <p class="summary-label">{{ item.label }}</p>
+    <p class="summary-value tone-{{ item.tone }}">{{ item.value }}</p>
+  </article>
+  {% endfor %}
+</section>
+
+<section class="panel-grid">
+  <article class="panel">
+    <div class="panel-head">
+      <h2>个股涨幅榜</h2>
+      <span>来自 `新浪` / `Market_Center.getHQNodeData`</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>代码</th>
+            <th>收盘价</th>
+            <th>涨跌幅</th>
+            <th>成交额</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in top_movers %}
+          <tr>
+            <td><a href="{{ url_for('stock_redirect', symbol=row.ts_code) }}">{{ row.ts_code }}</a></td>
+            <td>{{ row.close }}</td>
+            <td class="{{ 'up' if (row.pct_chg or 0) >= 0 else 'down' }}">{{ row.pct_chg|pct }}</td>
+            <td>{{ row.amount|cn_num }}</td>
+          </tr>
+          {% else %}
+          <tr><td colspan="4" class="empty">暂无数据</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <article class="panel">
+    <div class="panel-head">
+      <h2>东财人气热度 Top 10</h2>
+      <span>来自 `东方财富` / `stockrank/getAllCurrentList`</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>排名</th>
+            <th>股票</th>
+            <th>价格</th>
+            <th>涨跌幅</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in hot_stocks %}
+          <tr>
+            <td>#{{ row.rank }}</td>
+            <td><a href="{{ url_for('stock_redirect', symbol=row.symbol) }}">{{ row.name }}</a></td>
+            <td>{{ row.price }}</td>
+            <td class="{{ 'up' if (row.pct or 0) >= 0 else 'down' }}">{{ row.pct|pct }}</td>
+          </tr>
+          {% else %}
+          <tr><td colspan="4" class="empty">暂无数据</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </article>
+</section>
+
+<section class="panel-grid">
+  <article class="panel">
+    <div class="panel-head">
+      <h2>行业资金流榜</h2>
+      <span>来自 `新浪` / 行业板块榜 · {{ industry_flows_trade_date_display }}</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>行业</th>
+            <th>对应值</th>
+            <th>领涨股</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in industry_flows %}
+          <tr>
+            <td>{{ row.name }}</td>
+            <td class="{{ 'up' if (row.pct or 0) >= 0 else 'down' }}">{{ row.pct|pct }}</td>
+            <td>{{ row.leader or '-' }}</td>
+            <td class="reason">总成交额 {{ row.net_inflow|cn_num }}，领涨股涨跌幅 {{ row.leader_pct|pct }}</td>
+          </tr>
+          {% else %}
+          <tr><td colspan="4" class="empty">暂无数据</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <article class="panel">
+    <div class="panel-head">
+      <h2>热门题材</h2>
+      <span>来自 `新浪` / 概念板块榜 · {{ hot_boards_trade_date_display }}</span>
+    </div>
+    <p class="panel-hint panel-hint-{{ hot_boards_hint.tone }}">{{ hot_boards_hint.message }}</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>题材</th>
+            <th>关联数</th>
+            <th>龙头</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in hot_boards %}
+          <tr>
+            <td>{{ row.name }}</td>
+            <td>{{ row.count }}</td>
+            <td>{{ row.leader or '-' }}</td>
+            <td class="reason">{{ row.reason or '-' }}</td>
+          </tr>
+          {% else %}
+          <tr><td colspan="4" class="empty">当前交易日暂无热点题材数据</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </article>
+</section>
+{% endblock %}

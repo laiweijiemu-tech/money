@@ -1,0 +1,258 @@
+{% extends "base.html" %}
+
+{% block title %}个股查询 - {{ portal_title }}{% endblock %}
+
+{% block content %}
+<section class="hero compact">
+  <div>
+    <p class="eyebrow">个股查询</p>
+    <h1>股票搜索与日线详情</h1>
+    <p class="hero-copy">输入股票代码或名称，查看基础信息、最新快照和近 60 个交易日趋势。</p>
+  </div>
+  <form class="search-card" action="{{ url_for('stock_search') }}" method="get">
+    <label for="q">搜索股票</label>
+    <input id="q" name="q" type="text" value="{{ query }}" placeholder="例如 600519 / 平安银行">
+    <button type="submit">查询</button>
+  </form>
+</section>
+
+{% if error %}
+<section class="notice error">{{ error }}</section>
+{% endif %}
+
+{% if results %}
+<section class="panel">
+  <div class="panel-head">
+    <h2>搜索结果</h2>
+    <span>共 {{ results|length }} 条</span>
+  </div>
+  <div class="chip-list">
+    {% for item in results %}
+    <a class="chip {{ 'active' if stock and item.ts_code == stock.ts_code else '' }}" href="{{ url_for('stock_search', q=query, symbol=item.ts_code) }}">
+      {{ item.name }} · {{ item.ts_code }}
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if stock %}
+<section class="summary-grid">
+  <article class="summary-card">
+    <p class="summary-label">股票名称</p>
+    <p class="summary-value">{{ stock.name }}</p>
+  </article>
+  <article class="summary-card">
+    <p class="summary-label">TS 代码</p>
+    <p class="summary-value">{{ stock.ts_code }}</p>
+  </article>
+  <article class="summary-card">
+    <p class="summary-label">交易所</p>
+    <p class="summary-value">{{ stock.exchange or '-' }}</p>
+  </article>
+  <article class="summary-card">
+    <p class="summary-label">板块</p>
+    <p class="summary-value">{{ stock.market or '主板' }}</p>
+  </article>
+  <article class="summary-card">
+    <p class="summary-label">上市状态</p>
+    <p class="summary-value">{{ stock.list_status }}</p>
+  </article>
+  <article class="summary-card">
+    <p class="summary-label">原始代码</p>
+    <p class="summary-value">{{ stock.symbol }}</p>
+  </article>
+</section>
+
+<section class="panel">
+  <div class="panel-head">
+    <h2>AI 选股建议</h2>
+    <span>来自豆包模型</span>
+  </div>
+  <form class="ai-form" action="{{ url_for('stock_search') }}" method="post">
+    <input type="hidden" name="q" value="{{ query }}">
+    <input type="hidden" name="symbol" value="{{ stock.ts_code }}">
+    <button type="submit" class="ai-button">生成 AI 建议</button>
+    <p class="search-hint">
+      {% if doubao_configured %}
+      已检测到豆包配置，点击后会基于当前股票数据生成建议。
+      {% else %}
+      尚未配置豆包。请先设置 `DOUBAO_API_KEY` 和 `DOUBAO_MODEL`。
+      {% endif %}
+    </p>
+  </form>
+  {% if ai_error %}
+  <div class="ai-result ai-error">{{ ai_error }}</div>
+  {% elif ai_advice %}
+  <div class="ai-result ai-markdown">{{ ai_advice }}</div>
+  {% else %}
+  <div class="ai-result ai-placeholder">点击上方按钮，让豆包基于当前股票的走势和快照生成选股建议。</div>
+  {% endif %}
+</section>
+
+<section class="panel-grid">
+  <article class="panel">
+    <div class="panel-head">
+      <h2>近 60 日收盘趋势</h2>
+      <span>来自 `daily`</span>
+    </div>
+    {% if chart %}
+    <div class="chart-box">
+      <canvas id="dailyChart"></canvas>
+    </div>
+    {% else %}
+    <p class="empty">暂无日线数据</p>
+    {% endif %}
+  </article>
+
+  <article class="panel">
+    <div class="panel-head">
+      <h2>当日分时图</h2>
+      <span>来自 `stk_mins`</span>
+    </div>
+    {% if intraday_chart %}
+    <div class="chart-box">
+      <canvas id="intradayChart"></canvas>
+    </div>
+    {% else %}
+    <p class="empty">暂无分时数据，可能未配置 token 或当前尚未开盘。</p>
+    {% endif %}
+  </article>
+</section>
+
+<section class="panel">
+  <div class="panel-head">
+    <h2>最新快照</h2>
+    <span>来自 `新浪行情`</span>
+  </div>
+  {% if latest_quote %}
+  <dl class="quote-grid">
+    <div><dt>最新价</dt><dd>{{ latest_quote.close }}</dd></div>
+    <div><dt>开盘</dt><dd>{{ latest_quote.open }}</dd></div>
+    <div><dt>最高</dt><dd>{{ latest_quote.high }}</dd></div>
+    <div><dt>最低</dt><dd>{{ latest_quote.low }}</dd></div>
+    <div><dt>昨收</dt><dd>{{ latest_quote.pre_close }}</dd></div>
+    <div><dt>成交量</dt><dd>{{ latest_quote.vol|cn_num }}</dd></div>
+    <div><dt>成交额</dt><dd>{{ latest_quote.amount|cn_num }}</dd></div>
+    <div><dt>名称</dt><dd>{{ latest_quote.name }}</dd></div>
+  </dl>
+  {% else %}
+  <p class="empty">当前未获取到实时快照，可能是未配置 token 或接口限频。</p>
+  {% endif %}
+</section>
+
+<section class="panel">
+  <div class="panel-head">
+    <h2>最近交易日明细</h2>
+    <span>展示最后 10 条</span>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>交易日</th>
+          <th>开盘</th>
+          <th>最高</th>
+          <th>最低</th>
+          <th>收盘</th>
+          <th>涨跌幅</th>
+          <th>成交额</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in chart[-10:]|reverse %}
+        <tr>
+          <td>{{ row.trade_date }}</td>
+          <td>{{ row.open }}</td>
+          <td>{{ row.high }}</td>
+          <td>{{ row.low }}</td>
+          <td>{{ row.close }}</td>
+          <td class="{{ 'up' if (row.pct_chg or 0) >= 0 else 'down' }}">{{ row.pct_chg|pct }}</td>
+          <td>{{ row.amount|cn_num }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+{% if chart %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const dailyData = {{ chart|tojson }};
+  const ctx = document.getElementById('dailyChart');
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: dailyData.map(item => item.trade_date),
+      datasets: [{
+        label: '收盘价',
+        data: dailyData.map(item => item.close),
+        borderColor: '#2563eb',
+        backgroundColor: 'rgba(37, 99, 235, 0.15)',
+        borderWidth: 2,
+        fill: true,
+        tension: 0.2,
+        pointRadius: 0
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false }
+      },
+      scales: {
+        x: {
+          ticks: { maxTicksLimit: 8 }
+        }
+      }
+    }
+  });
+</script>
+{% endif %}
+
+{% if intraday_chart %}
+<script>
+  const intradayData = {{ intraday_chart|tojson }};
+  const intradayCtx = document.getElementById('intradayChart');
+  new Chart(intradayCtx, {
+    type: 'line',
+    data: {
+      labels: intradayData.map(item => item.trade_time.slice(8, 12)),
+      datasets: [{
+        label: '分时价',
+        data: intradayData.map(item => item.close),
+        borderColor: '#dc2626',
+        backgroundColor: 'rgba(220, 38, 38, 0.10)',
+        borderWidth: 2,
+        fill: true,
+        tension: 0.18,
+        pointRadius: 0
+      }, {
+        label: '均价',
+        data: intradayData.map(item => item.avg_price),
+        borderColor: '#0f766e',
+        borderWidth: 1.5,
+        fill: false,
+        tension: 0.18,
+        pointRadius: 0
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: true }
+      },
+      scales: {
+        x: {
+          ticks: { maxTicksLimit: 10 }
+        }
+      }
+    }
+  });
+</script>
+{% endif %}
+{% endif %}
+{% endblock %}

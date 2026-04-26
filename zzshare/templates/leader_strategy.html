@@ -1,0 +1,284 @@
+{% extends "base.html" %}
+
+{% block title %}龙头战法 - {{ portal_title }}{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div>
+    <p class="eyebrow">龙头战法</p>
+    <h1>9:30-10:00 热门板块与龙头股筛选</h1>
+    <p class="hero-copy">
+      这个页面用于盘中前半小时确认今天最强主线、最强题材和最强个股，优先筛出具备“题材强 + 行业强 + 热度高 + 个股强度高”的龙头候选。
+    </p>
+  </div>
+  <div class="search-card">
+    <label>当前时间窗</label>
+    <p class="search-hint">页面时间：{{ now_display }}</p>
+    <p class="search-hint">交易日：{{ latest_trade_date_display }}</p>
+    <div class="panel-hint panel-hint-{{ time_window_status.tone }}">{{ time_window_status.message }}</div>
+    <form class="backtest-form" action="{{ url_for('leader_strategy') }}" method="get">
+      <label for="backtest_date">历史回测日期</label>
+      <input id="backtest_date" name="backtest_date" type="text" value="{{ backtest_date }}" placeholder="例如 20260417">
+      <button type="submit">回测这一天</button>
+    </form>
+    <div class="date-nav">
+      <a class="chip" href="{{ url_for('leader_strategy', backtest_date=prev_backtest_date) }}">上一天</a>
+      <a class="chip" href="{{ url_for('leader_strategy', backtest_date='20260417') }}">回到 4/17</a>
+      <a class="chip" href="{{ url_for('leader_strategy', backtest_date=next_backtest_date) }}">下一天</a>
+    </div>
+  </div>
+</section>
+
+<section class="panel">
+  <div class="panel-head">
+    <h2>龙头选股规则</h2>
+    <span>适用窗口：09:30-10:00</span>
+  </div>
+  <div class="rule-grid">
+    {% for rule in rules %}
+    <article class="rule-card">
+      <h3>{{ loop.index }}. {{ rule.title }}</h3>
+      <p>{{ rule.content }}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="panel-grid">
+  <article class="panel">
+    <div class="panel-head">
+      <h2>市场关注股 Top 6</h2>
+      <span>东方财富 / 人气热榜</span>
+    </div>
+    <p class="panel-hint panel-hint-warning">这里只是市场关注度观察名单，不直接作为龙头候选入池依据。</p>
+    <div class="chip-list">
+      {% for row in hot_stocks %}
+      <span class="chip">{{ row.name }} · 第{{ row.rank }}名</span>
+      {% else %}
+      <span class="empty">暂无热度数据</span>
+      {% endfor %}
+    </div>
+  </article>
+
+  <article class="panel">
+    <div class="panel-head">
+      <h2>热门题材 Top 6</h2>
+      <span>新浪 / 概念板块榜 · {{ hot_boards_trade_date_display }}</span>
+    </div>
+    <div class="chip-list">
+      {% for row in hot_boards %}
+      <span class="chip">{{ row.name }} · 龙头 {{ row.leader or '-' }}</span>
+      {% else %}
+      <span class="empty">暂无题材数据</span>
+      {% endfor %}
+    </div>
+  </article>
+
+  <article class="panel">
+    <div class="panel-head">
+      <h2>行业强度 Top 6</h2>
+      <span>新浪 / 行业板块榜</span>
+    </div>
+    <div class="chip-list">
+      {% for row in industry_flows %}
+      <span class="chip">{{ row.name }} · {{ row.pct|pct }}</span>
+      {% else %}
+      <span class="empty">暂无行业数据</span>
+      {% endfor %}
+    </div>
+  </article>
+</section>
+
+<section class="panel">
+  <div class="panel-head">
+    <h2>龙头候选股</h2>
+    <span>综合题材、行业、热度、涨幅与成交额打分</span>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>排名</th>
+          <th>股票</th>
+          <th>最新价</th>
+          <th>涨跌幅</th>
+          <th>成交额</th>
+          <th>主线题材</th>
+          <th>强行业</th>
+          <th>总分</th>
+          <th>入池原因</th>
+          <th>打分理由</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in candidates %}
+        <tr>
+          <td>#{{ row.rank }}</td>
+          <td>
+            {% if row.symbol %}
+            <a href="{{ url_for('stock_redirect', symbol=row.symbol) }}">{{ row.name }}</a>
+            <div class="table-sub">{{ row.symbol }}</div>
+            {% else %}
+            {{ row.name }}
+            {% endif %}
+          </td>
+          <td>{{ row.price or '-' }}</td>
+          <td class="{{ 'up' if (row.pct or 0) >= 0 else 'down' }}">{{ row.pct|pct }}</td>
+          <td>{{ row.amount|cn_num }}</td>
+          <td>{{ row.board_name or '-' }}</td>
+          <td>{{ row.industry_name or '-' }}</td>
+          <td>
+            <span class="score-pill">{{ row.score }}</span>
+            <div class="score-tag-list">
+              {% for item in row.score_tags %}
+              <span class="score-tag score-tag-{{ item.tone }}">{{ "%+d"|format(item.score) }}</span>
+              {% endfor %}
+            </div>
+          </td>
+          <td class="reason">{{ row.entry_reason }}</td>
+          <td class="reason">
+            <div>{{ row.score_breakdown }}</div>
+            <div class="score-tag-list">
+              {% for item in row.score_tags %}
+              <span class="score-tag score-tag-{{ item.tone }}">{{ item.label }}</span>
+              {% endfor %}
+            </div>
+          </td>
+        </tr>
+        {% else %}
+        <tr><td colspan="10" class="empty">当前未筛出候选龙头股</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="panel">
+  <div class="panel-head">
+    <h2>淘汰股观察</h2>
+    <span>展示为什么没能进入龙头候选池</span>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>股票</th>
+          <th>涨跌幅</th>
+          <th>成交额</th>
+          <th>主线题材</th>
+          <th>强行业</th>
+          <th>淘汰原因</th>
+          <th>已有打分项</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in rejected_candidates %}
+        <tr>
+          <td>
+            {% if row.symbol %}
+            <a href="{{ url_for('stock_redirect', symbol=row.symbol) }}">{{ row.name }}</a>
+            <div class="table-sub">{{ row.symbol }}</div>
+            {% else %}
+            {{ row.name }}
+            {% endif %}
+          </td>
+          <td class="{{ 'up' if (row.pct or 0) >= 0 else 'down' }}">{{ row.pct|pct }}</td>
+          <td>{{ row.amount|cn_num }}</td>
+          <td>{{ row.board_name or '-' }}</td>
+          <td>{{ row.industry_name or '-' }}</td>
+          <td class="reason">{{ row.rejected_reason_text }}</td>
+          <td class="reason">
+            <div class="score-tag-list">
+              {% for item in row.score_tags %}
+              <span class="score-tag score-tag-{{ item.tone }}">{{ item.label }}</span>
+              {% endfor %}
+            </div>
+          </td>
+        </tr>
+        {% else %}
+        <tr><td colspan="7" class="empty">当前没有可展示的淘汰股</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="panel">
+  <div class="panel-head">
+    <h2>历史日期回测</h2>
+    <span>{{ backtest.date_display }} · 观察 09:30-10:00，验证 10点后是否涨停</span>
+  </div>
+  <p class="panel-hint panel-hint-neutral">{{ backtest.note }}</p>
+  {% if backtest.error %}
+  <div class="ai-result ai-error">{{ backtest.error }}</div>
+  {% else %}
+  <section class="summary-grid compact-grid">
+    {% for item in backtest.summary %}
+    <article class="summary-card">
+      <p class="summary-label">{{ item.label }}</p>
+      <p class="summary-value tone-{{ item.tone }}">{{ item.value }}</p>
+    </article>
+    {% endfor %}
+  </section>
+
+  {% if backtest.insights %}
+  <section class="summary-grid compact-grid">
+    {% for item in backtest.insights %}
+    <article class="summary-card">
+      <p class="summary-label">{{ item.label }}</p>
+      <p class="summary-value tone-{{ item.tone }}">{{ item.value }}</p>
+    </article>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if backtest.top_pick %}
+  <div class="panel-hint panel-hint-warning">
+    这一天的 Top1 预测股是 {{ backtest.top_pick.name }}（{{ backtest.top_pick.code }}），
+    10:00 时涨幅 {{ backtest.top_pick.pct_1000|pct }}，
+    当天首次封板时间 {{ backtest.top_pick.first_limit_time }}，结果：{{ backtest.top_pick.status }}。
+  </div>
+  {% endif %}
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>排名</th>
+          <th>股票</th>
+          <th>10点价格</th>
+          <th>10点涨幅</th>
+          <th>10点前成交额</th>
+          <th>盘中最高涨幅</th>
+          <th>总分</th>
+          <th>首次封板时间</th>
+          <th>结果</th>
+          <th>复盘理由</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in backtest.rows %}
+        <tr>
+          <td>#{{ row.rank }}</td>
+          <td>
+            <a href="{{ url_for('stock_redirect', symbol=row.symbol) }}">{{ row.name }}</a>
+            <div class="table-sub">{{ row.code }} · {{ row.industry or '-' }}</div>
+          </td>
+          <td>{{ row.price_1000 }}</td>
+          <td class="{{ 'up' if (row.pct_1000 or 0) >= 0 else 'down' }}">{{ row.pct_1000|pct }}</td>
+          <td>{{ row.amount_1000_yi }}亿</td>
+          <td class="{{ 'up' if (row.high_pct_1000 or 0) >= 0 else 'down' }}">{{ row.high_pct_1000|pct }}</td>
+          <td><span class="score-pill">{{ row.score }}</span></td>
+          <td>{{ row.first_limit_time }}</td>
+          <td>{{ row.status }}</td>
+          <td class="reason">{{ row.signals_text }}</td>
+        </tr>
+        {% else %}
+        <tr><td colspan="10" class="empty">当前没有生成回测结果</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
+</section>
+{% endblock %}

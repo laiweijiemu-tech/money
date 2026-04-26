@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ portal_title }}{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='portal.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div>
+        <a class="brand" href="{{ url_for('index') }}">ZZShare Stock Portal</a>
+        <p class="tagline">A 股行情、热度、龙虎榜和个股查询门户</p>
+      </div>
+      <nav class="nav">
+        <a href="{{ url_for('index') }}">市场首页</a>
+        <a href="{{ url_for('leader_strategy') }}">龙头战法</a>
+        <a href="{{ url_for('tomorrow_outlook') }}">明日推演</a>
+        <a href="{{ url_for('stock_search') }}">个股查询</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    {% if not token_configured %}
+    <section class="notice warning">
+      <strong>提示：</strong> 当前未检测到 `ZZSHARE_TOKEN` 环境变量。部分实时能力可能不可用，建议先配置 token 再启动门户。
+    </section>
+    {% endif %}
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>
