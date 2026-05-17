@@ -1,0 +1,30 @@
+web/CLAUDE.md
+  62f179d5e920d629 1-44
+web/backend/app/services/live_data.py
+  62f179d5e920d629 3,14-20,22-25,38-40,70-112,114-240,242-255,257-258,270-271,277,285,336-339,360-361,404
+web/frontend/src/App.vue
+  62f179d5e920d629 3,7,10,15,18,30,84-90,96,103-104,108,112-113,117-118,121-126,129,142-151,153,156,158,164-165,169-181,194-196,204-205,214-215,226,234,238-243,253,290-376,380-395,402-403,409,419,424,427-428,438-444,468-479,481-484,486-507,509-512,514-515,517,519-524,527,529-535,537-553,555-568,570-594,596-599,601-603,605-611,613-619,621-660,662-671,673-675,677-682,684-714,716-744,746-758,760-763,765-806
+web/frontend/src/style.css
+  62f179d5e920d629 350-386,553-665
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.14",
+  "base_commit_sha": "9d741346f08ef9697bb06c957f69b9d255f43064",
+  "prompts": {
+    "62f179d5e920d629": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "02b593c9-6bcd-4fcd-81b2-fb7d3e3cf39b",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "laimin <laimin@laimindeMacBook-Air.local>",
+      "messages": [],
+      "total_additions": 3016,
+      "total_deletions": 305,
+      "accepted_lines": 935,
+      "overriden_lines": 0,
+      "messages_url": "https://gitai.gz.cvte.cn/cas/85a1c08c6e0baa5b812418356f3ee398d702bf6160b6aae41fefb9fec9d70fb0"
+    }
+  }
+}
