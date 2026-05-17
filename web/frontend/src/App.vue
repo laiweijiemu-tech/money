@@ -88,6 +88,17 @@ interface HotBoard {
   leader_name: string
 }
 
+interface EventItem {
+  type: string
+  symbol: string
+  name: string
+  code: string
+  theme: string
+  message: string
+  triggered_at: string
+  level: 'high' | 'medium'
+}
+
 interface DashboardData {
   generated_at: string
   overview: Overview
@@ -97,6 +108,7 @@ interface DashboardData {
   leaders: LeaderItem[]
   alerts: AlertItem[]
   positions: PositionItem[]
+  events: EventItem[]
   source: SourceInfo
 }
 
@@ -189,6 +201,16 @@ function formatSealAmount(value: number): string {
 
 function alertLevelClass(level: AlertItem['level']): string {
   return `level-${level}`
+}
+
+function eventTypeLabel(type: string): string {
+  const map: Record<string, string> = {
+    limit_up_new: '新封板',
+    limit_up_reseal: '炸板回封',
+    weak_to_strong: '弱转强',
+    sector_surge: '板块联动',
+  }
+  return map[type] ?? type
 }
 
 function switchTab(tab: TabName): void {
@@ -504,6 +526,27 @@ onBeforeUnmount(() => {
               <span>{{ stock.turnover_rate.toFixed(1) }}%</span>
               <span>{{ stock.market_cap?.toFixed(1) ?? '--' }} 亿</span>
               <span>{{ formatSealAmount(stock.seal_amount) }}</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="panel-kicker">盘中信号</p>
+              <h2>实时事件流</h2>
+            </div>
+            <span class="timestamp">{{ dashboard?.events?.length ?? 0 }} 条</span>
+          </div>
+          <div class="event-list">
+            <p v-if="!dashboard?.events?.length" class="muted-copy">盘中监控运行中，捕获到信号时将实时展示。</p>
+            <div v-for="(event, idx) in (dashboard?.events ?? []).slice().reverse().slice(0, 10)" :key="`${event.code}-${event.triggered_at}-${idx}`" class="event-item" :class="`event-${event.level}`">
+              <div class="event-head">
+                <span class="event-type" :class="`type-${event.type}`">{{ eventTypeLabel(event.type) }}</span>
+                <time>{{ event.triggered_at }}</time>
+              </div>
+              <strong>{{ event.name }} <span v-if="event.code !== '--'">{{ event.code }}</span></strong>
+              <p>{{ event.message }}</p>
             </div>
           </div>
         </article>

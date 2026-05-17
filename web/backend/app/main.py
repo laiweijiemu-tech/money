@@ -4,6 +4,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from .database import init_database
+from .services.intraday_monitor import monitor
 from .services.live_data import get_dashboard_data
 
 app = FastAPI(
@@ -24,6 +25,12 @@ app.add_middleware(
 @app.on_event("startup")
 def on_startup() -> None:
     init_database()
+    monitor.start()
+
+
+@app.on_event("shutdown")
+def on_shutdown() -> None:
+    monitor.stop()
 
 
 @app.get("/api/health")
@@ -33,4 +40,14 @@ def health_check() -> dict:
 
 @app.get("/api/dashboard")
 def get_dashboard() -> dict:
-    return get_dashboard_data()
+    data = get_dashboard_data()
+    data["events"] = monitor.get_events()
+    return data
+
+
+@app.get("/api/events")
+def get_events() -> dict:
+    return {
+        "events": monitor.get_events(),
+        "live_pool_count": len(monitor.get_live_pool()),
+    }
