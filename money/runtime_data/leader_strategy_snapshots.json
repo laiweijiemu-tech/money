@@ -1,0 +1,3532 @@
+[
+  {
+    "id": "20260426165602",
+    "captured_at": "2026-04-26 16:56:02",
+    "trade_date": "20260426",
+    "reference_date": "20260426",
+    "prediction_mode": "实时预测",
+    "hot_boards_trade_date": "2026-04-26 16:56:04",
+    "candidates": [
+      {
+        "pool": "候选",
+        "rank": 1,
+        "symbol": "000973.SZ",
+        "name": "佛塑科技",
+        "price": 18.99,
+        "pct": 10.023,
+        "amount": 1839550896.0,
+        "score": 99,
+        "board_name": "锂电池",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 34 名，盘中涨停 (+14)；题材龙头 锂电池 (+28)；题材龙头 聚氨酯 (+18)；盘中涨幅 10.02% 接近涨停 (+25)；成交额 18.40亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；题材龙头: 锂电池 (+28)；题材龙头: 聚氨酯 (+18)；盘中强度: 接近涨停 (+25)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 34 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 锂电池",
+            "score": 28,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 聚氨酯",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.02% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 18.40亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 2,
+        "symbol": "300390.SZ",
+        "name": "天华新能",
+        "price": 91.0,
+        "pct": 13.651,
+        "amount": 8541912157.0,
+        "score": 97,
+        "board_name": "锂矿",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 13 名，盘中涨停 (+18)；题材龙头 锂矿 (+38)；市场关注股第 13 名 (+2)；盘中涨幅 13.65% 接近涨停 (+25)；成交额 85.42亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；题材龙头: 锂矿 (+38)；热度靠前: 东财人气第 13 名 (+2)；盘中强度: 接近涨停 (+25)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 13 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 锂矿",
+            "score": 38,
+            "tone": "positive"
+          },
+          {
+            "label": "市场关注股第 13 名",
+            "score": 2,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 13.65% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 85.42亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 3,
+        "symbol": "300721.SZ",
+        "name": "怡达股份",
+        "price": 21.0,
+        "pct": 18.711,
+        "amount": 1097364057.0,
+        "score": 91,
+        "board_name": "电解液",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 9 名，盘中涨停 (+18)；题材龙头 电解液 (+38)；盘中涨幅 18.71% 接近涨停 (+25)；成交额 10.97亿 活跃 (+10)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；题材龙头: 电解液 (+38)；盘中强度: 接近涨停 (+25)；成交额活跃: 超 8 亿 (+10)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 9 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 电解液",
+            "score": 38,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 18.71% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 10.97亿 活跃",
+            "score": 10,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 4,
+        "symbol": "600633.SH",
+        "name": "浙数文化",
+        "price": 15.09,
+        "pct": 9.985,
+        "amount": 2200318062.0,
+        "score": 86,
+        "board_name": "固态电池",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 70 名，盘中涨停 (+14)；题材龙头 固态电池 (+28)；市场关注股第 10 名 (+5)；盘中涨幅 9.98% 接近涨停 (+25)；成交额 22.00亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；题材龙头: 固态电池 (+28)；热度靠前: 东财人气第 10 名 (+5)；盘中强度: 接近涨停 (+25)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 70 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 固态电池",
+            "score": 28,
+            "tone": "positive"
+          },
+          {
+            "label": "市场关注股第 10 名",
+            "score": 5,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.98% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 22.00亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 5,
+        "symbol": "688808.SH",
+        "name": "N联讯",
+        "price": 799.0,
+        "pct": 875.818,
+        "amount": 11413259860.0,
+        "score": 81,
+        "board_name": "",
+        "industry_name": "仪器仪表制造业",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 1 名，盘中涨停 (+18)；行业领涨 仪器仪表制造业 (+24)；盘中涨幅 875.82% 接近涨停 (+25)；成交额 114.13亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；行业领涨: 仪器仪表制造业 (+24)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 1 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "行业领涨 仪器仪表制造业",
+            "score": 24,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 875.82% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 114.13亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 6,
+        "symbol": "688101.SH",
+        "name": "三达膜",
+        "price": 17.93,
+        "pct": 10.406,
+        "amount": 182751729.0,
+        "score": 81,
+        "board_name": "盐湖提锂",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 3 个。",
+        "score_breakdown": "市场强势第 19 名，盘中涨停 (+18)；题材龙头 盐湖提锂 (+38)；盘中涨幅 10.41% 接近涨停 (+25)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；题材龙头: 盐湖提锂 (+38)；盘中强度: 接近涨停 (+25)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 19 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 盐湖提锂",
+            "score": 38,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.41% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 7,
+        "symbol": "002176.SZ",
+        "name": "江特电机",
+        "price": 13.62,
+        "pct": 10.016,
+        "amount": 2357626254.0,
+        "score": 79,
+        "board_name": "涉矿概念",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 39 名，盘中涨停 (+14)；题材龙头 涉矿概念 (+18)；市场关注股第 2 名 (+8)；盘中涨幅 10.02% 接近涨停 (+25)；成交额 23.58亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；题材龙头: 涉矿概念 (+18)；热度靠前: 东财人气第 2 名 (+8)；盘中强度: 接近涨停 (+25)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 39 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 涉矿概念",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "市场关注股第 2 名",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.02% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 23.58亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 8,
+        "symbol": "002240.SZ",
+        "name": "盛新锂能",
+        "price": 50.93,
+        "pct": 10.0,
+        "amount": 3174971097.0,
+        "score": 77,
+        "board_name": "",
+        "industry_name": "家具制造业",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 50 名，盘中涨停 (+14)；行业领涨 家具制造业 (+24)；盘中涨幅 10.00% 接近涨停 (+25)；成交额 31.75亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；行业领涨: 家具制造业 (+24)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 50 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "行业领涨 家具制造业",
+            "score": 24,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.00% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 31.75亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 9,
+        "symbol": "300489.SZ",
+        "name": "光智科技",
+        "price": 101.9,
+        "pct": 17.032,
+        "amount": 1699837245.0,
+        "score": 73,
+        "board_name": "",
+        "industry_name": "有色金属冶炼和压延加工业",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 10 名，盘中涨停 (+18)；行业领涨 有色金属冶炼和压延加工业 (+16)；盘中涨幅 17.03% 接近涨停 (+25)；成交额 17.00亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；行业领涨: 有色金属冶炼和压延加工业 (+16)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 10 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "行业领涨 有色金属冶炼和压延加工业",
+            "score": 16,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 17.03% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 17.00亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 10,
+        "symbol": "002192.SZ",
+        "name": "融捷股份",
+        "price": 86.28,
+        "pct": 9.995,
+        "amount": 2477165922.0,
+        "score": 71,
+        "board_name": "稀缺资源",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 60 名，盘中涨停 (+14)；题材龙头 稀缺资源 (+18)；盘中涨幅 9.99% 接近涨停 (+25)；成交额 24.77亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；题材龙头: 稀缺资源 (+18)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 60 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 稀缺资源",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.99% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 24.77亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 11,
+        "symbol": "000762.SZ",
+        "name": "西藏矿业",
+        "price": 38.5,
+        "pct": 7.783,
+        "amount": 2562951225.0,
+        "score": 66,
+        "board_name": "",
+        "industry_name": "黑色金属矿采选业",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 96 名，涨幅居前 (+8)；行业领涨 黑色金属矿采选业 (+24)；盘中涨幅 7.78% 强势 (+20)；成交额 25.63亿 放大 (+14)",
+        "signals_text": "市场强势: 涨幅居前 (+8)；行业领涨: 黑色金属矿采选业 (+24)；盘中强度: 涨幅强势 (+20)；成交额放大: 超 15 亿 (+14)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 96 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "行业领涨 黑色金属矿采选业",
+            "score": 24,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 7.78% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 25.63亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 12,
+        "symbol": "001234.SZ",
+        "name": "泰慕士",
+        "price": 35.77,
+        "pct": 9.994,
+        "amount": 451485262.0,
+        "score": 61,
+        "board_name": "",
+        "industry_name": "纺织服装、服饰业",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 63 名，盘中涨停 (+14)；行业领涨 纺织服装、服饰业 (+16)；盘中涨幅 9.99% 接近涨停 (+25)；成交额 4.51亿 尚可 (+6)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；行业领涨: 纺织服装、服饰业 (+16)；盘中强度: 接近涨停 (+25)；成交额尚可: 超 3 亿 (+6)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 63 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "行业领涨 纺织服装、服饰业",
+            "score": 16,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.99% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 4.51亿 尚可",
+            "score": 6,
+            "tone": "positive"
+          }
+        ]
+      }
+    ],
+    "rejected_candidates": [
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "002466.SZ",
+        "name": "天齐锂业",
+        "price": 73.7,
+        "pct": 8.43,
+        "amount": 9667979616.0,
+        "score": 44,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 89 名，涨幅居前 (+8)；市场关注股第 12 名 (+2)；盘中涨幅 8.43% 强势 (+20)；成交额 96.68亿 放大 (+14)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 89 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "市场关注股第 12 名",
+            "score": 2,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 8.43% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 96.68亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "688041.SH",
+        "name": "海光信息",
+        "price": 285.0,
+        "pct": 8.2,
+        "amount": 15260717932.0,
+        "score": 44,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 92 名，涨幅居前 (+8)；市场关注股第 19 名 (+2)；盘中涨幅 8.20% 强势 (+20)；成交额 152.61亿 放大 (+14)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 92 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "市场关注股第 19 名",
+            "score": 2,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 8.20% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 152.61亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "300422.SZ",
+        "name": "博世科",
+        "price": 5.56,
+        "pct": 20.086,
+        "amount": 213182897.0,
+        "score": 43,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 3 名，盘中涨停 (+18)；盘中涨幅 20.09% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 3 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 20.09% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "301165.SZ",
+        "name": "锐捷网络",
+        "price": 100.6,
+        "pct": 8.992,
+        "amount": 1692924156.0,
+        "score": 42,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 3 个。",
+        "score_breakdown": "市场强势第 85 名，涨幅居前 (+8)；盘中涨幅 8.99% 强势 (+20)；成交额 16.93亿 放大 (+14)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 85 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 8.99% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 16.93亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "002980.SZ",
+        "name": "华盛昌",
+        "price": 82.29,
+        "pct": 8.419,
+        "amount": 2103074910.0,
+        "score": 42,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 3 个。",
+        "score_breakdown": "市场强势第 90 名，涨幅居前 (+8)；盘中涨幅 8.42% 强势 (+20)；成交额 21.03亿 放大 (+14)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 90 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 8.42% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 21.03亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "600331.SH",
+        "name": "宏达股份",
+        "price": 18.24,
+        "pct": 7.738,
+        "amount": 1580212650.0,
+        "score": 42,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 3 个。",
+        "score_breakdown": "市场强势第 99 名，涨幅居前 (+8)；盘中涨幅 7.74% 强势 (+20)；成交额 15.80亿 放大 (+14)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 99 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 7.74% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 15.80亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "002795.SZ",
+        "name": "永和智控",
+        "price": 8.86,
+        "pct": 10.062,
+        "amount": 222762326.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 21 名，盘中涨停 (+14)；盘中涨幅 10.06% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 21 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.06% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "002999.SZ",
+        "name": "天禾股份",
+        "price": 7.66,
+        "pct": 10.057,
+        "amount": 241064356.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 24 名，盘中涨停 (+14)；盘中涨幅 10.06% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 24 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.06% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "603318.SH",
+        "name": "水发燃气",
+        "price": 11.39,
+        "pct": 10.048,
+        "amount": 183816148.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 27 名，盘中涨停 (+14)；盘中涨幅 10.05% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 27 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.05% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "002313.SZ",
+        "name": "日海智能",
+        "price": 9.64,
+        "pct": 10.046,
+        "amount": 231029539.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 28 名，盘中涨停 (+14)；盘中涨幅 10.05% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 28 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.05% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "603680.SH",
+        "name": "今创集团",
+        "price": 14.03,
+        "pct": 10.039,
+        "amount": 147707855.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 29 名，盘中涨停 (+14)；盘中涨幅 10.04% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 29 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.04% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "600826.SH",
+        "name": "兰生股份",
+        "price": 10.32,
+        "pct": 10.021,
+        "amount": 156400682.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 36 名，盘中涨停 (+14)；盘中涨幅 10.02% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 36 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.02% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      }
+    ],
+    "signature": "{\"candidates\": [{\"amount\": 1839550896.0, \"board_name\": \"锂电池\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 4 个。\", \"industry_name\": \"\", \"name\": \"佛塑科技\", \"pct\": 10.023, \"pool\": \"候选\", \"price\": 18.99, \"rank\": 1, \"rejected_reason_text\": \"\", \"score\": 99, \"score_breakdown\": \"市场强势第 34 名，盘中涨停 (+14)；题材龙头 锂电池 (+28)；题材龙头 聚氨酯 (+18)；盘中涨幅 10.02% 接近涨停 (+25)；成交额 18.40亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 34 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"题材龙头 锂电池\", \"score\": 28, \"tone\": \"positive\"}, {\"label\": \"题材龙头 聚氨酯\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.02% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 18.40亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；题材龙头: 锂电池 (+28)；题材龙头: 聚氨酯 (+18)；盘中强度: 接近涨停 (+25)\", \"symbol\": \"000973.SZ\"}, {\"amount\": 8541912157.0, \"board_name\": \"锂矿\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 5 个。\", \"industry_name\": \"\", \"name\": \"天华新能\", \"pct\": 13.651, \"pool\": \"候选\", \"price\": 91.0, \"rank\": 2, \"rejected_reason_text\": \"\", \"score\": 97, \"score_breakdown\": \"市场强势第 13 名，盘中涨停 (+18)；题材龙头 锂矿 (+38)；市场关注股第 13 名 (+2)；盘中涨幅 13.65% 接近涨停 (+25)；成交额 85.42亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 13 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"题材龙头 锂矿\", \"score\": 38, \"tone\": \"positive\"}, {\"label\": \"市场关注股第 13 名\", \"score\": 2, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 13.65% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 85.42亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；题材龙头: 锂矿 (+38)；热度靠前: 东财人气第 13 名 (+2)；盘中强度: 接近涨停 (+25)\", \"symbol\": \"300390.SZ\"}, {\"amount\": 1097364057.0, \"board_name\": \"电解液\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 4 个。\", \"industry_name\": \"\", \"name\": \"怡达股份\", \"pct\": 18.711, \"pool\": \"候选\", \"price\": 21.0, \"rank\": 3, \"rejected_reason_text\": \"\", \"score\": 91, \"score_breakdown\": \"市场强势第 9 名，盘中涨停 (+18)；题材龙头 电解液 (+38)；盘中涨幅 18.71% 接近涨停 (+25)；成交额 10.97亿 活跃 (+10)\", \"score_tags\": [{\"label\": \"市场强势第 9 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"题材龙头 电解液\", \"score\": 38, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 18.71% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 10.97亿 活跃\", \"score\": 10, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；题材龙头: 电解液 (+38)；盘中强度: 接近涨停 (+25)；成交额活跃: 超 8 亿 (+10)\", \"symbol\": \"300721.SZ\"}, {\"amount\": 2200318062.0, \"board_name\": \"固态电池\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 5 个。\", \"industry_name\": \"\", \"name\": \"浙数文化\", \"pct\": 9.985, \"pool\": \"候选\", \"price\": 15.09, \"rank\": 4, \"rejected_reason_text\": \"\", \"score\": 86, \"score_breakdown\": \"市场强势第 70 名，盘中涨停 (+14)；题材龙头 固态电池 (+28)；市场关注股第 10 名 (+5)；盘中涨幅 9.98% 接近涨停 (+25)；成交额 22.00亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 70 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"题材龙头 固态电池\", \"score\": 28, \"tone\": \"positive\"}, {\"label\": \"市场关注股第 10 名\", \"score\": 5, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.98% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 22.00亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；题材龙头: 固态电池 (+28)；热度靠前: 东财人气第 10 名 (+5)；盘中强度: 接近涨停 (+25)\", \"symbol\": \"600633.SH\"}, {\"amount\": 11413259860.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 4 个。\", \"industry_name\": \"仪器仪表制造业\", \"name\": \"N联讯\", \"pct\": 875.818, \"pool\": \"候选\", \"price\": 799.0, \"rank\": 5, \"rejected_reason_text\": \"\", \"score\": 81, \"score_breakdown\": \"市场强势第 1 名，盘中涨停 (+18)；行业领涨 仪器仪表制造业 (+24)；盘中涨幅 875.82% 接近涨停 (+25)；成交额 114.13亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 1 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"行业领涨 仪器仪表制造业\", \"score\": 24, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 875.82% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 114.13亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；行业领涨: 仪器仪表制造业 (+24)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)\", \"symbol\": \"688808.SH\"}, {\"amount\": 182751729.0, \"board_name\": \"盐湖提锂\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 3 个。\", \"industry_name\": \"\", \"name\": \"三达膜\", \"pct\": 10.406, \"pool\": \"候选\", \"price\": 17.93, \"rank\": 6, \"rejected_reason_text\": \"\", \"score\": 81, \"score_breakdown\": \"市场强势第 19 名，盘中涨停 (+18)；题材龙头 盐湖提锂 (+38)；盘中涨幅 10.41% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 19 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"题材龙头 盐湖提锂\", \"score\": 38, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.41% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；题材龙头: 盐湖提锂 (+38)；盘中强度: 接近涨停 (+25)\", \"symbol\": \"688101.SH\"}, {\"amount\": 2357626254.0, \"board_name\": \"涉矿概念\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 5 个。\", \"industry_name\": \"\", \"name\": \"江特电机\", \"pct\": 10.016, \"pool\": \"候选\", \"price\": 13.62, \"rank\": 7, \"rejected_reason_text\": \"\", \"score\": 79, \"score_breakdown\": \"市场强势第 39 名，盘中涨停 (+14)；题材龙头 涉矿概念 (+18)；市场关注股第 2 名 (+8)；盘中涨幅 10.02% 接近涨停 (+25)；成交额 23.58亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 39 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"题材龙头 涉矿概念\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"市场关注股第 2 名\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.02% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 23.58亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；题材龙头: 涉矿概念 (+18)；热度靠前: 东财人气第 2 名 (+8)；盘中强度: 接近涨停 (+25)\", \"symbol\": \"002176.SZ\"}, {\"amount\": 3174971097.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 4 个。\", \"industry_name\": \"家具制造业\", \"name\": \"盛新锂能\", \"pct\": 10.0, \"pool\": \"候选\", \"price\": 50.93, \"rank\": 8, \"rejected_reason_text\": \"\", \"score\": 77, \"score_breakdown\": \"市场强势第 50 名，盘中涨停 (+14)；行业领涨 家具制造业 (+24)；盘中涨幅 10.00% 接近涨停 (+25)；成交额 31.75亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 50 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"行业领涨 家具制造业\", \"score\": 24, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.00% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 31.75亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；行业领涨: 家具制造业 (+24)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)\", \"symbol\": \"002240.SZ\"}, {\"amount\": 1699837245.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 4 个。\", \"industry_name\": \"有色金属冶炼和压延加工业\", \"name\": \"光智科技\", \"pct\": 17.032, \"pool\": \"候选\", \"price\": 101.9, \"rank\": 9, \"rejected_reason_text\": \"\", \"score\": 73, \"score_breakdown\": \"市场强势第 10 名，盘中涨停 (+18)；行业领涨 有色金属冶炼和压延加工业 (+16)；盘中涨幅 17.03% 接近涨停 (+25)；成交额 17.00亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 10 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"行业领涨 有色金属冶炼和压延加工业\", \"score\": 16, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 17.03% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 17.00亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；行业领涨: 有色金属冶炼和压延加工业 (+16)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)\", \"symbol\": \"300489.SZ\"}, {\"amount\": 2477165922.0, \"board_name\": \"稀缺资源\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 4 个。\", \"industry_name\": \"\", \"name\": \"融捷股份\", \"pct\": 9.995, \"pool\": \"候选\", \"price\": 86.28, \"rank\": 10, \"rejected_reason_text\": \"\", \"score\": 71, \"score_breakdown\": \"市场强势第 60 名，盘中涨停 (+14)；题材龙头 稀缺资源 (+18)；盘中涨幅 9.99% 接近涨停 (+25)；成交额 24.77亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 60 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"题材龙头 稀缺资源\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.99% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 24.77亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；题材龙头: 稀缺资源 (+18)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)\", \"symbol\": \"002192.SZ\"}, {\"amount\": 2562951225.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 4 个。\", \"industry_name\": \"黑色金属矿采选业\", \"name\": \"西藏矿业\", \"pct\": 7.783, \"pool\": \"候选\", \"price\": 38.5, \"rank\": 11, \"rejected_reason_text\": \"\", \"score\": 66, \"score_breakdown\": \"市场强势第 96 名，涨幅居前 (+8)；行业领涨 黑色金属矿采选业 (+24)；盘中涨幅 7.78% 强势 (+20)；成交额 25.63亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 96 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"行业领涨 黑色金属矿采选业\", \"score\": 24, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 7.78% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 25.63亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 涨幅居前 (+8)；行业领涨: 黑色金属矿采选业 (+24)；盘中强度: 涨幅强势 (+20)；成交额放大: 超 15 亿 (+14)\", \"symbol\": \"000762.SZ\"}, {\"amount\": 451485262.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 4 个。\", \"industry_name\": \"纺织服装、服饰业\", \"name\": \"泰慕士\", \"pct\": 9.994, \"pool\": \"候选\", \"price\": 35.77, \"rank\": 12, \"rejected_reason_text\": \"\", \"score\": 61, \"score_breakdown\": \"市场强势第 63 名，盘中涨停 (+14)；行业领涨 纺织服装、服饰业 (+16)；盘中涨幅 9.99% 接近涨停 (+25)；成交额 4.51亿 尚可 (+6)\", \"score_tags\": [{\"label\": \"市场强势第 63 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"行业领涨 纺织服装、服饰业\", \"score\": 16, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.99% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 4.51亿 尚可\", \"score\": 6, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；行业领涨: 纺织服装、服饰业 (+16)；盘中强度: 接近涨停 (+25)；成交额尚可: 超 3 亿 (+6)\", \"symbol\": \"001234.SZ\"}], \"mode\": \"实时预测\", \"reference_date\": \"20260426\", \"rejected_candidates\": [{\"amount\": 9667979616.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 4 个。\", \"industry_name\": \"\", \"name\": \"天齐锂业\", \"pct\": 8.43, \"pool\": \"淘汰\", \"price\": 73.7, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件\", \"score\": 44, \"score_breakdown\": \"市场强势第 89 名，涨幅居前 (+8)；市场关注股第 12 名 (+2)；盘中涨幅 8.43% 强势 (+20)；成交额 96.68亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 89 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"市场关注股第 12 名\", \"score\": 2, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 8.43% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 96.68亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"002466.SZ\"}, {\"amount\": 15260717932.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 4 个。\", \"industry_name\": \"\", \"name\": \"海光信息\", \"pct\": 8.2, \"pool\": \"淘汰\", \"price\": 285.0, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件\", \"score\": 44, \"score_breakdown\": \"市场强势第 92 名，涨幅居前 (+8)；市场关注股第 19 名 (+2)；盘中涨幅 8.20% 强势 (+20)；成交额 152.61亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 92 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"市场关注股第 19 名\", \"score\": 2, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 8.20% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 152.61亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"688041.SH\"}, {\"amount\": 213182897.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"博世科\", \"pct\": 20.086, \"pool\": \"淘汰\", \"price\": 5.56, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 43, \"score_breakdown\": \"市场强势第 3 名，盘中涨停 (+18)；盘中涨幅 20.09% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 3 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 20.09% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"300422.SZ\"}, {\"amount\": 1692924156.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 3 个。\", \"industry_name\": \"\", \"name\": \"锐捷网络\", \"pct\": 8.992, \"pool\": \"淘汰\", \"price\": 100.6, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件\", \"score\": 42, \"score_breakdown\": \"市场强势第 85 名，涨幅居前 (+8)；盘中涨幅 8.99% 强势 (+20)；成交额 16.93亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 85 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 8.99% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 16.93亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"301165.SZ\"}, {\"amount\": 2103074910.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 3 个。\", \"industry_name\": \"\", \"name\": \"华盛昌\", \"pct\": 8.419, \"pool\": \"淘汰\", \"price\": 82.29, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件\", \"score\": 42, \"score_breakdown\": \"市场强势第 90 名，涨幅居前 (+8)；盘中涨幅 8.42% 强势 (+20)；成交额 21.03亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 90 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 8.42% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 21.03亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"002980.SZ\"}, {\"amount\": 1580212650.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 3 个。\", \"industry_name\": \"\", \"name\": \"宏达股份\", \"pct\": 7.738, \"pool\": \"淘汰\", \"price\": 18.24, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件\", \"score\": 42, \"score_breakdown\": \"市场强势第 99 名，涨幅居前 (+8)；盘中涨幅 7.74% 强势 (+20)；成交额 15.80亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 99 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 7.74% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 15.80亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"600331.SH\"}, {\"amount\": 222762326.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"永和智控\", \"pct\": 10.062, \"pool\": \"淘汰\", \"price\": 8.86, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 21 名，盘中涨停 (+14)；盘中涨幅 10.06% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 21 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.06% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"002795.SZ\"}, {\"amount\": 241064356.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"天禾股份\", \"pct\": 10.057, \"pool\": \"淘汰\", \"price\": 7.66, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 24 名，盘中涨停 (+14)；盘中涨幅 10.06% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 24 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.06% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"002999.SZ\"}, {\"amount\": 183816148.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"水发燃气\", \"pct\": 10.048, \"pool\": \"淘汰\", \"price\": 11.39, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 27 名，盘中涨停 (+14)；盘中涨幅 10.05% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 27 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.05% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"603318.SH\"}, {\"amount\": 231029539.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"日海智能\", \"pct\": 10.046, \"pool\": \"淘汰\", \"price\": 9.64, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 28 名，盘中涨停 (+14)；盘中涨幅 10.05% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 28 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.05% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"002313.SZ\"}, {\"amount\": 147707855.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"今创集团\", \"pct\": 10.039, \"pool\": \"淘汰\", \"price\": 14.03, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 29 名，盘中涨停 (+14)；盘中涨幅 10.04% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 29 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.04% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"603680.SH\"}, {\"amount\": 156400682.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"兰生股份\", \"pct\": 10.021, \"pool\": \"淘汰\", \"price\": 10.32, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 36 名，盘中涨停 (+14)；盘中涨幅 10.02% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 36 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.02% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"600826.SH\"}], \"trade_date\": \"20260426\"}"
+  },
+  {
+    "id": "20260426170715",
+    "captured_at": "2026-04-26 17:07:15",
+    "trade_date": "20260426",
+    "reference_date": "20260426",
+    "prediction_mode": "实时预测",
+    "hot_boards_trade_date": "2026-04-26 17:07:17",
+    "candidates": [
+      {
+        "pool": "候选",
+        "rank": 1,
+        "symbol": "000973.SZ",
+        "name": "佛塑科技",
+        "price": 18.99,
+        "pct": 10.023,
+        "amount": 1839550896.0,
+        "score": 99,
+        "board_name": "锂电池",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 34 名，盘中涨停 (+14)；题材龙头 锂电池 (+28)；题材龙头 聚氨酯 (+18)；盘中涨幅 10.02% 接近涨停 (+25)；成交额 18.40亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；题材龙头: 锂电池 (+28)；题材龙头: 聚氨酯 (+18)；盘中强度: 接近涨停 (+25)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 34 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 锂电池",
+            "score": 28,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 聚氨酯",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.02% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 18.40亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 2,
+        "symbol": "300390.SZ",
+        "name": "天华新能",
+        "price": 91.0,
+        "pct": 13.651,
+        "amount": 8541912157.0,
+        "score": 97,
+        "board_name": "锂矿",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 13 名，盘中涨停 (+18)；题材龙头 锂矿 (+38)；市场关注股第 13 名 (+2)；盘中涨幅 13.65% 接近涨停 (+25)；成交额 85.42亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；题材龙头: 锂矿 (+38)；热度靠前: 东财人气第 13 名 (+2)；盘中强度: 接近涨停 (+25)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 13 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 锂矿",
+            "score": 38,
+            "tone": "positive"
+          },
+          {
+            "label": "市场关注股第 13 名",
+            "score": 2,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 13.65% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 85.42亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 3,
+        "symbol": "300721.SZ",
+        "name": "怡达股份",
+        "price": 21.0,
+        "pct": 18.711,
+        "amount": 1097364057.0,
+        "score": 91,
+        "board_name": "电解液",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 9 名，盘中涨停 (+18)；题材龙头 电解液 (+38)；盘中涨幅 18.71% 接近涨停 (+25)；成交额 10.97亿 活跃 (+10)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；题材龙头: 电解液 (+38)；盘中强度: 接近涨停 (+25)；成交额活跃: 超 8 亿 (+10)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 9 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 电解液",
+            "score": 38,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 18.71% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 10.97亿 活跃",
+            "score": 10,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 4,
+        "symbol": "600633.SH",
+        "name": "浙数文化",
+        "price": 15.09,
+        "pct": 9.985,
+        "amount": 2200318062.0,
+        "score": 86,
+        "board_name": "固态电池",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 70 名，盘中涨停 (+14)；题材龙头 固态电池 (+28)；市场关注股第 10 名 (+5)；盘中涨幅 9.98% 接近涨停 (+25)；成交额 22.00亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；题材龙头: 固态电池 (+28)；热度靠前: 东财人气第 10 名 (+5)；盘中强度: 接近涨停 (+25)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 70 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 固态电池",
+            "score": 28,
+            "tone": "positive"
+          },
+          {
+            "label": "市场关注股第 10 名",
+            "score": 5,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.98% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 22.00亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 5,
+        "symbol": "688808.SH",
+        "name": "N联讯",
+        "price": 799.0,
+        "pct": 875.818,
+        "amount": 11413259860.0,
+        "score": 81,
+        "board_name": "",
+        "industry_name": "仪器仪表制造业",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 1 名，盘中涨停 (+18)；行业领涨 仪器仪表制造业 (+24)；盘中涨幅 875.82% 接近涨停 (+25)；成交额 114.13亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；行业领涨: 仪器仪表制造业 (+24)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 1 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "行业领涨 仪器仪表制造业",
+            "score": 24,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 875.82% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 114.13亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 6,
+        "symbol": "688101.SH",
+        "name": "三达膜",
+        "price": 17.93,
+        "pct": 10.406,
+        "amount": 182751729.0,
+        "score": 81,
+        "board_name": "盐湖提锂",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 3 个。",
+        "score_breakdown": "市场强势第 19 名，盘中涨停 (+18)；题材龙头 盐湖提锂 (+38)；盘中涨幅 10.41% 接近涨停 (+25)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；题材龙头: 盐湖提锂 (+38)；盘中强度: 接近涨停 (+25)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 19 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 盐湖提锂",
+            "score": 38,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.41% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 7,
+        "symbol": "002176.SZ",
+        "name": "江特电机",
+        "price": 13.62,
+        "pct": 10.016,
+        "amount": 2357626254.0,
+        "score": 79,
+        "board_name": "涉矿概念",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 39 名，盘中涨停 (+14)；题材龙头 涉矿概念 (+18)；市场关注股第 2 名 (+8)；盘中涨幅 10.02% 接近涨停 (+25)；成交额 23.58亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；题材龙头: 涉矿概念 (+18)；热度靠前: 东财人气第 2 名 (+8)；盘中强度: 接近涨停 (+25)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 39 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 涉矿概念",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "市场关注股第 2 名",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.02% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 23.58亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 8,
+        "symbol": "002240.SZ",
+        "name": "盛新锂能",
+        "price": 50.93,
+        "pct": 10.0,
+        "amount": 3174971097.0,
+        "score": 77,
+        "board_name": "",
+        "industry_name": "家具制造业",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 50 名，盘中涨停 (+14)；行业领涨 家具制造业 (+24)；盘中涨幅 10.00% 接近涨停 (+25)；成交额 31.75亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；行业领涨: 家具制造业 (+24)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 50 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "行业领涨 家具制造业",
+            "score": 24,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.00% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 31.75亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 9,
+        "symbol": "300489.SZ",
+        "name": "光智科技",
+        "price": 101.9,
+        "pct": 17.032,
+        "amount": 1699837245.0,
+        "score": 73,
+        "board_name": "",
+        "industry_name": "有色金属冶炼和压延加工业",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 10 名，盘中涨停 (+18)；行业领涨 有色金属冶炼和压延加工业 (+16)；盘中涨幅 17.03% 接近涨停 (+25)；成交额 17.00亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；行业领涨: 有色金属冶炼和压延加工业 (+16)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 10 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "行业领涨 有色金属冶炼和压延加工业",
+            "score": 16,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 17.03% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 17.00亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 10,
+        "symbol": "002192.SZ",
+        "name": "融捷股份",
+        "price": 86.28,
+        "pct": 9.995,
+        "amount": 2477165922.0,
+        "score": 71,
+        "board_name": "稀缺资源",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 60 名，盘中涨停 (+14)；题材龙头 稀缺资源 (+18)；盘中涨幅 9.99% 接近涨停 (+25)；成交额 24.77亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；题材龙头: 稀缺资源 (+18)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 60 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 稀缺资源",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.99% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 24.77亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 11,
+        "symbol": "000762.SZ",
+        "name": "西藏矿业",
+        "price": 38.5,
+        "pct": 7.783,
+        "amount": 2562951225.0,
+        "score": 66,
+        "board_name": "",
+        "industry_name": "黑色金属矿采选业",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 96 名，涨幅居前 (+8)；行业领涨 黑色金属矿采选业 (+24)；盘中涨幅 7.78% 强势 (+20)；成交额 25.63亿 放大 (+14)",
+        "signals_text": "市场强势: 涨幅居前 (+8)；行业领涨: 黑色金属矿采选业 (+24)；盘中强度: 涨幅强势 (+20)；成交额放大: 超 15 亿 (+14)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 96 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "行业领涨 黑色金属矿采选业",
+            "score": 24,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 7.78% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 25.63亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 12,
+        "symbol": "001234.SZ",
+        "name": "泰慕士",
+        "price": 35.77,
+        "pct": 9.994,
+        "amount": 451485262.0,
+        "score": 61,
+        "board_name": "",
+        "industry_name": "纺织服装、服饰业",
+        "entry_reason": "入池原因：有题材/行业共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 63 名，盘中涨停 (+14)；行业领涨 纺织服装、服饰业 (+16)；盘中涨幅 9.99% 接近涨停 (+25)；成交额 4.51亿 尚可 (+6)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；行业领涨: 纺织服装、服饰业 (+16)；盘中强度: 接近涨停 (+25)；成交额尚可: 超 3 亿 (+6)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 63 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "行业领涨 纺织服装、服饰业",
+            "score": 16,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.99% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 4.51亿 尚可",
+            "score": 6,
+            "tone": "positive"
+          }
+        ]
+      }
+    ],
+    "rejected_candidates": [
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "002466.SZ",
+        "name": "天齐锂业",
+        "price": 73.7,
+        "pct": 8.43,
+        "amount": 9667979616.0,
+        "score": 44,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 89 名，涨幅居前 (+8)；市场关注股第 12 名 (+2)；盘中涨幅 8.43% 强势 (+20)；成交额 96.68亿 放大 (+14)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 89 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "市场关注股第 12 名",
+            "score": 2,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 8.43% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 96.68亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "688041.SH",
+        "name": "海光信息",
+        "price": 285.0,
+        "pct": 8.2,
+        "amount": 15260717932.0,
+        "score": 44,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 92 名，涨幅居前 (+8)；市场关注股第 20 名 (+2)；盘中涨幅 8.20% 强势 (+20)；成交额 152.61亿 放大 (+14)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 92 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "市场关注股第 20 名",
+            "score": 2,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 8.20% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 152.61亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "300422.SZ",
+        "name": "博世科",
+        "price": 5.56,
+        "pct": 20.086,
+        "amount": 213182897.0,
+        "score": 43,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 3 名，盘中涨停 (+18)；盘中涨幅 20.09% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 3 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 20.09% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "301165.SZ",
+        "name": "锐捷网络",
+        "price": 100.6,
+        "pct": 8.992,
+        "amount": 1692924156.0,
+        "score": 42,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 3 个。",
+        "score_breakdown": "市场强势第 85 名，涨幅居前 (+8)；盘中涨幅 8.99% 强势 (+20)；成交额 16.93亿 放大 (+14)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 85 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 8.99% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 16.93亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "002980.SZ",
+        "name": "华盛昌",
+        "price": 82.29,
+        "pct": 8.419,
+        "amount": 2103074910.0,
+        "score": 42,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 3 个。",
+        "score_breakdown": "市场强势第 90 名，涨幅居前 (+8)；盘中涨幅 8.42% 强势 (+20)；成交额 21.03亿 放大 (+14)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 90 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 8.42% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 21.03亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "600331.SH",
+        "name": "宏达股份",
+        "price": 18.24,
+        "pct": 7.738,
+        "amount": 1580212650.0,
+        "score": 42,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 3 个。",
+        "score_breakdown": "市场强势第 99 名，涨幅居前 (+8)；盘中涨幅 7.74% 强势 (+20)；成交额 15.80亿 放大 (+14)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 99 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 7.74% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 15.80亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "002795.SZ",
+        "name": "永和智控",
+        "price": 8.86,
+        "pct": 10.062,
+        "amount": 222762326.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 21 名，盘中涨停 (+14)；盘中涨幅 10.06% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 21 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.06% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "002999.SZ",
+        "name": "天禾股份",
+        "price": 7.66,
+        "pct": 10.057,
+        "amount": 241064356.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 24 名，盘中涨停 (+14)；盘中涨幅 10.06% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 24 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.06% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "603318.SH",
+        "name": "水发燃气",
+        "price": 11.39,
+        "pct": 10.048,
+        "amount": 183816148.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 27 名，盘中涨停 (+14)；盘中涨幅 10.05% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 27 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.05% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "002313.SZ",
+        "name": "日海智能",
+        "price": 9.64,
+        "pct": 10.046,
+        "amount": 231029539.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 28 名，盘中涨停 (+14)；盘中涨幅 10.05% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 28 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.05% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "603680.SH",
+        "name": "今创集团",
+        "price": 14.03,
+        "pct": 10.039,
+        "amount": 147707855.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 29 名，盘中涨停 (+14)；盘中涨幅 10.04% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 29 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.04% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "600826.SH",
+        "name": "兰生股份",
+        "price": 10.32,
+        "pct": 10.021,
+        "amount": 156400682.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 36 名，盘中涨停 (+14)；盘中涨幅 10.02% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 36 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.02% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      }
+    ],
+    "signature": "{\"candidates\": [{\"amount\": 1839550896.0, \"board_name\": \"锂电池\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 4 个。\", \"industry_name\": \"\", \"name\": \"佛塑科技\", \"pct\": 10.023, \"pool\": \"候选\", \"price\": 18.99, \"rank\": 1, \"rejected_reason_text\": \"\", \"score\": 99, \"score_breakdown\": \"市场强势第 34 名，盘中涨停 (+14)；题材龙头 锂电池 (+28)；题材龙头 聚氨酯 (+18)；盘中涨幅 10.02% 接近涨停 (+25)；成交额 18.40亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 34 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"题材龙头 锂电池\", \"score\": 28, \"tone\": \"positive\"}, {\"label\": \"题材龙头 聚氨酯\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.02% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 18.40亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；题材龙头: 锂电池 (+28)；题材龙头: 聚氨酯 (+18)；盘中强度: 接近涨停 (+25)\", \"symbol\": \"000973.SZ\"}, {\"amount\": 8541912157.0, \"board_name\": \"锂矿\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 5 个。\", \"industry_name\": \"\", \"name\": \"天华新能\", \"pct\": 13.651, \"pool\": \"候选\", \"price\": 91.0, \"rank\": 2, \"rejected_reason_text\": \"\", \"score\": 97, \"score_breakdown\": \"市场强势第 13 名，盘中涨停 (+18)；题材龙头 锂矿 (+38)；市场关注股第 13 名 (+2)；盘中涨幅 13.65% 接近涨停 (+25)；成交额 85.42亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 13 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"题材龙头 锂矿\", \"score\": 38, \"tone\": \"positive\"}, {\"label\": \"市场关注股第 13 名\", \"score\": 2, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 13.65% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 85.42亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；题材龙头: 锂矿 (+38)；热度靠前: 东财人气第 13 名 (+2)；盘中强度: 接近涨停 (+25)\", \"symbol\": \"300390.SZ\"}, {\"amount\": 1097364057.0, \"board_name\": \"电解液\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 4 个。\", \"industry_name\": \"\", \"name\": \"怡达股份\", \"pct\": 18.711, \"pool\": \"候选\", \"price\": 21.0, \"rank\": 3, \"rejected_reason_text\": \"\", \"score\": 91, \"score_breakdown\": \"市场强势第 9 名，盘中涨停 (+18)；题材龙头 电解液 (+38)；盘中涨幅 18.71% 接近涨停 (+25)；成交额 10.97亿 活跃 (+10)\", \"score_tags\": [{\"label\": \"市场强势第 9 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"题材龙头 电解液\", \"score\": 38, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 18.71% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 10.97亿 活跃\", \"score\": 10, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；题材龙头: 电解液 (+38)；盘中强度: 接近涨停 (+25)；成交额活跃: 超 8 亿 (+10)\", \"symbol\": \"300721.SZ\"}, {\"amount\": 2200318062.0, \"board_name\": \"固态电池\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 5 个。\", \"industry_name\": \"\", \"name\": \"浙数文化\", \"pct\": 9.985, \"pool\": \"候选\", \"price\": 15.09, \"rank\": 4, \"rejected_reason_text\": \"\", \"score\": 86, \"score_breakdown\": \"市场强势第 70 名，盘中涨停 (+14)；题材龙头 固态电池 (+28)；市场关注股第 10 名 (+5)；盘中涨幅 9.98% 接近涨停 (+25)；成交额 22.00亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 70 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"题材龙头 固态电池\", \"score\": 28, \"tone\": \"positive\"}, {\"label\": \"市场关注股第 10 名\", \"score\": 5, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.98% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 22.00亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；题材龙头: 固态电池 (+28)；热度靠前: 东财人气第 10 名 (+5)；盘中强度: 接近涨停 (+25)\", \"symbol\": \"600633.SH\"}, {\"amount\": 11413259860.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 4 个。\", \"industry_name\": \"仪器仪表制造业\", \"name\": \"N联讯\", \"pct\": 875.818, \"pool\": \"候选\", \"price\": 799.0, \"rank\": 5, \"rejected_reason_text\": \"\", \"score\": 81, \"score_breakdown\": \"市场强势第 1 名，盘中涨停 (+18)；行业领涨 仪器仪表制造业 (+24)；盘中涨幅 875.82% 接近涨停 (+25)；成交额 114.13亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 1 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"行业领涨 仪器仪表制造业\", \"score\": 24, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 875.82% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 114.13亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；行业领涨: 仪器仪表制造业 (+24)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)\", \"symbol\": \"688808.SH\"}, {\"amount\": 182751729.0, \"board_name\": \"盐湖提锂\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 3 个。\", \"industry_name\": \"\", \"name\": \"三达膜\", \"pct\": 10.406, \"pool\": \"候选\", \"price\": 17.93, \"rank\": 6, \"rejected_reason_text\": \"\", \"score\": 81, \"score_breakdown\": \"市场强势第 19 名，盘中涨停 (+18)；题材龙头 盐湖提锂 (+38)；盘中涨幅 10.41% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 19 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"题材龙头 盐湖提锂\", \"score\": 38, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.41% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；题材龙头: 盐湖提锂 (+38)；盘中强度: 接近涨停 (+25)\", \"symbol\": \"688101.SH\"}, {\"amount\": 2357626254.0, \"board_name\": \"涉矿概念\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 5 个。\", \"industry_name\": \"\", \"name\": \"江特电机\", \"pct\": 10.016, \"pool\": \"候选\", \"price\": 13.62, \"rank\": 7, \"rejected_reason_text\": \"\", \"score\": 79, \"score_breakdown\": \"市场强势第 39 名，盘中涨停 (+14)；题材龙头 涉矿概念 (+18)；市场关注股第 2 名 (+8)；盘中涨幅 10.02% 接近涨停 (+25)；成交额 23.58亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 39 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"题材龙头 涉矿概念\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"市场关注股第 2 名\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.02% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 23.58亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；题材龙头: 涉矿概念 (+18)；热度靠前: 东财人气第 2 名 (+8)；盘中强度: 接近涨停 (+25)\", \"symbol\": \"002176.SZ\"}, {\"amount\": 3174971097.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 4 个。\", \"industry_name\": \"家具制造业\", \"name\": \"盛新锂能\", \"pct\": 10.0, \"pool\": \"候选\", \"price\": 50.93, \"rank\": 8, \"rejected_reason_text\": \"\", \"score\": 77, \"score_breakdown\": \"市场强势第 50 名，盘中涨停 (+14)；行业领涨 家具制造业 (+24)；盘中涨幅 10.00% 接近涨停 (+25)；成交额 31.75亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 50 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"行业领涨 家具制造业\", \"score\": 24, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.00% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 31.75亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；行业领涨: 家具制造业 (+24)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)\", \"symbol\": \"002240.SZ\"}, {\"amount\": 1699837245.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 4 个。\", \"industry_name\": \"有色金属冶炼和压延加工业\", \"name\": \"光智科技\", \"pct\": 17.032, \"pool\": \"候选\", \"price\": 101.9, \"rank\": 9, \"rejected_reason_text\": \"\", \"score\": 73, \"score_breakdown\": \"市场强势第 10 名，盘中涨停 (+18)；行业领涨 有色金属冶炼和压延加工业 (+16)；盘中涨幅 17.03% 接近涨停 (+25)；成交额 17.00亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 10 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"行业领涨 有色金属冶炼和压延加工业\", \"score\": 16, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 17.03% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 17.00亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；行业领涨: 有色金属冶炼和压延加工业 (+16)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)\", \"symbol\": \"300489.SZ\"}, {\"amount\": 2477165922.0, \"board_name\": \"稀缺资源\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 4 个。\", \"industry_name\": \"\", \"name\": \"融捷股份\", \"pct\": 9.995, \"pool\": \"候选\", \"price\": 86.28, \"rank\": 10, \"rejected_reason_text\": \"\", \"score\": 71, \"score_breakdown\": \"市场强势第 60 名，盘中涨停 (+14)；题材龙头 稀缺资源 (+18)；盘中涨幅 9.99% 接近涨停 (+25)；成交额 24.77亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 60 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"题材龙头 稀缺资源\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.99% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 24.77亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；题材龙头: 稀缺资源 (+18)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)\", \"symbol\": \"002192.SZ\"}, {\"amount\": 2562951225.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 4 个。\", \"industry_name\": \"黑色金属矿采选业\", \"name\": \"西藏矿业\", \"pct\": 7.783, \"pool\": \"候选\", \"price\": 38.5, \"rank\": 11, \"rejected_reason_text\": \"\", \"score\": 66, \"score_breakdown\": \"市场强势第 96 名，涨幅居前 (+8)；行业领涨 黑色金属矿采选业 (+24)；盘中涨幅 7.78% 强势 (+20)；成交额 25.63亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 96 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"行业领涨 黑色金属矿采选业\", \"score\": 24, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 7.78% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 25.63亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 涨幅居前 (+8)；行业领涨: 黑色金属矿采选业 (+24)；盘中强度: 涨幅强势 (+20)；成交额放大: 超 15 亿 (+14)\", \"symbol\": \"000762.SZ\"}, {\"amount\": 451485262.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业共振，盘中强势，共振项 4 个。\", \"industry_name\": \"纺织服装、服饰业\", \"name\": \"泰慕士\", \"pct\": 9.994, \"pool\": \"候选\", \"price\": 35.77, \"rank\": 12, \"rejected_reason_text\": \"\", \"score\": 61, \"score_breakdown\": \"市场强势第 63 名，盘中涨停 (+14)；行业领涨 纺织服装、服饰业 (+16)；盘中涨幅 9.99% 接近涨停 (+25)；成交额 4.51亿 尚可 (+6)\", \"score_tags\": [{\"label\": \"市场强势第 63 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"行业领涨 纺织服装、服饰业\", \"score\": 16, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.99% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 4.51亿 尚可\", \"score\": 6, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；行业领涨: 纺织服装、服饰业 (+16)；盘中强度: 接近涨停 (+25)；成交额尚可: 超 3 亿 (+6)\", \"symbol\": \"001234.SZ\"}], \"mode\": \"实时预测\", \"reference_date\": \"20260426\", \"rejected_candidates\": [{\"amount\": 9667979616.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 4 个。\", \"industry_name\": \"\", \"name\": \"天齐锂业\", \"pct\": 8.43, \"pool\": \"淘汰\", \"price\": 73.7, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件\", \"score\": 44, \"score_breakdown\": \"市场强势第 89 名，涨幅居前 (+8)；市场关注股第 12 名 (+2)；盘中涨幅 8.43% 强势 (+20)；成交额 96.68亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 89 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"市场关注股第 12 名\", \"score\": 2, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 8.43% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 96.68亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"002466.SZ\"}, {\"amount\": 15260717932.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 4 个。\", \"industry_name\": \"\", \"name\": \"海光信息\", \"pct\": 8.2, \"pool\": \"淘汰\", \"price\": 285.0, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件\", \"score\": 44, \"score_breakdown\": \"市场强势第 92 名，涨幅居前 (+8)；市场关注股第 20 名 (+2)；盘中涨幅 8.20% 强势 (+20)；成交额 152.61亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 92 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"市场关注股第 20 名\", \"score\": 2, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 8.20% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 152.61亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"688041.SH\"}, {\"amount\": 213182897.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"博世科\", \"pct\": 20.086, \"pool\": \"淘汰\", \"price\": 5.56, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 43, \"score_breakdown\": \"市场强势第 3 名，盘中涨停 (+18)；盘中涨幅 20.09% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 3 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 20.09% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"300422.SZ\"}, {\"amount\": 1692924156.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 3 个。\", \"industry_name\": \"\", \"name\": \"锐捷网络\", \"pct\": 8.992, \"pool\": \"淘汰\", \"price\": 100.6, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件\", \"score\": 42, \"score_breakdown\": \"市场强势第 85 名，涨幅居前 (+8)；盘中涨幅 8.99% 强势 (+20)；成交额 16.93亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 85 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 8.99% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 16.93亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"301165.SZ\"}, {\"amount\": 2103074910.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 3 个。\", \"industry_name\": \"\", \"name\": \"华盛昌\", \"pct\": 8.419, \"pool\": \"淘汰\", \"price\": 82.29, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件\", \"score\": 42, \"score_breakdown\": \"市场强势第 90 名，涨幅居前 (+8)；盘中涨幅 8.42% 强势 (+20)；成交额 21.03亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 90 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 8.42% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 21.03亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"002980.SZ\"}, {\"amount\": 1580212650.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 3 个。\", \"industry_name\": \"\", \"name\": \"宏达股份\", \"pct\": 7.738, \"pool\": \"淘汰\", \"price\": 18.24, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件\", \"score\": 42, \"score_breakdown\": \"市场强势第 99 名，涨幅居前 (+8)；盘中涨幅 7.74% 强势 (+20)；成交额 15.80亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 99 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 7.74% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 15.80亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"600331.SH\"}, {\"amount\": 222762326.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"永和智控\", \"pct\": 10.062, \"pool\": \"淘汰\", \"price\": 8.86, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 21 名，盘中涨停 (+14)；盘中涨幅 10.06% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 21 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.06% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"002795.SZ\"}, {\"amount\": 241064356.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"天禾股份\", \"pct\": 10.057, \"pool\": \"淘汰\", \"price\": 7.66, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 24 名，盘中涨停 (+14)；盘中涨幅 10.06% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 24 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.06% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"002999.SZ\"}, {\"amount\": 183816148.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"水发燃气\", \"pct\": 10.048, \"pool\": \"淘汰\", \"price\": 11.39, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 27 名，盘中涨停 (+14)；盘中涨幅 10.05% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 27 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.05% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"603318.SH\"}, {\"amount\": 231029539.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"日海智能\", \"pct\": 10.046, \"pool\": \"淘汰\", \"price\": 9.64, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 28 名，盘中涨停 (+14)；盘中涨幅 10.05% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 28 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.05% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"002313.SZ\"}, {\"amount\": 147707855.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"今创集团\", \"pct\": 10.039, \"pool\": \"淘汰\", \"price\": 14.03, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 29 名，盘中涨停 (+14)；盘中涨幅 10.04% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 29 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.04% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"603680.SH\"}, {\"amount\": 156400682.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"兰生股份\", \"pct\": 10.021, \"pool\": \"淘汰\", \"price\": 10.32, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 36 名，盘中涨停 (+14)；盘中涨幅 10.02% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 36 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.02% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"600826.SH\"}], \"trade_date\": \"20260426\"}"
+  },
+  {
+    "id": "20260426171156",
+    "captured_at": "2026-04-26 17:11:56",
+    "trade_date": "20260426",
+    "reference_date": "20260426",
+    "prediction_mode": "实时预测",
+    "hot_boards_trade_date": "2026-04-26 17:12:06",
+    "candidates": [
+      {
+        "pool": "候选",
+        "rank": 1,
+        "symbol": "300390.SZ",
+        "name": "天华新能",
+        "price": 91.0,
+        "pct": 13.651,
+        "amount": 8541912157.0,
+        "score": 119,
+        "board_name": "锂矿",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 6 个。",
+        "score_breakdown": "市场强势第 13 名，盘中涨停 (+18)；题材龙头 锂矿 (+38)；市场关注股第 13 名 (+2)；公告催化 业绩预告 预增，变动幅度 29819.0%，公告日期 2026-04-08 (+16)；公告催化 财务报告公告 2026-04-24：天华新能:2026年一季度报告 (+6)；盘中涨幅 13.65% 接近涨停 (+25)；成交额 85.42亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；题材龙头: 锂矿 (+38)；热度靠前: 东财人气第 13 名 (+2)；公告催化: 业绩预告 预增，变动幅度 29819.0%，公告日期 2026-04-08 (+16)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 13 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 锂矿",
+            "score": 38,
+            "tone": "positive"
+          },
+          {
+            "label": "市场关注股第 13 名",
+            "score": 2,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 业绩预告 预增，变动幅度 29819.0%，公告日期 2026-04-08",
+            "score": 16,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 财务报告公告 2026-04-24：天华新能:2026年一季度报告",
+            "score": 6,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 13.65% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 85.42亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 2,
+        "symbol": "000973.SZ",
+        "name": "佛塑科技",
+        "price": 18.99,
+        "pct": 10.023,
+        "amount": 1839550896.0,
+        "score": 115,
+        "board_name": "锂电池",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 34 名，盘中涨停 (+14)；题材龙头 锂电池 (+28)；题材龙头 聚氨酯 (+18)；公告催化 业绩预告 预增，变动幅度 315.3%，公告日期 2026-04-15 (+16)；盘中涨幅 10.02% 接近涨停 (+25)；成交额 18.40亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；题材龙头: 锂电池 (+28)；题材龙头: 聚氨酯 (+18)；公告催化: 业绩预告 预增，变动幅度 315.3%，公告日期 2026-04-15 (+16)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 34 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 锂电池",
+            "score": 28,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 聚氨酯",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 业绩预告 预增，变动幅度 315.3%，公告日期 2026-04-15",
+            "score": 16,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.02% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 18.40亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 3,
+        "symbol": "688808.SH",
+        "name": "N联讯",
+        "price": 799.0,
+        "pct": 875.818,
+        "amount": 11413259860.0,
+        "score": 100,
+        "board_name": "",
+        "industry_name": "仪器仪表制造业",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 1 名，盘中涨停 (+18)；行业领涨 仪器仪表制造业 (+24)；公告催化 业绩预告 预增，变动幅度 507.9%，公告日期 2026-04-23 (+19)；盘中涨幅 875.82% 接近涨停 (+25)；成交额 114.13亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；行业领涨: 仪器仪表制造业 (+24)；公告催化: 业绩预告 预增，变动幅度 507.9%，公告日期 2026-04-23 (+19)；盘中强度: 接近涨停 (+25)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 1 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "行业领涨 仪器仪表制造业",
+            "score": 24,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 业绩预告 预增，变动幅度 507.9%，公告日期 2026-04-23",
+            "score": 19,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 875.82% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 114.13亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 4,
+        "symbol": "688101.SH",
+        "name": "三达膜",
+        "price": 17.93,
+        "pct": 10.406,
+        "amount": 182751729.0,
+        "score": 94,
+        "board_name": "盐湖提锂",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 19 名，盘中涨停 (+18)；题材龙头 盐湖提锂 (+38)；公告催化 财务报告公告 2026-04-21：三达膜:关于2025年度利润分配方案的公告 (+3)；公告催化 重大事项公告 2026-04-21：三达膜:2025年度独立董事述职报告-屈中标 (+10)；盘中涨幅 10.41% 接近涨停 (+25)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；题材龙头: 盐湖提锂 (+38)；公告催化: 财务报告公告 2026-04-21：三达膜:关于2025年度利润分配方案的公告 (+3)；公告催化: 重大事项公告 2026-04-21：三达膜:2025年度独立董事述职报告-屈中标 (+10)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 19 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 盐湖提锂",
+            "score": 38,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 财务报告公告 2026-04-21：三达膜:关于2025年度利润分配方案的公告",
+            "score": 3,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 重大事项公告 2026-04-21：三达膜:2025年度独立董事述职报告-屈中标",
+            "score": 10,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.41% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 5,
+        "symbol": "300721.SZ",
+        "name": "怡达股份",
+        "price": 21.0,
+        "pct": 18.711,
+        "amount": 1097364057.0,
+        "score": 91,
+        "board_name": "电解液",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 9 名，盘中涨停 (+18)；题材龙头 电解液 (+38)；盘中涨幅 18.71% 接近涨停 (+25)；成交额 10.97亿 活跃 (+10)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；题材龙头: 电解液 (+38)；盘中强度: 接近涨停 (+25)；成交额活跃: 超 8 亿 (+10)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 9 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 电解液",
+            "score": 38,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 18.71% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 10.97亿 活跃",
+            "score": 10,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 6,
+        "symbol": "600633.SH",
+        "name": "浙数文化",
+        "price": 15.09,
+        "pct": 9.985,
+        "amount": 2200318062.0,
+        "score": 89,
+        "board_name": "固态电池",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 6 个。",
+        "score_breakdown": "市场强势第 70 名，盘中涨停 (+14)；题材龙头 固态电池 (+28)；市场关注股第 10 名 (+5)；公告催化 财务报告公告 2026-04-21：浙数文化:浙数文化2025年年度股东会决议公告 (+3)；盘中涨幅 9.98% 接近涨停 (+25)；成交额 22.00亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；题材龙头: 固态电池 (+28)；热度靠前: 东财人气第 10 名 (+5)；公告催化: 财务报告公告 2026-04-21：浙数文化:浙数文化2025年年度股东会决议公告 (+3)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 70 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 固态电池",
+            "score": 28,
+            "tone": "positive"
+          },
+          {
+            "label": "市场关注股第 10 名",
+            "score": 5,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 财务报告公告 2026-04-21：浙数文化:浙数文化2025年年度股东会决议公告",
+            "score": 3,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.98% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 22.00亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 7,
+        "symbol": "002240.SZ",
+        "name": "盛新锂能",
+        "price": 50.93,
+        "pct": 10.0,
+        "amount": 3174971097.0,
+        "score": 87,
+        "board_name": "",
+        "industry_name": "家具制造业",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 50 名，盘中涨停 (+14)；行业领涨 家具制造业 (+24)；公告催化 重大事项公告 2026-04-24：盛新锂能:关于控股股东的一致行动人部分股份补充质押的公告 (+10)；盘中涨幅 10.00% 接近涨停 (+25)；成交额 31.75亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；行业领涨: 家具制造业 (+24)；公告催化: 重大事项公告 2026-04-24：盛新锂能:关于控股股东的一致行动人部分股份补充质押的公告 (+10)；盘中强度: 接近涨停 (+25)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 50 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "行业领涨 家具制造业",
+            "score": 24,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 重大事项公告 2026-04-24：盛新锂能:关于控股股东的一致行动人部分股份补充质押的公告",
+            "score": 10,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.00% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 31.75亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 8,
+        "symbol": "000062.SZ",
+        "name": "深圳华强",
+        "price": 34.34,
+        "pct": 9.994,
+        "amount": 3731477591.0,
+        "score": 87,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 61 名，盘中涨停 (+14)；市场关注股第 4 名 (+5)；公告催化 业绩预告 预增，变动幅度 132.1%，公告日期 2026-04-15 (+16)；公告催化 财务报告公告 2026-04-22：深圳华强:2025年年度权益分派实施公告 (+3)；公告催化 重大事项公告 2026-04-23：深圳华强:关于控股股东面向专业投资者非公开发行可交换公司债券换股价格调整的提示性公告 (+10)；盘中涨幅 9.99% 接近涨停 (+25)；成交额 37.31亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；热度靠前: 东财人气第 4 名 (+5)；公告催化: 业绩预告 预增，变动幅度 132.1%，公告日期 2026-04-15 (+16)；公告催化: 财务报告公告 2026-04-22：深圳华强:2025年年度权益分派实施公告 (+3)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 61 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "市场关注股第 4 名",
+            "score": 5,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 业绩预告 预增，变动幅度 132.1%，公告日期 2026-04-15",
+            "score": 16,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 财务报告公告 2026-04-22：深圳华强:2025年年度权益分派实施公告",
+            "score": 3,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 重大事项公告 2026-04-23：深圳华强:关于控股股东面向专业投资者非公开发行可交换公司债券换股价格调整的提示性公告",
+            "score": 10,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.99% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 37.31亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 9,
+        "symbol": "300489.SZ",
+        "name": "光智科技",
+        "price": 101.9,
+        "pct": 17.032,
+        "amount": 1699837245.0,
+        "score": 79,
+        "board_name": "",
+        "industry_name": "有色金属冶炼和压延加工业",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 10 名，盘中涨停 (+18)；行业领涨 有色金属冶炼和压延加工业 (+16)；公告催化 财务报告公告 2026-04-24：光智科技:2026年一季度报告 (+6)；盘中涨幅 17.03% 接近涨停 (+25)；成交额 17.00亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；行业领涨: 有色金属冶炼和压延加工业 (+16)；公告催化: 财务报告公告 2026-04-24：光智科技:2026年一季度报告 (+6)；盘中强度: 接近涨停 (+25)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 10 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "行业领涨 有色金属冶炼和压延加工业",
+            "score": 16,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 财务报告公告 2026-04-24：光智科技:2026年一季度报告",
+            "score": 6,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 17.03% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 17.00亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 10,
+        "symbol": "002176.SZ",
+        "name": "江特电机",
+        "price": 13.62,
+        "pct": 10.016,
+        "amount": 2357626254.0,
+        "score": 79,
+        "board_name": "涉矿概念",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 39 名，盘中涨停 (+14)；题材龙头 涉矿概念 (+18)；市场关注股第 2 名 (+8)；盘中涨幅 10.02% 接近涨停 (+25)；成交额 23.58亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；题材龙头: 涉矿概念 (+18)；热度靠前: 东财人气第 2 名 (+8)；盘中强度: 接近涨停 (+25)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 39 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 涉矿概念",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "市场关注股第 2 名",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.02% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 23.58亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 11,
+        "symbol": "002812.SZ",
+        "name": "恩捷股份",
+        "price": 77.18,
+        "pct": 10.006,
+        "amount": 4946335564.0,
+        "score": 74,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 48 名，盘中涨停 (+14)；市场关注股第 5 名 (+5)；公告催化 财务报告公告 2026-04-23：恩捷股份:2026年一季度报告 (+6)；公告催化 重大事项公告 2026-04-24：恩捷股份:关于股东部分股份质押变动的公告 (+10)；盘中涨幅 10.01% 接近涨停 (+25)；成交额 49.46亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；热度靠前: 东财人气第 5 名 (+5)；公告催化: 财务报告公告 2026-04-23：恩捷股份:2026年一季度报告 (+6)；公告催化: 重大事项公告 2026-04-24：恩捷股份:关于股东部分股份质押变动的公告 (+10)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 48 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "市场关注股第 5 名",
+            "score": 5,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 财务报告公告 2026-04-23：恩捷股份:2026年一季度报告",
+            "score": 6,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 重大事项公告 2026-04-24：恩捷股份:关于股东部分股份质押变动的公告",
+            "score": 10,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.01% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 49.46亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 12,
+        "symbol": "300339.SZ",
+        "name": "润和软件",
+        "price": 46.1,
+        "pct": 9.475,
+        "amount": 3985200724.0,
+        "score": 72,
+        "board_name": "鸿蒙概念",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 81 名，涨幅居前 (+8)；题材龙头 鸿蒙概念 (+18)；公告催化 财务报告公告 2026-04-24：润和软件:2026年一季度报告 (+6)；公告催化 重大事项公告 2026-04-22：润和软件:非经营性资金占用及其他关联资金往来情况汇总表 (+6)；盘中涨幅 9.47% 强势 (+20)；成交额 39.85亿 放大 (+14)",
+        "signals_text": "市场强势: 涨幅居前 (+8)；题材龙头: 鸿蒙概念 (+18)；公告催化: 财务报告公告 2026-04-24：润和软件:2026年一季度报告 (+6)；公告催化: 重大事项公告 2026-04-22：润和软件:非经营性资金占用及其他关联资金往来情况汇总表 (+6)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 81 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 鸿蒙概念",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 财务报告公告 2026-04-24：润和软件:2026年一季度报告",
+            "score": 6,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 重大事项公告 2026-04-22：润和软件:非经营性资金占用及其他关联资金往来情况汇总表",
+            "score": 6,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.47% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 39.85亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      }
+    ],
+    "rejected_candidates": [
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "002980.SZ",
+        "name": "华盛昌",
+        "price": 82.29,
+        "pct": 8.419,
+        "amount": 2103074910.0,
+        "score": 42,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 3 个。",
+        "score_breakdown": "市场强势第 90 名，涨幅居前 (+8)；盘中涨幅 8.42% 强势 (+20)；成交额 21.03亿 放大 (+14)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 90 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 8.42% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 21.03亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "600331.SH",
+        "name": "宏达股份",
+        "price": 18.24,
+        "pct": 7.738,
+        "amount": 1580212650.0,
+        "score": 42,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 3 个。",
+        "score_breakdown": "市场强势第 99 名，涨幅居前 (+8)；盘中涨幅 7.74% 强势 (+20)；成交额 15.80亿 放大 (+14)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 99 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 7.74% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 15.80亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "002999.SZ",
+        "name": "天禾股份",
+        "price": 7.66,
+        "pct": 10.057,
+        "amount": 241064356.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 24 名，盘中涨停 (+14)；盘中涨幅 10.06% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 24 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.06% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "603272.SH",
+        "name": "联翔股份",
+        "price": 22.09,
+        "pct": 10.01,
+        "amount": 202637514.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 41 名，盘中涨停 (+14)；盘中涨幅 10.01% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 41 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.01% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "603655.SH",
+        "name": "朗博科技",
+        "price": 47.52,
+        "pct": 10.0,
+        "amount": 295734309.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 58 名，盘中涨停 (+14)；盘中涨幅 10.00% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 58 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.00% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "603819.SH",
+        "name": "神力股份",
+        "price": 15.31,
+        "pct": 9.986,
+        "amount": 211420838.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 69 名，盘中涨停 (+14)；盘中涨幅 9.99% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 69 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.99% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "301588.SZ",
+        "name": "美新科技",
+        "price": 29.3,
+        "pct": 9.533,
+        "amount": 716499917.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 3 个。",
+        "score_breakdown": "市场强势第 80 名，涨幅居前 (+8)；盘中涨幅 9.53% 接近涨停 (+25)；成交额 7.16亿 尚可 (+6)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 80 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.53% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 7.16亿 尚可",
+            "score": 6,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "688519.SH",
+        "name": "南亚新材",
+        "price": 160.86,
+        "pct": 9.339,
+        "amount": 1483625177.0,
+        "score": 38,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 3 个。",
+        "score_breakdown": "市场强势第 82 名，涨幅居前 (+8)；盘中涨幅 9.34% 强势 (+20)；成交额 14.84亿 活跃 (+10)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 82 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.34% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 14.84亿 活跃",
+            "score": 10,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "600227.SH",
+        "name": "赤天化",
+        "price": 3.96,
+        "pct": 7.609,
+        "amount": 1408139259.0,
+        "score": 38,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 3 个。",
+        "score_breakdown": "市场强势第 100 名，涨幅居前 (+8)；盘中涨幅 7.61% 强势 (+20)；成交额 14.08亿 活跃 (+10)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 100 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 7.61% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 14.08亿 活跃",
+            "score": 10,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "301273.SZ",
+        "name": "瑞晨环保",
+        "price": 34.99,
+        "pct": 9.31,
+        "amount": 113121853.0,
+        "score": 28,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 83 名，涨幅居前 (+8)；盘中涨幅 9.31% 强势 (+20)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 83 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.31% 强势",
+            "score": 20,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "003030.SZ",
+        "name": "祖名股份",
+        "price": 21.9,
+        "pct": 7.882,
+        "amount": 131673955.0,
+        "score": 28,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 95 名，涨幅居前 (+8)；盘中涨幅 7.88% 强势 (+20)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 95 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 7.88% 强势",
+            "score": 20,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "688558.SH",
+        "name": "国盛智科",
+        "price": 35.89,
+        "pct": 7.778,
+        "amount": 232714934.0,
+        "score": 28,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 97 名，涨幅居前 (+8)；盘中涨幅 7.78% 强势 (+20)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 97 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 7.78% 强势",
+            "score": 20,
+            "tone": "positive"
+          }
+        ]
+      }
+    ],
+    "signature": "{\"candidates\": [{\"amount\": 8541912157.0, \"board_name\": \"锂矿\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 6 个。\", \"industry_name\": \"\", \"name\": \"天华新能\", \"pct\": 13.651, \"pool\": \"候选\", \"price\": 91.0, \"rank\": 1, \"rejected_reason_text\": \"\", \"score\": 119, \"score_breakdown\": \"市场强势第 13 名，盘中涨停 (+18)；题材龙头 锂矿 (+38)；市场关注股第 13 名 (+2)；公告催化 业绩预告 预增，变动幅度 29819.0%，公告日期 2026-04-08 (+16)；公告催化 财务报告公告 2026-04-24：天华新能:2026年一季度报告 (+6)；盘中涨幅 13.65% 接近涨停 (+25)；成交额 85.42亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 13 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"题材龙头 锂矿\", \"score\": 38, \"tone\": \"positive\"}, {\"label\": \"市场关注股第 13 名\", \"score\": 2, \"tone\": \"positive\"}, {\"label\": \"公告催化 业绩预告 预增，变动幅度 29819.0%，公告日期 2026-04-08\", \"score\": 16, \"tone\": \"positive\"}, {\"label\": \"公告催化 财务报告公告 2026-04-24：天华新能:2026年一季度报告\", \"score\": 6, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 13.65% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 85.42亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；题材龙头: 锂矿 (+38)；热度靠前: 东财人气第 13 名 (+2)；公告催化: 业绩预告 预增，变动幅度 29819.0%，公告日期 2026-04-08 (+16)\", \"symbol\": \"300390.SZ\"}, {\"amount\": 1839550896.0, \"board_name\": \"锂电池\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。\", \"industry_name\": \"\", \"name\": \"佛塑科技\", \"pct\": 10.023, \"pool\": \"候选\", \"price\": 18.99, \"rank\": 2, \"rejected_reason_text\": \"\", \"score\": 115, \"score_breakdown\": \"市场强势第 34 名，盘中涨停 (+14)；题材龙头 锂电池 (+28)；题材龙头 聚氨酯 (+18)；公告催化 业绩预告 预增，变动幅度 315.3%，公告日期 2026-04-15 (+16)；盘中涨幅 10.02% 接近涨停 (+25)；成交额 18.40亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 34 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"题材龙头 锂电池\", \"score\": 28, \"tone\": \"positive\"}, {\"label\": \"题材龙头 聚氨酯\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"公告催化 业绩预告 预增，变动幅度 315.3%，公告日期 2026-04-15\", \"score\": 16, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.02% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 18.40亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；题材龙头: 锂电池 (+28)；题材龙头: 聚氨酯 (+18)；公告催化: 业绩预告 预增，变动幅度 315.3%，公告日期 2026-04-15 (+16)\", \"symbol\": \"000973.SZ\"}, {\"amount\": 11413259860.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。\", \"industry_name\": \"仪器仪表制造业\", \"name\": \"N联讯\", \"pct\": 875.818, \"pool\": \"候选\", \"price\": 799.0, \"rank\": 3, \"rejected_reason_text\": \"\", \"score\": 100, \"score_breakdown\": \"市场强势第 1 名，盘中涨停 (+18)；行业领涨 仪器仪表制造业 (+24)；公告催化 业绩预告 预增，变动幅度 507.9%，公告日期 2026-04-23 (+19)；盘中涨幅 875.82% 接近涨停 (+25)；成交额 114.13亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 1 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"行业领涨 仪器仪表制造业\", \"score\": 24, \"tone\": \"positive\"}, {\"label\": \"公告催化 业绩预告 预增，变动幅度 507.9%，公告日期 2026-04-23\", \"score\": 19, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 875.82% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 114.13亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；行业领涨: 仪器仪表制造业 (+24)；公告催化: 业绩预告 预增，变动幅度 507.9%，公告日期 2026-04-23 (+19)；盘中强度: 接近涨停 (+25)\", \"symbol\": \"688808.SH\"}, {\"amount\": 182751729.0, \"board_name\": \"盐湖提锂\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 4 个。\", \"industry_name\": \"\", \"name\": \"三达膜\", \"pct\": 10.406, \"pool\": \"候选\", \"price\": 17.93, \"rank\": 4, \"rejected_reason_text\": \"\", \"score\": 94, \"score_breakdown\": \"市场强势第 19 名，盘中涨停 (+18)；题材龙头 盐湖提锂 (+38)；公告催化 财务报告公告 2026-04-21：三达膜:关于2025年度利润分配方案的公告 (+3)；公告催化 重大事项公告 2026-04-21：三达膜:2025年度独立董事述职报告-屈中标 (+10)；盘中涨幅 10.41% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 19 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"题材龙头 盐湖提锂\", \"score\": 38, \"tone\": \"positive\"}, {\"label\": \"公告催化 财务报告公告 2026-04-21：三达膜:关于2025年度利润分配方案的公告\", \"score\": 3, \"tone\": \"positive\"}, {\"label\": \"公告催化 重大事项公告 2026-04-21：三达膜:2025年度独立董事述职报告-屈中标\", \"score\": 10, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.41% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；题材龙头: 盐湖提锂 (+38)；公告催化: 财务报告公告 2026-04-21：三达膜:关于2025年度利润分配方案的公告 (+3)；公告催化: 重大事项公告 2026-04-21：三达膜:2025年度独立董事述职报告-屈中标 (+10)\", \"symbol\": \"688101.SH\"}, {\"amount\": 1097364057.0, \"board_name\": \"电解液\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 4 个。\", \"industry_name\": \"\", \"name\": \"怡达股份\", \"pct\": 18.711, \"pool\": \"候选\", \"price\": 21.0, \"rank\": 5, \"rejected_reason_text\": \"\", \"score\": 91, \"score_breakdown\": \"市场强势第 9 名，盘中涨停 (+18)；题材龙头 电解液 (+38)；盘中涨幅 18.71% 接近涨停 (+25)；成交额 10.97亿 活跃 (+10)\", \"score_tags\": [{\"label\": \"市场强势第 9 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"题材龙头 电解液\", \"score\": 38, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 18.71% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 10.97亿 活跃\", \"score\": 10, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；题材龙头: 电解液 (+38)；盘中强度: 接近涨停 (+25)；成交额活跃: 超 8 亿 (+10)\", \"symbol\": \"300721.SZ\"}, {\"amount\": 2200318062.0, \"board_name\": \"固态电池\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 6 个。\", \"industry_name\": \"\", \"name\": \"浙数文化\", \"pct\": 9.985, \"pool\": \"候选\", \"price\": 15.09, \"rank\": 6, \"rejected_reason_text\": \"\", \"score\": 89, \"score_breakdown\": \"市场强势第 70 名，盘中涨停 (+14)；题材龙头 固态电池 (+28)；市场关注股第 10 名 (+5)；公告催化 财务报告公告 2026-04-21：浙数文化:浙数文化2025年年度股东会决议公告 (+3)；盘中涨幅 9.98% 接近涨停 (+25)；成交额 22.00亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 70 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"题材龙头 固态电池\", \"score\": 28, \"tone\": \"positive\"}, {\"label\": \"市场关注股第 10 名\", \"score\": 5, \"tone\": \"positive\"}, {\"label\": \"公告催化 财务报告公告 2026-04-21：浙数文化:浙数文化2025年年度股东会决议公告\", \"score\": 3, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.98% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 22.00亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；题材龙头: 固态电池 (+28)；热度靠前: 东财人气第 10 名 (+5)；公告催化: 财务报告公告 2026-04-21：浙数文化:浙数文化2025年年度股东会决议公告 (+3)\", \"symbol\": \"600633.SH\"}, {\"amount\": 3174971097.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。\", \"industry_name\": \"家具制造业\", \"name\": \"盛新锂能\", \"pct\": 10.0, \"pool\": \"候选\", \"price\": 50.93, \"rank\": 7, \"rejected_reason_text\": \"\", \"score\": 87, \"score_breakdown\": \"市场强势第 50 名，盘中涨停 (+14)；行业领涨 家具制造业 (+24)；公告催化 重大事项公告 2026-04-24：盛新锂能:关于控股股东的一致行动人部分股份补充质押的公告 (+10)；盘中涨幅 10.00% 接近涨停 (+25)；成交额 31.75亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 50 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"行业领涨 家具制造业\", \"score\": 24, \"tone\": \"positive\"}, {\"label\": \"公告催化 重大事项公告 2026-04-24：盛新锂能:关于控股股东的一致行动人部分股份补充质押的公告\", \"score\": 10, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.00% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 31.75亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；行业领涨: 家具制造业 (+24)；公告催化: 重大事项公告 2026-04-24：盛新锂能:关于控股股东的一致行动人部分股份补充质押的公告 (+10)；盘中强度: 接近涨停 (+25)\", \"symbol\": \"002240.SZ\"}, {\"amount\": 3731477591.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。\", \"industry_name\": \"\", \"name\": \"深圳华强\", \"pct\": 9.994, \"pool\": \"候选\", \"price\": 34.34, \"rank\": 8, \"rejected_reason_text\": \"\", \"score\": 87, \"score_breakdown\": \"市场强势第 61 名，盘中涨停 (+14)；市场关注股第 4 名 (+5)；公告催化 业绩预告 预增，变动幅度 132.1%，公告日期 2026-04-15 (+16)；公告催化 财务报告公告 2026-04-22：深圳华强:2025年年度权益分派实施公告 (+3)；公告催化 重大事项公告 2026-04-23：深圳华强:关于控股股东面向专业投资者非公开发行可交换公司债券换股价格调整的提示性公告 (+10)；盘中涨幅 9.99% 接近涨停 (+25)；成交额 37.31亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 61 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"市场关注股第 4 名\", \"score\": 5, \"tone\": \"positive\"}, {\"label\": \"公告催化 业绩预告 预增，变动幅度 132.1%，公告日期 2026-04-15\", \"score\": 16, \"tone\": \"positive\"}, {\"label\": \"公告催化 财务报告公告 2026-04-22：深圳华强:2025年年度权益分派实施公告\", \"score\": 3, \"tone\": \"positive\"}, {\"label\": \"公告催化 重大事项公告 2026-04-23：深圳华强:关于控股股东面向专业投资者非公开发行可交换公司债券换股价格调整的提示性公告\", \"score\": 10, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.99% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 37.31亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；热度靠前: 东财人气第 4 名 (+5)；公告催化: 业绩预告 预增，变动幅度 132.1%，公告日期 2026-04-15 (+16)；公告催化: 财务报告公告 2026-04-22：深圳华强:2025年年度权益分派实施公告 (+3)\", \"symbol\": \"000062.SZ\"}, {\"amount\": 1699837245.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。\", \"industry_name\": \"有色金属冶炼和压延加工业\", \"name\": \"光智科技\", \"pct\": 17.032, \"pool\": \"候选\", \"price\": 101.9, \"rank\": 9, \"rejected_reason_text\": \"\", \"score\": 79, \"score_breakdown\": \"市场强势第 10 名，盘中涨停 (+18)；行业领涨 有色金属冶炼和压延加工业 (+16)；公告催化 财务报告公告 2026-04-24：光智科技:2026年一季度报告 (+6)；盘中涨幅 17.03% 接近涨停 (+25)；成交额 17.00亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 10 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"行业领涨 有色金属冶炼和压延加工业\", \"score\": 16, \"tone\": \"positive\"}, {\"label\": \"公告催化 财务报告公告 2026-04-24：光智科技:2026年一季度报告\", \"score\": 6, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 17.03% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 17.00亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；行业领涨: 有色金属冶炼和压延加工业 (+16)；公告催化: 财务报告公告 2026-04-24：光智科技:2026年一季度报告 (+6)；盘中强度: 接近涨停 (+25)\", \"symbol\": \"300489.SZ\"}, {\"amount\": 2357626254.0, \"board_name\": \"涉矿概念\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。\", \"industry_name\": \"\", \"name\": \"江特电机\", \"pct\": 10.016, \"pool\": \"候选\", \"price\": 13.62, \"rank\": 10, \"rejected_reason_text\": \"\", \"score\": 79, \"score_breakdown\": \"市场强势第 39 名，盘中涨停 (+14)；题材龙头 涉矿概念 (+18)；市场关注股第 2 名 (+8)；盘中涨幅 10.02% 接近涨停 (+25)；成交额 23.58亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 39 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"题材龙头 涉矿概念\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"市场关注股第 2 名\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.02% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 23.58亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；题材龙头: 涉矿概念 (+18)；热度靠前: 东财人气第 2 名 (+8)；盘中强度: 接近涨停 (+25)\", \"symbol\": \"002176.SZ\"}, {\"amount\": 4946335564.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。\", \"industry_name\": \"\", \"name\": \"恩捷股份\", \"pct\": 10.006, \"pool\": \"候选\", \"price\": 77.18, \"rank\": 11, \"rejected_reason_text\": \"\", \"score\": 74, \"score_breakdown\": \"市场强势第 48 名，盘中涨停 (+14)；市场关注股第 5 名 (+5)；公告催化 财务报告公告 2026-04-23：恩捷股份:2026年一季度报告 (+6)；公告催化 重大事项公告 2026-04-24：恩捷股份:关于股东部分股份质押变动的公告 (+10)；盘中涨幅 10.01% 接近涨停 (+25)；成交额 49.46亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 48 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"市场关注股第 5 名\", \"score\": 5, \"tone\": \"positive\"}, {\"label\": \"公告催化 财务报告公告 2026-04-23：恩捷股份:2026年一季度报告\", \"score\": 6, \"tone\": \"positive\"}, {\"label\": \"公告催化 重大事项公告 2026-04-24：恩捷股份:关于股东部分股份质押变动的公告\", \"score\": 10, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.01% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 49.46亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；热度靠前: 东财人气第 5 名 (+5)；公告催化: 财务报告公告 2026-04-23：恩捷股份:2026年一季度报告 (+6)；公告催化: 重大事项公告 2026-04-24：恩捷股份:关于股东部分股份质押变动的公告 (+10)\", \"symbol\": \"002812.SZ\"}, {\"amount\": 3985200724.0, \"board_name\": \"鸿蒙概念\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。\", \"industry_name\": \"\", \"name\": \"润和软件\", \"pct\": 9.475, \"pool\": \"候选\", \"price\": 46.1, \"rank\": 12, \"rejected_reason_text\": \"\", \"score\": 72, \"score_breakdown\": \"市场强势第 81 名，涨幅居前 (+8)；题材龙头 鸿蒙概念 (+18)；公告催化 财务报告公告 2026-04-24：润和软件:2026年一季度报告 (+6)；公告催化 重大事项公告 2026-04-22：润和软件:非经营性资金占用及其他关联资金往来情况汇总表 (+6)；盘中涨幅 9.47% 强势 (+20)；成交额 39.85亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 81 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"题材龙头 鸿蒙概念\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"公告催化 财务报告公告 2026-04-24：润和软件:2026年一季度报告\", \"score\": 6, \"tone\": \"positive\"}, {\"label\": \"公告催化 重大事项公告 2026-04-22：润和软件:非经营性资金占用及其他关联资金往来情况汇总表\", \"score\": 6, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.47% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 39.85亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 涨幅居前 (+8)；题材龙头: 鸿蒙概念 (+18)；公告催化: 财务报告公告 2026-04-24：润和软件:2026年一季度报告 (+6)；公告催化: 重大事项公告 2026-04-22：润和软件:非经营性资金占用及其他关联资金往来情况汇总表 (+6)\", \"symbol\": \"300339.SZ\"}], \"mode\": \"实时预测\", \"reference_date\": \"20260426\", \"rejected_candidates\": [{\"amount\": 2103074910.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 3 个。\", \"industry_name\": \"\", \"name\": \"华盛昌\", \"pct\": 8.419, \"pool\": \"淘汰\", \"price\": 82.29, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件\", \"score\": 42, \"score_breakdown\": \"市场强势第 90 名，涨幅居前 (+8)；盘中涨幅 8.42% 强势 (+20)；成交额 21.03亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 90 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 8.42% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 21.03亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"002980.SZ\"}, {\"amount\": 1580212650.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 3 个。\", \"industry_name\": \"\", \"name\": \"宏达股份\", \"pct\": 7.738, \"pool\": \"淘汰\", \"price\": 18.24, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件\", \"score\": 42, \"score_breakdown\": \"市场强势第 99 名，涨幅居前 (+8)；盘中涨幅 7.74% 强势 (+20)；成交额 15.80亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 99 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 7.74% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 15.80亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"600331.SH\"}, {\"amount\": 241064356.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"天禾股份\", \"pct\": 10.057, \"pool\": \"淘汰\", \"price\": 7.66, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 24 名，盘中涨停 (+14)；盘中涨幅 10.06% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 24 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.06% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"002999.SZ\"}, {\"amount\": 202637514.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"联翔股份\", \"pct\": 10.01, \"pool\": \"淘汰\", \"price\": 22.09, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 41 名，盘中涨停 (+14)；盘中涨幅 10.01% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 41 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.01% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"603272.SH\"}, {\"amount\": 295734309.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"朗博科技\", \"pct\": 10.0, \"pool\": \"淘汰\", \"price\": 47.52, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 58 名，盘中涨停 (+14)；盘中涨幅 10.00% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 58 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.00% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"603655.SH\"}, {\"amount\": 211420838.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"神力股份\", \"pct\": 9.986, \"pool\": \"淘汰\", \"price\": 15.31, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 69 名，盘中涨停 (+14)；盘中涨幅 9.99% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 69 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.99% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"603819.SH\"}, {\"amount\": 716499917.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 3 个。\", \"industry_name\": \"\", \"name\": \"美新科技\", \"pct\": 9.533, \"pool\": \"淘汰\", \"price\": 29.3, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件\", \"score\": 39, \"score_breakdown\": \"市场强势第 80 名，涨幅居前 (+8)；盘中涨幅 9.53% 接近涨停 (+25)；成交额 7.16亿 尚可 (+6)\", \"score_tags\": [{\"label\": \"市场强势第 80 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.53% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 7.16亿 尚可\", \"score\": 6, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"301588.SZ\"}, {\"amount\": 1483625177.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 3 个。\", \"industry_name\": \"\", \"name\": \"南亚新材\", \"pct\": 9.339, \"pool\": \"淘汰\", \"price\": 160.86, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件\", \"score\": 38, \"score_breakdown\": \"市场强势第 82 名，涨幅居前 (+8)；盘中涨幅 9.34% 强势 (+20)；成交额 14.84亿 活跃 (+10)\", \"score_tags\": [{\"label\": \"市场强势第 82 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.34% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 14.84亿 活跃\", \"score\": 10, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"688519.SH\"}, {\"amount\": 1408139259.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 3 个。\", \"industry_name\": \"\", \"name\": \"赤天化\", \"pct\": 7.609, \"pool\": \"淘汰\", \"price\": 3.96, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件\", \"score\": 38, \"score_breakdown\": \"市场强势第 100 名，涨幅居前 (+8)；盘中涨幅 7.61% 强势 (+20)；成交额 14.08亿 活跃 (+10)\", \"score_tags\": [{\"label\": \"市场强势第 100 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 7.61% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 14.08亿 活跃\", \"score\": 10, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"600227.SH\"}, {\"amount\": 113121853.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"瑞晨环保\", \"pct\": 9.31, \"pool\": \"淘汰\", \"price\": 34.99, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 28, \"score_breakdown\": \"市场强势第 83 名，涨幅居前 (+8)；盘中涨幅 9.31% 强势 (+20)\", \"score_tags\": [{\"label\": \"市场强势第 83 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.31% 强势\", \"score\": 20, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"301273.SZ\"}, {\"amount\": 131673955.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"祖名股份\", \"pct\": 7.882, \"pool\": \"淘汰\", \"price\": 21.9, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 28, \"score_breakdown\": \"市场强势第 95 名，涨幅居前 (+8)；盘中涨幅 7.88% 强势 (+20)\", \"score_tags\": [{\"label\": \"市场强势第 95 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 7.88% 强势\", \"score\": 20, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"003030.SZ\"}, {\"amount\": 232714934.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"国盛智科\", \"pct\": 7.778, \"pool\": \"淘汰\", \"price\": 35.89, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 28, \"score_breakdown\": \"市场强势第 97 名，涨幅居前 (+8)；盘中涨幅 7.78% 强势 (+20)\", \"score_tags\": [{\"label\": \"市场强势第 97 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 7.78% 强势\", \"score\": 20, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"688558.SH\"}], \"trade_date\": \"20260426\"}"
+  },
+  {
+    "id": "20260426171440",
+    "captured_at": "2026-04-26 17:14:40",
+    "trade_date": "20260426",
+    "reference_date": "20260426",
+    "prediction_mode": "实时预测",
+    "hot_boards_trade_date": "2026-04-26 17:14:42",
+    "candidates": [
+      {
+        "pool": "候选",
+        "rank": 1,
+        "symbol": "300390.SZ",
+        "name": "天华新能",
+        "price": 91.0,
+        "pct": 13.651,
+        "amount": 8541912157.0,
+        "score": 119,
+        "board_name": "锂矿",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 6 个。",
+        "score_breakdown": "市场强势第 13 名，盘中涨停 (+18)；题材龙头 锂矿 (+38)；市场关注股第 13 名 (+2)；公告催化 业绩预告 预增，变动幅度 29819.0%，公告日期 2026-04-08 (+16)；公告催化 财务报告公告 2026-04-24：天华新能:2026年一季度报告 (+6)；盘中涨幅 13.65% 接近涨停 (+25)；成交额 85.42亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；题材龙头: 锂矿 (+38)；热度靠前: 东财人气第 13 名 (+2)；公告催化: 业绩预告 预增，变动幅度 29819.0%，公告日期 2026-04-08 (+16)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 13 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 锂矿",
+            "score": 38,
+            "tone": "positive"
+          },
+          {
+            "label": "市场关注股第 13 名",
+            "score": 2,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 业绩预告 预增，变动幅度 29819.0%，公告日期 2026-04-08",
+            "score": 16,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 财务报告公告 2026-04-24：天华新能:2026年一季度报告",
+            "score": 6,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 13.65% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 85.42亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 2,
+        "symbol": "000973.SZ",
+        "name": "佛塑科技",
+        "price": 18.99,
+        "pct": 10.023,
+        "amount": 1839550896.0,
+        "score": 115,
+        "board_name": "锂电池",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 34 名，盘中涨停 (+14)；题材龙头 锂电池 (+28)；题材龙头 聚氨酯 (+18)；公告催化 业绩预告 预增，变动幅度 315.3%，公告日期 2026-04-15 (+16)；盘中涨幅 10.02% 接近涨停 (+25)；成交额 18.40亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；题材龙头: 锂电池 (+28)；题材龙头: 聚氨酯 (+18)；公告催化: 业绩预告 预增，变动幅度 315.3%，公告日期 2026-04-15 (+16)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 34 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 锂电池",
+            "score": 28,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 聚氨酯",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 业绩预告 预增，变动幅度 315.3%，公告日期 2026-04-15",
+            "score": 16,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.02% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 18.40亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 3,
+        "symbol": "688808.SH",
+        "name": "N联讯",
+        "price": 799.0,
+        "pct": 875.818,
+        "amount": 11413259860.0,
+        "score": 100,
+        "board_name": "",
+        "industry_name": "仪器仪表制造业",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 1 名，盘中涨停 (+18)；行业领涨 仪器仪表制造业 (+24)；公告催化 业绩预告 预增，变动幅度 507.9%，公告日期 2026-04-23 (+19)；盘中涨幅 875.82% 接近涨停 (+25)；成交额 114.13亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；行业领涨: 仪器仪表制造业 (+24)；公告催化: 业绩预告 预增，变动幅度 507.9%，公告日期 2026-04-23 (+19)；盘中强度: 接近涨停 (+25)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 1 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "行业领涨 仪器仪表制造业",
+            "score": 24,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 业绩预告 预增，变动幅度 507.9%，公告日期 2026-04-23",
+            "score": 19,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 875.82% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 114.13亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 4,
+        "symbol": "300721.SZ",
+        "name": "怡达股份",
+        "price": 21.0,
+        "pct": 18.711,
+        "amount": 1097364057.0,
+        "score": 91,
+        "board_name": "电解液",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 9 名，盘中涨停 (+18)；题材龙头 电解液 (+38)；盘中涨幅 18.71% 接近涨停 (+25)；成交额 10.97亿 活跃 (+10)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；题材龙头: 电解液 (+38)；盘中强度: 接近涨停 (+25)；成交额活跃: 超 8 亿 (+10)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 9 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 电解液",
+            "score": 38,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 18.71% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 10.97亿 活跃",
+            "score": 10,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 5,
+        "symbol": "600633.SH",
+        "name": "浙数文化",
+        "price": 15.09,
+        "pct": 9.985,
+        "amount": 2200318062.0,
+        "score": 89,
+        "board_name": "固态电池",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 6 个。",
+        "score_breakdown": "市场强势第 70 名，盘中涨停 (+14)；题材龙头 固态电池 (+28)；市场关注股第 10 名 (+5)；公告催化 财务报告公告 2026-04-21：浙数文化:浙数文化2025年年度股东会决议公告 (+3)；盘中涨幅 9.98% 接近涨停 (+25)；成交额 22.00亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；题材龙头: 固态电池 (+28)；热度靠前: 东财人气第 10 名 (+5)；公告催化: 财务报告公告 2026-04-21：浙数文化:浙数文化2025年年度股东会决议公告 (+3)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 70 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 固态电池",
+            "score": 28,
+            "tone": "positive"
+          },
+          {
+            "label": "市场关注股第 10 名",
+            "score": 5,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 财务报告公告 2026-04-21：浙数文化:浙数文化2025年年度股东会决议公告",
+            "score": 3,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.98% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 22.00亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 6,
+        "symbol": "688101.SH",
+        "name": "三达膜",
+        "price": 17.93,
+        "pct": 10.406,
+        "amount": 182751729.0,
+        "score": 84,
+        "board_name": "盐湖提锂",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 19 名，盘中涨停 (+18)；题材龙头 盐湖提锂 (+38)；公告催化 财务报告公告 2026-04-21：三达膜:关于2025年度利润分配方案的公告 (+3)；盘中涨幅 10.41% 接近涨停 (+25)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；题材龙头: 盐湖提锂 (+38)；公告催化: 财务报告公告 2026-04-21：三达膜:关于2025年度利润分配方案的公告 (+3)；盘中强度: 接近涨停 (+25)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 19 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 盐湖提锂",
+            "score": 38,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 财务报告公告 2026-04-21：三达膜:关于2025年度利润分配方案的公告",
+            "score": 3,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.41% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 7,
+        "symbol": "300489.SZ",
+        "name": "光智科技",
+        "price": 101.9,
+        "pct": 17.032,
+        "amount": 1699837245.0,
+        "score": 79,
+        "board_name": "",
+        "industry_name": "有色金属冶炼和压延加工业",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 10 名，盘中涨停 (+18)；行业领涨 有色金属冶炼和压延加工业 (+16)；公告催化 财务报告公告 2026-04-24：光智科技:2026年一季度报告 (+6)；盘中涨幅 17.03% 接近涨停 (+25)；成交额 17.00亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+18)；行业领涨: 有色金属冶炼和压延加工业 (+16)；公告催化: 财务报告公告 2026-04-24：光智科技:2026年一季度报告 (+6)；盘中强度: 接近涨停 (+25)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 10 名，盘中涨停",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "行业领涨 有色金属冶炼和压延加工业",
+            "score": 16,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 财务报告公告 2026-04-24：光智科技:2026年一季度报告",
+            "score": 6,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 17.03% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 17.00亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 8,
+        "symbol": "002176.SZ",
+        "name": "江特电机",
+        "price": 13.62,
+        "pct": 10.016,
+        "amount": 2357626254.0,
+        "score": 79,
+        "board_name": "涉矿概念",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 39 名，盘中涨停 (+14)；题材龙头 涉矿概念 (+18)；市场关注股第 2 名 (+8)；盘中涨幅 10.02% 接近涨停 (+25)；成交额 23.58亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；题材龙头: 涉矿概念 (+18)；热度靠前: 东财人气第 2 名 (+8)；盘中强度: 接近涨停 (+25)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 39 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 涉矿概念",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "市场关注股第 2 名",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.02% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 23.58亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 9,
+        "symbol": "000062.SZ",
+        "name": "深圳华强",
+        "price": 34.34,
+        "pct": 9.994,
+        "amount": 3731477591.0,
+        "score": 77,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 61 名，盘中涨停 (+14)；市场关注股第 4 名 (+5)；公告催化 业绩预告 预增，变动幅度 132.1%，公告日期 2026-04-15 (+16)；公告催化 财务报告公告 2026-04-22：深圳华强:2025年年度权益分派实施公告 (+3)；盘中涨幅 9.99% 接近涨停 (+25)；成交额 37.31亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；热度靠前: 东财人气第 4 名 (+5)；公告催化: 业绩预告 预增，变动幅度 132.1%，公告日期 2026-04-15 (+16)；公告催化: 财务报告公告 2026-04-22：深圳华强:2025年年度权益分派实施公告 (+3)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 61 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "市场关注股第 4 名",
+            "score": 5,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 业绩预告 预增，变动幅度 132.1%，公告日期 2026-04-15",
+            "score": 16,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 财务报告公告 2026-04-22：深圳华强:2025年年度权益分派实施公告",
+            "score": 3,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.99% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 37.31亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 10,
+        "symbol": "002240.SZ",
+        "name": "盛新锂能",
+        "price": 50.93,
+        "pct": 10.0,
+        "amount": 3174971097.0,
+        "score": 77,
+        "board_name": "",
+        "industry_name": "家具制造业",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 50 名，盘中涨停 (+14)；行业领涨 家具制造业 (+24)；盘中涨幅 10.00% 接近涨停 (+25)；成交额 31.75亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；行业领涨: 家具制造业 (+24)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 50 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "行业领涨 家具制造业",
+            "score": 24,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.00% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 31.75亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 11,
+        "symbol": "000762.SZ",
+        "name": "西藏矿业",
+        "price": 38.5,
+        "pct": 7.783,
+        "amount": 2562951225.0,
+        "score": 72,
+        "board_name": "",
+        "industry_name": "黑色金属矿采选业",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。",
+        "score_breakdown": "市场强势第 96 名，涨幅居前 (+8)；行业领涨 黑色金属矿采选业 (+24)；公告催化 财务报告公告 2026-04-24：西藏矿业:2026年一季度报告 (+6)；盘中涨幅 7.78% 强势 (+20)；成交额 25.63亿 放大 (+14)",
+        "signals_text": "市场强势: 涨幅居前 (+8)；行业领涨: 黑色金属矿采选业 (+24)；公告催化: 财务报告公告 2026-04-24：西藏矿业:2026年一季度报告 (+6)；盘中强度: 涨幅强势 (+20)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 96 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "行业领涨 黑色金属矿采选业",
+            "score": 24,
+            "tone": "positive"
+          },
+          {
+            "label": "公告催化 财务报告公告 2026-04-24：西藏矿业:2026年一季度报告",
+            "score": 6,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 7.78% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 25.63亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "候选",
+        "rank": 12,
+        "symbol": "002192.SZ",
+        "name": "融捷股份",
+        "price": 86.28,
+        "pct": 9.995,
+        "amount": 2477165922.0,
+        "score": 71,
+        "board_name": "稀缺资源",
+        "industry_name": "",
+        "entry_reason": "入池原因：有题材/行业/公告催化共振，盘中强势，共振项 4 个。",
+        "score_breakdown": "市场强势第 60 名，盘中涨停 (+14)；题材龙头 稀缺资源 (+18)；盘中涨幅 9.99% 接近涨停 (+25)；成交额 24.77亿 放大 (+14)",
+        "signals_text": "市场强势: 盘中涨停/封板 (+14)；题材龙头: 稀缺资源 (+18)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)",
+        "rejected_reason_text": "",
+        "score_tags": [
+          {
+            "label": "市场强势第 60 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "题材龙头 稀缺资源",
+            "score": 18,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.99% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 24.77亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      }
+    ],
+    "rejected_candidates": [
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "002980.SZ",
+        "name": "华盛昌",
+        "price": 82.29,
+        "pct": 8.419,
+        "amount": 2103074910.0,
+        "score": 42,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 3 个。",
+        "score_breakdown": "市场强势第 90 名，涨幅居前 (+8)；盘中涨幅 8.42% 强势 (+20)；成交额 21.03亿 放大 (+14)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 90 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 8.42% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 21.03亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "600331.SH",
+        "name": "宏达股份",
+        "price": 18.24,
+        "pct": 7.738,
+        "amount": 1580212650.0,
+        "score": 42,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 3 个。",
+        "score_breakdown": "市场强势第 99 名，涨幅居前 (+8)；盘中涨幅 7.74% 强势 (+20)；成交额 15.80亿 放大 (+14)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 99 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 7.74% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 15.80亿 放大",
+            "score": 14,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "002999.SZ",
+        "name": "天禾股份",
+        "price": 7.66,
+        "pct": 10.057,
+        "amount": 241064356.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 24 名，盘中涨停 (+14)；盘中涨幅 10.06% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 24 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.06% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "603272.SH",
+        "name": "联翔股份",
+        "price": 22.09,
+        "pct": 10.01,
+        "amount": 202637514.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 41 名，盘中涨停 (+14)；盘中涨幅 10.01% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 41 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.01% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "603655.SH",
+        "name": "朗博科技",
+        "price": 47.52,
+        "pct": 10.0,
+        "amount": 295734309.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 58 名，盘中涨停 (+14)；盘中涨幅 10.00% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 58 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 10.00% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "603819.SH",
+        "name": "神力股份",
+        "price": 15.31,
+        "pct": 9.986,
+        "amount": 211420838.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 69 名，盘中涨停 (+14)；盘中涨幅 9.99% 接近涨停 (+25)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 69 名，盘中涨停",
+            "score": 14,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.99% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "301588.SZ",
+        "name": "美新科技",
+        "price": 29.3,
+        "pct": 9.533,
+        "amount": 716499917.0,
+        "score": 39,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 3 个。",
+        "score_breakdown": "市场强势第 80 名，涨幅居前 (+8)；盘中涨幅 9.53% 接近涨停 (+25)；成交额 7.16亿 尚可 (+6)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 80 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.53% 接近涨停",
+            "score": 25,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 7.16亿 尚可",
+            "score": 6,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "688519.SH",
+        "name": "南亚新材",
+        "price": 160.86,
+        "pct": 9.339,
+        "amount": 1483625177.0,
+        "score": 38,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 3 个。",
+        "score_breakdown": "市场强势第 82 名，涨幅居前 (+8)；盘中涨幅 9.34% 强势 (+20)；成交额 14.84亿 活跃 (+10)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 82 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.34% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 14.84亿 活跃",
+            "score": 10,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "600227.SH",
+        "name": "赤天化",
+        "price": 3.96,
+        "pct": 7.609,
+        "amount": 1408139259.0,
+        "score": 38,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 3 个。",
+        "score_breakdown": "市场强势第 100 名，涨幅居前 (+8)；盘中涨幅 7.61% 强势 (+20)；成交额 14.08亿 活跃 (+10)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件",
+        "score_tags": [
+          {
+            "label": "市场强势第 100 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 7.61% 强势",
+            "score": 20,
+            "tone": "positive"
+          },
+          {
+            "label": "成交额 14.08亿 活跃",
+            "score": 10,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "301273.SZ",
+        "name": "瑞晨环保",
+        "price": 34.99,
+        "pct": 9.31,
+        "amount": 113121853.0,
+        "score": 28,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 83 名，涨幅居前 (+8)；盘中涨幅 9.31% 强势 (+20)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 83 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 9.31% 强势",
+            "score": 20,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "003030.SZ",
+        "name": "祖名股份",
+        "price": 21.9,
+        "pct": 7.882,
+        "amount": 131673955.0,
+        "score": 28,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 95 名，涨幅居前 (+8)；盘中涨幅 7.88% 强势 (+20)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 95 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 7.88% 强势",
+            "score": 20,
+            "tone": "positive"
+          }
+        ]
+      },
+      {
+        "pool": "淘汰",
+        "rank": 0,
+        "symbol": "688558.SH",
+        "name": "国盛智科",
+        "price": 35.89,
+        "pct": 7.778,
+        "amount": 232714934.0,
+        "score": 28,
+        "board_name": "",
+        "industry_name": "",
+        "entry_reason": "入池原因：无主线共振，盘中强势，共振项 2 个。",
+        "score_breakdown": "市场强势第 97 名，涨幅居前 (+8)；盘中涨幅 7.78% 强势 (+20)",
+        "signals_text": "",
+        "rejected_reason_text": "没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个",
+        "score_tags": [
+          {
+            "label": "市场强势第 97 名，涨幅居前",
+            "score": 8,
+            "tone": "positive"
+          },
+          {
+            "label": "盘中涨幅 7.78% 强势",
+            "score": 20,
+            "tone": "positive"
+          }
+        ]
+      }
+    ],
+    "signature": "{\"candidates\": [{\"amount\": 8541912157.0, \"board_name\": \"锂矿\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 6 个。\", \"industry_name\": \"\", \"name\": \"天华新能\", \"pct\": 13.651, \"pool\": \"候选\", \"price\": 91.0, \"rank\": 1, \"rejected_reason_text\": \"\", \"score\": 119, \"score_breakdown\": \"市场强势第 13 名，盘中涨停 (+18)；题材龙头 锂矿 (+38)；市场关注股第 13 名 (+2)；公告催化 业绩预告 预增，变动幅度 29819.0%，公告日期 2026-04-08 (+16)；公告催化 财务报告公告 2026-04-24：天华新能:2026年一季度报告 (+6)；盘中涨幅 13.65% 接近涨停 (+25)；成交额 85.42亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 13 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"题材龙头 锂矿\", \"score\": 38, \"tone\": \"positive\"}, {\"label\": \"市场关注股第 13 名\", \"score\": 2, \"tone\": \"positive\"}, {\"label\": \"公告催化 业绩预告 预增，变动幅度 29819.0%，公告日期 2026-04-08\", \"score\": 16, \"tone\": \"positive\"}, {\"label\": \"公告催化 财务报告公告 2026-04-24：天华新能:2026年一季度报告\", \"score\": 6, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 13.65% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 85.42亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；题材龙头: 锂矿 (+38)；热度靠前: 东财人气第 13 名 (+2)；公告催化: 业绩预告 预增，变动幅度 29819.0%，公告日期 2026-04-08 (+16)\", \"symbol\": \"300390.SZ\"}, {\"amount\": 1839550896.0, \"board_name\": \"锂电池\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。\", \"industry_name\": \"\", \"name\": \"佛塑科技\", \"pct\": 10.023, \"pool\": \"候选\", \"price\": 18.99, \"rank\": 2, \"rejected_reason_text\": \"\", \"score\": 115, \"score_breakdown\": \"市场强势第 34 名，盘中涨停 (+14)；题材龙头 锂电池 (+28)；题材龙头 聚氨酯 (+18)；公告催化 业绩预告 预增，变动幅度 315.3%，公告日期 2026-04-15 (+16)；盘中涨幅 10.02% 接近涨停 (+25)；成交额 18.40亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 34 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"题材龙头 锂电池\", \"score\": 28, \"tone\": \"positive\"}, {\"label\": \"题材龙头 聚氨酯\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"公告催化 业绩预告 预增，变动幅度 315.3%，公告日期 2026-04-15\", \"score\": 16, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.02% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 18.40亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；题材龙头: 锂电池 (+28)；题材龙头: 聚氨酯 (+18)；公告催化: 业绩预告 预增，变动幅度 315.3%，公告日期 2026-04-15 (+16)\", \"symbol\": \"000973.SZ\"}, {\"amount\": 11413259860.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。\", \"industry_name\": \"仪器仪表制造业\", \"name\": \"N联讯\", \"pct\": 875.818, \"pool\": \"候选\", \"price\": 799.0, \"rank\": 3, \"rejected_reason_text\": \"\", \"score\": 100, \"score_breakdown\": \"市场强势第 1 名，盘中涨停 (+18)；行业领涨 仪器仪表制造业 (+24)；公告催化 业绩预告 预增，变动幅度 507.9%，公告日期 2026-04-23 (+19)；盘中涨幅 875.82% 接近涨停 (+25)；成交额 114.13亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 1 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"行业领涨 仪器仪表制造业\", \"score\": 24, \"tone\": \"positive\"}, {\"label\": \"公告催化 业绩预告 预增，变动幅度 507.9%，公告日期 2026-04-23\", \"score\": 19, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 875.82% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 114.13亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；行业领涨: 仪器仪表制造业 (+24)；公告催化: 业绩预告 预增，变动幅度 507.9%，公告日期 2026-04-23 (+19)；盘中强度: 接近涨停 (+25)\", \"symbol\": \"688808.SH\"}, {\"amount\": 1097364057.0, \"board_name\": \"电解液\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 4 个。\", \"industry_name\": \"\", \"name\": \"怡达股份\", \"pct\": 18.711, \"pool\": \"候选\", \"price\": 21.0, \"rank\": 4, \"rejected_reason_text\": \"\", \"score\": 91, \"score_breakdown\": \"市场强势第 9 名，盘中涨停 (+18)；题材龙头 电解液 (+38)；盘中涨幅 18.71% 接近涨停 (+25)；成交额 10.97亿 活跃 (+10)\", \"score_tags\": [{\"label\": \"市场强势第 9 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"题材龙头 电解液\", \"score\": 38, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 18.71% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 10.97亿 活跃\", \"score\": 10, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；题材龙头: 电解液 (+38)；盘中强度: 接近涨停 (+25)；成交额活跃: 超 8 亿 (+10)\", \"symbol\": \"300721.SZ\"}, {\"amount\": 2200318062.0, \"board_name\": \"固态电池\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 6 个。\", \"industry_name\": \"\", \"name\": \"浙数文化\", \"pct\": 9.985, \"pool\": \"候选\", \"price\": 15.09, \"rank\": 5, \"rejected_reason_text\": \"\", \"score\": 89, \"score_breakdown\": \"市场强势第 70 名，盘中涨停 (+14)；题材龙头 固态电池 (+28)；市场关注股第 10 名 (+5)；公告催化 财务报告公告 2026-04-21：浙数文化:浙数文化2025年年度股东会决议公告 (+3)；盘中涨幅 9.98% 接近涨停 (+25)；成交额 22.00亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 70 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"题材龙头 固态电池\", \"score\": 28, \"tone\": \"positive\"}, {\"label\": \"市场关注股第 10 名\", \"score\": 5, \"tone\": \"positive\"}, {\"label\": \"公告催化 财务报告公告 2026-04-21：浙数文化:浙数文化2025年年度股东会决议公告\", \"score\": 3, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.98% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 22.00亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；题材龙头: 固态电池 (+28)；热度靠前: 东财人气第 10 名 (+5)；公告催化: 财务报告公告 2026-04-21：浙数文化:浙数文化2025年年度股东会决议公告 (+3)\", \"symbol\": \"600633.SH\"}, {\"amount\": 182751729.0, \"board_name\": \"盐湖提锂\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 4 个。\", \"industry_name\": \"\", \"name\": \"三达膜\", \"pct\": 10.406, \"pool\": \"候选\", \"price\": 17.93, \"rank\": 6, \"rejected_reason_text\": \"\", \"score\": 84, \"score_breakdown\": \"市场强势第 19 名，盘中涨停 (+18)；题材龙头 盐湖提锂 (+38)；公告催化 财务报告公告 2026-04-21：三达膜:关于2025年度利润分配方案的公告 (+3)；盘中涨幅 10.41% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 19 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"题材龙头 盐湖提锂\", \"score\": 38, \"tone\": \"positive\"}, {\"label\": \"公告催化 财务报告公告 2026-04-21：三达膜:关于2025年度利润分配方案的公告\", \"score\": 3, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.41% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；题材龙头: 盐湖提锂 (+38)；公告催化: 财务报告公告 2026-04-21：三达膜:关于2025年度利润分配方案的公告 (+3)；盘中强度: 接近涨停 (+25)\", \"symbol\": \"688101.SH\"}, {\"amount\": 1699837245.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。\", \"industry_name\": \"有色金属冶炼和压延加工业\", \"name\": \"光智科技\", \"pct\": 17.032, \"pool\": \"候选\", \"price\": 101.9, \"rank\": 7, \"rejected_reason_text\": \"\", \"score\": 79, \"score_breakdown\": \"市场强势第 10 名，盘中涨停 (+18)；行业领涨 有色金属冶炼和压延加工业 (+16)；公告催化 财务报告公告 2026-04-24：光智科技:2026年一季度报告 (+6)；盘中涨幅 17.03% 接近涨停 (+25)；成交额 17.00亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 10 名，盘中涨停\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"行业领涨 有色金属冶炼和压延加工业\", \"score\": 16, \"tone\": \"positive\"}, {\"label\": \"公告催化 财务报告公告 2026-04-24：光智科技:2026年一季度报告\", \"score\": 6, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 17.03% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 17.00亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+18)；行业领涨: 有色金属冶炼和压延加工业 (+16)；公告催化: 财务报告公告 2026-04-24：光智科技:2026年一季度报告 (+6)；盘中强度: 接近涨停 (+25)\", \"symbol\": \"300489.SZ\"}, {\"amount\": 2357626254.0, \"board_name\": \"涉矿概念\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。\", \"industry_name\": \"\", \"name\": \"江特电机\", \"pct\": 10.016, \"pool\": \"候选\", \"price\": 13.62, \"rank\": 8, \"rejected_reason_text\": \"\", \"score\": 79, \"score_breakdown\": \"市场强势第 39 名，盘中涨停 (+14)；题材龙头 涉矿概念 (+18)；市场关注股第 2 名 (+8)；盘中涨幅 10.02% 接近涨停 (+25)；成交额 23.58亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 39 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"题材龙头 涉矿概念\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"市场关注股第 2 名\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.02% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 23.58亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；题材龙头: 涉矿概念 (+18)；热度靠前: 东财人气第 2 名 (+8)；盘中强度: 接近涨停 (+25)\", \"symbol\": \"002176.SZ\"}, {\"amount\": 3731477591.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。\", \"industry_name\": \"\", \"name\": \"深圳华强\", \"pct\": 9.994, \"pool\": \"候选\", \"price\": 34.34, \"rank\": 9, \"rejected_reason_text\": \"\", \"score\": 77, \"score_breakdown\": \"市场强势第 61 名，盘中涨停 (+14)；市场关注股第 4 名 (+5)；公告催化 业绩预告 预增，变动幅度 132.1%，公告日期 2026-04-15 (+16)；公告催化 财务报告公告 2026-04-22：深圳华强:2025年年度权益分派实施公告 (+3)；盘中涨幅 9.99% 接近涨停 (+25)；成交额 37.31亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 61 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"市场关注股第 4 名\", \"score\": 5, \"tone\": \"positive\"}, {\"label\": \"公告催化 业绩预告 预增，变动幅度 132.1%，公告日期 2026-04-15\", \"score\": 16, \"tone\": \"positive\"}, {\"label\": \"公告催化 财务报告公告 2026-04-22：深圳华强:2025年年度权益分派实施公告\", \"score\": 3, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.99% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 37.31亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；热度靠前: 东财人气第 4 名 (+5)；公告催化: 业绩预告 预增，变动幅度 132.1%，公告日期 2026-04-15 (+16)；公告催化: 财务报告公告 2026-04-22：深圳华强:2025年年度权益分派实施公告 (+3)\", \"symbol\": \"000062.SZ\"}, {\"amount\": 3174971097.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 4 个。\", \"industry_name\": \"家具制造业\", \"name\": \"盛新锂能\", \"pct\": 10.0, \"pool\": \"候选\", \"price\": 50.93, \"rank\": 10, \"rejected_reason_text\": \"\", \"score\": 77, \"score_breakdown\": \"市场强势第 50 名，盘中涨停 (+14)；行业领涨 家具制造业 (+24)；盘中涨幅 10.00% 接近涨停 (+25)；成交额 31.75亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 50 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"行业领涨 家具制造业\", \"score\": 24, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.00% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 31.75亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；行业领涨: 家具制造业 (+24)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)\", \"symbol\": \"002240.SZ\"}, {\"amount\": 2562951225.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 5 个。\", \"industry_name\": \"黑色金属矿采选业\", \"name\": \"西藏矿业\", \"pct\": 7.783, \"pool\": \"候选\", \"price\": 38.5, \"rank\": 11, \"rejected_reason_text\": \"\", \"score\": 72, \"score_breakdown\": \"市场强势第 96 名，涨幅居前 (+8)；行业领涨 黑色金属矿采选业 (+24)；公告催化 财务报告公告 2026-04-24：西藏矿业:2026年一季度报告 (+6)；盘中涨幅 7.78% 强势 (+20)；成交额 25.63亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 96 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"行业领涨 黑色金属矿采选业\", \"score\": 24, \"tone\": \"positive\"}, {\"label\": \"公告催化 财务报告公告 2026-04-24：西藏矿业:2026年一季度报告\", \"score\": 6, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 7.78% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 25.63亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 涨幅居前 (+8)；行业领涨: 黑色金属矿采选业 (+24)；公告催化: 财务报告公告 2026-04-24：西藏矿业:2026年一季度报告 (+6)；盘中强度: 涨幅强势 (+20)\", \"symbol\": \"000762.SZ\"}, {\"amount\": 2477165922.0, \"board_name\": \"稀缺资源\", \"entry_reason\": \"入池原因：有题材/行业/公告催化共振，盘中强势，共振项 4 个。\", \"industry_name\": \"\", \"name\": \"融捷股份\", \"pct\": 9.995, \"pool\": \"候选\", \"price\": 86.28, \"rank\": 12, \"rejected_reason_text\": \"\", \"score\": 71, \"score_breakdown\": \"市场强势第 60 名，盘中涨停 (+14)；题材龙头 稀缺资源 (+18)；盘中涨幅 9.99% 接近涨停 (+25)；成交额 24.77亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 60 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"题材龙头 稀缺资源\", \"score\": 18, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.99% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 24.77亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"市场强势: 盘中涨停/封板 (+14)；题材龙头: 稀缺资源 (+18)；盘中强度: 接近涨停 (+25)；成交额放大: 超 15 亿 (+14)\", \"symbol\": \"002192.SZ\"}], \"mode\": \"实时预测\", \"reference_date\": \"20260426\", \"rejected_candidates\": [{\"amount\": 2103074910.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 3 个。\", \"industry_name\": \"\", \"name\": \"华盛昌\", \"pct\": 8.419, \"pool\": \"淘汰\", \"price\": 82.29, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件\", \"score\": 42, \"score_breakdown\": \"市场强势第 90 名，涨幅居前 (+8)；盘中涨幅 8.42% 强势 (+20)；成交额 21.03亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 90 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 8.42% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 21.03亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"002980.SZ\"}, {\"amount\": 1580212650.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 3 个。\", \"industry_name\": \"\", \"name\": \"宏达股份\", \"pct\": 7.738, \"pool\": \"淘汰\", \"price\": 18.24, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件\", \"score\": 42, \"score_breakdown\": \"市场强势第 99 名，涨幅居前 (+8)；盘中涨幅 7.74% 强势 (+20)；成交额 15.80亿 放大 (+14)\", \"score_tags\": [{\"label\": \"市场强势第 99 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 7.74% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 15.80亿 放大\", \"score\": 14, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"600331.SH\"}, {\"amount\": 241064356.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"天禾股份\", \"pct\": 10.057, \"pool\": \"淘汰\", \"price\": 7.66, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 24 名，盘中涨停 (+14)；盘中涨幅 10.06% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 24 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.06% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"002999.SZ\"}, {\"amount\": 202637514.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"联翔股份\", \"pct\": 10.01, \"pool\": \"淘汰\", \"price\": 22.09, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 41 名，盘中涨停 (+14)；盘中涨幅 10.01% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 41 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.01% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"603272.SH\"}, {\"amount\": 295734309.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"朗博科技\", \"pct\": 10.0, \"pool\": \"淘汰\", \"price\": 47.52, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 58 名，盘中涨停 (+14)；盘中涨幅 10.00% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 58 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 10.00% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"603655.SH\"}, {\"amount\": 211420838.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"神力股份\", \"pct\": 9.986, \"pool\": \"淘汰\", \"price\": 15.31, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 39, \"score_breakdown\": \"市场强势第 69 名，盘中涨停 (+14)；盘中涨幅 9.99% 接近涨停 (+25)\", \"score_tags\": [{\"label\": \"市场强势第 69 名，盘中涨停\", \"score\": 14, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.99% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"603819.SH\"}, {\"amount\": 716499917.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 3 个。\", \"industry_name\": \"\", \"name\": \"美新科技\", \"pct\": 9.533, \"pool\": \"淘汰\", \"price\": 29.3, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件\", \"score\": 39, \"score_breakdown\": \"市场强势第 80 名，涨幅居前 (+8)；盘中涨幅 9.53% 接近涨停 (+25)；成交额 7.16亿 尚可 (+6)\", \"score_tags\": [{\"label\": \"市场强势第 80 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.53% 接近涨停\", \"score\": 25, \"tone\": \"positive\"}, {\"label\": \"成交额 7.16亿 尚可\", \"score\": 6, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"301588.SZ\"}, {\"amount\": 1483625177.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 3 个。\", \"industry_name\": \"\", \"name\": \"南亚新材\", \"pct\": 9.339, \"pool\": \"淘汰\", \"price\": 160.86, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件\", \"score\": 38, \"score_breakdown\": \"市场强势第 82 名，涨幅居前 (+8)；盘中涨幅 9.34% 强势 (+20)；成交额 14.84亿 活跃 (+10)\", \"score_tags\": [{\"label\": \"市场强势第 82 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.34% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 14.84亿 活跃\", \"score\": 10, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"688519.SH\"}, {\"amount\": 1408139259.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 3 个。\", \"industry_name\": \"\", \"name\": \"赤天化\", \"pct\": 7.609, \"pool\": \"淘汰\", \"price\": 3.96, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件\", \"score\": 38, \"score_breakdown\": \"市场强势第 100 名，涨幅居前 (+8)；盘中涨幅 7.61% 强势 (+20)；成交额 14.08亿 活跃 (+10)\", \"score_tags\": [{\"label\": \"市场强势第 100 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 7.61% 强势\", \"score\": 20, \"tone\": \"positive\"}, {\"label\": \"成交额 14.08亿 活跃\", \"score\": 10, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"600227.SH\"}, {\"amount\": 113121853.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"瑞晨环保\", \"pct\": 9.31, \"pool\": \"淘汰\", \"price\": 34.99, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 28, \"score_breakdown\": \"市场强势第 83 名，涨幅居前 (+8)；盘中涨幅 9.31% 强势 (+20)\", \"score_tags\": [{\"label\": \"市场强势第 83 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 9.31% 强势\", \"score\": 20, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"301273.SZ\"}, {\"amount\": 131673955.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"祖名股份\", \"pct\": 7.882, \"pool\": \"淘汰\", \"price\": 21.9, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 28, \"score_breakdown\": \"市场强势第 95 名，涨幅居前 (+8)；盘中涨幅 7.88% 强势 (+20)\", \"score_tags\": [{\"label\": \"市场强势第 95 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 7.88% 强势\", \"score\": 20, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"003030.SZ\"}, {\"amount\": 232714934.0, \"board_name\": \"\", \"entry_reason\": \"入池原因：无主线共振，盘中强势，共振项 2 个。\", \"industry_name\": \"\", \"name\": \"国盛智科\", \"pct\": 7.778, \"pool\": \"淘汰\", \"price\": 35.89, \"rank\": 0, \"rejected_reason_text\": \"没有题材/行业/公告催化共振，且未达到强势涨停直通条件；共振项不足，仅 2 个\", \"score\": 28, \"score_breakdown\": \"市场强势第 97 名，涨幅居前 (+8)；盘中涨幅 7.78% 强势 (+20)\", \"score_tags\": [{\"label\": \"市场强势第 97 名，涨幅居前\", \"score\": 8, \"tone\": \"positive\"}, {\"label\": \"盘中涨幅 7.78% 强势\", \"score\": 20, \"tone\": \"positive\"}], \"signals_text\": \"\", \"symbol\": \"688558.SH\"}], \"trade_date\": \"20260426\"}"
+  }
+]

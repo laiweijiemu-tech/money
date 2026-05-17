@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+
+{% block title %}预测对比 - {{ portal_title }}{% endblock %}
+
+{% block content %}
+<section class="hero compact">
+  <div>
+    <p class="eyebrow">预测对比</p>
+    <h1>本次预测 vs 上一次预测</h1>
+    <p class="hero-copy">
+      这个页面用于解释同一交易日里，龙头候选为什么会发生变化。系统会保存每次打开“龙头战法”页面时的预测快照，并自动对比最近两次结果。
+    </p>
+  </div>
+  <div class="search-card">
+    <label>对比范围</label>
+    <p class="search-hint">页面时间：{{ now_display }}</p>
+    <p class="search-hint">交易日：{{ trade_date_display }}</p>
+    <form class="backtest-form" action="{{ url_for('leader_strategy_compare') }}" method="get">
+      <label for="trade_date">选择交易日</label>
+      <input id="trade_date" name="trade_date" type="text" value="{{ trade_date }}" placeholder="例如 20260426">
+      <button type="submit">查看这一天</button>
+    </form>
+    <div class="date-nav">
+      <a class="chip" href="{{ url_for('leader_strategy') }}">返回龙头战法</a>
+    </div>
+  </div>
+</section>
+
+{% if comparison.error %}
+<section class="panel">
+  <div class="ai-result ai-error">{{ comparison.error }}</div>
+</section>
+{% else %}
+<section class="panel">
+  <div class="panel-head">
+    <h2>快照概览</h2>
+    <span>{{ comparison.trade_date_display }}</span>
+  </div>
+  <section class="summary-grid compact-grid">
+    {% for item in comparison.summary %}
+    <article class="summary-card">
+      <p class="summary-label">{{ item.label }}</p>
+      <p class="summary-value tone-{{ item.tone }}">{{ item.value }}</p>
+    </article>
+    {% endfor %}
+  </section>
+  <div class="panel-hint panel-hint-neutral">
+    本次模式：{{ comparison.current.prediction_mode }}，参考日期 {{ comparison.current.reference_date }}；
+    上次模式：{{ comparison.previous.prediction_mode }}，参考日期 {{ comparison.previous.reference_date }}。
+  </div>
+</section>
+
+<section class="panel-grid">
+  <article class="panel">
+    <div class="panel-head">
+      <h2>本次候选</h2>
+      <span>{{ comparison.current.captured_at }}</span>
+    </div>
+    <div class="chip-list">
+      {% for row in comparison.current.candidates[:10] %}
+      <span class="chip">{{ row.name }} · #{{ row.rank }} · {{ row.score }}分</span>
+      {% else %}
+      <span class="empty">暂无候选快照</span>
+      {% endfor %}
+    </div>
+  </article>
+
+  <article class="panel">
+    <div class="panel-head">
+      <h2>上次候选</h2>
+      <span>{{ comparison.previous.captured_at }}</span>
+    </div>
+    <div class="chip-list">
+      {% for row in comparison.previous.candidates[:10] %}
+      <span class="chip">{{ row.name }} · #{{ row.rank }} · {{ row.score }}分</span>
+      {% else %}
+      <span class="empty">暂无候选快照</span>
+      {% endfor %}
+    </div>
+  </article>
+</section>
+
+<section class="panel">
+  <div class="panel-head">
+    <h2>变化原因明细</h2>
+    <span>按“新进候选 / 状态切换 / 排名分数变化”排序</span>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>股票</th>
+          <th>变化状态</th>
+          <th>本次</th>
+          <th>上次</th>
+          <th>本次原因</th>
+          <th>上次原因</th>
+          <th>变化解释</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in comparison.changes %}
+        <tr>
+          <td>
+            {% if row.symbol %}
+            <a href="{{ url_for('stock_redirect', symbol=row.symbol) }}">{{ row.name }}</a>
+            <div class="table-sub">{{ row.symbol }}</div>
+            {% else %}
+            {{ row.name }}
+            {% endif %}
+          </td>
+          <td>{{ row.status }}</td>
+          <td class="reason">
+            <div>{{ row.current_pool }}{% if row.current_rank %} · #{{ row.current_rank }}{% endif %}</div>
+            <div>分数 {{ row.current_score if row.current_score is not none else '-' }}</div>
+            <div>涨幅 {{ row.current_pct }}</div>
+            <div>成交额 {{ row.current_amount }}</div>
+          </td>
+          <td class="reason">
+            <div>{{ row.previous_pool }}{% if row.previous_rank %} · #{{ row.previous_rank }}{% endif %}</div>
+            <div>分数 {{ row.previous_score if row.previous_score is not none else '-' }}</div>
+            <div>涨幅 {{ row.previous_pct }}</div>
+            <div>成交额 {{ row.previous_amount }}</div>
+          </td>
+          <td class="reason">{{ row.current_reason }}</td>
+          <td class="reason">{{ row.previous_reason }}</td>
+          <td class="reason">{{ row.change_reason }}</td>
+        </tr>
+        {% else %}
+        <tr><td colspan="7" class="empty">最近两次预测没有检测到明显变化</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endif %}
+
+<section class="panel">
+  <div class="panel-head">
+    <h2>最近快照</h2>
+    <span>同一交易日最多展示 8 条</span>
+  </div>
+  <div class="chip-list">
+    {% for row in recent_snapshots %}
+    <span class="chip">{{ row.captured_at }} · {{ row.prediction_mode }} · 候选 {{ row.candidates|length }} 只</span>
+    {% else %}
+    <span class="empty">当前交易日还没有快照记录</span>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

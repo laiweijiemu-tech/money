@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block title %}明日推演 - {{ portal_title }}{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div>
+    <p class="eyebrow">明日推演</p>
+    <h1>使用龙头战法推演明天走势</h1>
+    <p class="hero-copy">
+      这个页面基于当前龙头候选、热门题材、行业强度和市场样本强弱，给出明日偏强/偏分化/偏谨慎的推演结果，以及核心候选股的观察剧本。
+    </p>
+  </div>
+  <div class="search-card">
+    <label>推演基准</label>
+    <p class="search-hint">页面时间：{{ now_display }}</p>
+    <p class="search-hint">交易日：{{ latest_trade_date_display }}</p>
+    <p class="search-hint">题材更新时间：{{ hot_boards_trade_date_display }}</p>
+    <div class="panel-hint panel-hint-{{ 'neutral' if outlook.market_view.tone == 'up' else 'warning' }}">
+      {{ outlook.market_view.title }}：{{ outlook.market_view.message }}
+    </div>
+  </div>
+</section>
+
+<section class="summary-grid">
+  {% for item in outlook.summary %}
+  <article class="summary-card">
+    <p class="summary-label">{{ item.label }}</p>
+    <p class="summary-value tone-{{ item.tone }}">{{ item.value }}</p>
+  </article>
+  {% endfor %}
+</section>
+
+<section class="panel">
+  <div class="panel-head">
+    <h2>市场判断</h2>
+    <span>龙头战法推演分值：{{ outlook.market_score }}</span>
+  </div>
+  <div class="chip-list">
+    {% for item in outlook.market_reasons %}
+    <span class="chip">{{ item }}</span>
+    {% else %}
+    <span class="empty">当前没有足够的市场判断依据</span>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="panel-grid">
+  <article class="panel">
+    <div class="panel-head">
+      <h2>主线题材推演</h2>
+      <span>优先看前排题材</span>
+    </div>
+    <div class="forecast-list">
+      {% for row in outlook.themes %}
+      <article class="forecast-card">
+        <h3>{{ row.name }}</h3>
+        <p class="forecast-meta">龙头：{{ row.leader }}</p>
+        <p>{{ row.view }}</p>
+        <p class="search-hint">{{ row.reason }}</p>
+      </article>
+      {% else %}
+      <p class="empty">暂无题材推演</p>
+      {% endfor %}
+    </div>
+  </article>
+
+  <article class="panel">
+    <div class="panel-head">
+      <h2>明日执行规则</h2>
+      <span>龙头战法</span>
+    </div>
+    <div class="forecast-list">
+      {% for row in outlook.rules %}
+      <article class="forecast-card">
+        <p>{{ row }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </article>
+</section>
+
+<section class="panel">
+  <div class="panel-head">
+    <h2>核心候选明日剧本</h2>
+    <span>按当前龙头候选池推演</span>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>股票</th>
+          <th>主线题材</th>
+          <th>强行业</th>
+          <th>总分</th>
+          <th>明日剧本</th>
+          <th>观察动作</th>
+          <th>风险点</th>
+          <th>推演依据</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in outlook.plans %}
+        <tr>
+          <td>
+            <a href="{{ url_for('stock_redirect', symbol=row.symbol) }}">{{ row.name }}</a>
+            <div class="table-sub">{{ row.symbol }}</div>
+          </td>
+          <td>{{ row.board_name }}</td>
+          <td>{{ row.industry_name }}</td>
+          <td><span class="score-pill">{{ row.score }}</span></td>
+          <td>{{ row.script }}</td>
+          <td class="reason">{{ row.action }}</td>
+          <td class="reason">{{ row.risk }}</td>
+          <td class="reason">{{ row.why }}</td>
+        </tr>
+        {% else %}
+        <tr><td colspan="8" class="empty">当前没有可推演的候选股</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}

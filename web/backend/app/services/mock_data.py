@@ -1,0 +1,126 @@
+from __future__ import annotations
+
+from datetime import datetime
+
+
+def seed_dashboard_data() -> dict:
+    now = datetime.now()
+    return {
+        "generated_at": now.isoformat(timespec="seconds"),
+        "overview": {
+            "trading_phase": "盘中监控",
+            "main_theme": "机器人 + AI 应用",
+            "market_sentiment": 74,
+            "watch_count": 8,
+            "alert_count": 5,
+            "board_success_rate": 68.4,
+            "limit_up_premium": 2.7,
+            "highest_board": 5,
+        },
+        "emotion_trend": [
+            {"label": "周一", "value": 48},
+            {"label": "周二", "value": 53},
+            {"label": "周三", "value": 61},
+            {"label": "周四", "value": 58},
+            {"label": "周五", "value": 74},
+        ],
+        "themes": [
+            {"name": "机器人", "heat": 96, "change_pct": 7.2, "leaders": 12},
+            {"name": "AI 应用", "heat": 88, "change_pct": 5.6, "leaders": 9},
+            {"name": "低空经济", "heat": 71, "change_pct": 3.4, "leaders": 5},
+            {"name": "新能源车", "heat": 63, "change_pct": 2.8, "leaders": 4},
+            {"name": "算力", "heat": 58, "change_pct": 2.1, "leaders": 3},
+        ],
+        "leaders": [
+            {
+                "code": "002123",
+                "name": "梦网科技",
+                "theme": "AI 应用",
+                "tag": "身位龙",
+                "last_price": 18.72,
+                "change_pct": 10.01,
+                "turnover_rate": 26.8,
+                "seal_amount": 1.83,
+                "status": "涨停封板",
+            },
+            {
+                "code": "603667",
+                "name": "五洲新春",
+                "theme": "机器人",
+                "tag": "中军",
+                "last_price": 31.46,
+                "change_pct": 8.52,
+                "turnover_rate": 18.6,
+                "seal_amount": 1.25,
+                "status": "强势换手",
+            },
+            {
+                "code": "301413",
+                "name": "安培龙",
+                "theme": "机器人",
+                "tag": "先锋",
+                "last_price": 46.88,
+                "change_pct": 6.14,
+                "turnover_rate": 21.3,
+                "seal_amount": 0.76,
+                "status": "回封确认",
+            },
+            {
+                "code": "600580",
+                "name": "卧龙电驱",
+                "theme": "低空经济",
+                "tag": "趋势龙",
+                "last_price": 24.37,
+                "change_pct": 4.86,
+                "turnover_rate": 14.1,
+                "seal_amount": 0.41,
+                "status": "板块联动",
+            },
+        ],
+        "alerts": [
+            {
+                "title": "炸板回封",
+                "stock_name": "安培龙",
+                "stock_code": "301413",
+                "level": "high",
+                "message": "14:06 二封成功，分时量能放大，板块同步跟风。",
+                "triggered_at": "14:06:12",
+            },
+            {
+                "title": "弱转强秒板",
+                "stock_name": "梦网科技",
+                "stock_code": "002123",
+                "level": "high",
+                "message": "竞价弱势后快速拉板，封单超 1.8 亿。",
+                "triggered_at": "09:37:41",
+            },
+            {
+                "title": "板块联动确认",
+                "stock_name": "五洲新春",
+                "stock_code": "603667",
+                "level": "medium",
+                "message": "机器人板块 5 只个股同步上冲，主线进一步强化。",
+                "triggered_at": "10:18:03",
+            },
+        ],
+        "positions": [
+            {
+                "code": "603667",
+                "name": "五洲新春",
+                "cost_price": 28.65,
+                "last_price": 31.46,
+                "profit_pct": 9.81,
+                "drawdown_pct": 1.6,
+                "risk_note": "未触发止损，留意午后量能衰减。",
+            },
+            {
+                "code": "600580",
+                "name": "卧龙电驱",
+                "cost_price": 23.92,
+                "last_price": 24.37,
+                "profit_pct": 1.88,
+                "drawdown_pct": 3.4,
+                "risk_note": "接近分时承接位，跌破均线需减仓。",
+            },
+        ],
+    }
