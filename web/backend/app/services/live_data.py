@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from collections import defaultdict
 from datetime import datetime, timedelta
 from threading import Lock
@@ -9,67 +10,19 @@ import requests
 
 from ..database import load_dashboard_snapshot, save_dashboard_snapshot
 
-WATCHLIST = [
-    {
-        "symbol": "sz002123",
-        "theme": "AI 应用",
-        "tag": "身位龙",
-        "float_shares": 630_000_000,
-        "cost_price": None,
-    },
-    {
-        "symbol": "sh603667",
-        "theme": "机器人",
-        "tag": "中军",
-        "float_shares": 280_000_000,
-        "cost_price": 28.65,
-    },
-    {
-        "symbol": "sz301413",
-        "theme": "机器人",
-        "tag": "先锋",
-        "float_shares": 58_700_000,
-        "cost_price": None,
-    },
-    {
-        "symbol": "sh600580",
-        "theme": "低空经济",
-        "tag": "趋势龙",
-        "float_shares": 1_080_000_000,
-        "cost_price": 23.92,
-    },
-    {
-        "symbol": "sz002031",
-        "theme": "机器人",
-        "tag": "人气票",
-        "float_shares": 620_000_000,
-        "cost_price": None,
-    },
-    {
-        "symbol": "sz002261",
-        "theme": "AI 应用",
-        "tag": "容量核心",
-        "float_shares": 960_000_000,
-        "cost_price": None,
-    },
-    {
-        "symbol": "sz002085",
-        "theme": "机器人",
-        "tag": "辨识度",
-        "float_shares": 610_000_000,
-        "cost_price": None,
-    },
-    {
-        "symbol": "sz000021",
-        "theme": "消费电子",
-        "tag": "补涨",
-        "float_shares": 1_180_000_000,
-        "cost_price": None,
-    },
-]
-
 QUOTE_URL = "https://hq.sinajs.cn/list="
+BOARD_RANKING_URL = "http://money.finance.sina.com.cn/q/view/newFLJK.php?param=class"
+BOARD_STOCKS_URL = (
+    "https://vip.stock.finance.sina.com.cn/quotes_service/api/json_v2.php"
+    "/Market_Center.getHQNodeData?page=1&num={num}&sort=changepercent&asc=0"
+    "&node={node}&symbol=&_s_r_a=auto"
+)
+
 CACHE_TTL_SECONDS = 12
+WATCHLIST_CACHE_TTL_SECONDS = 60
+TOP_BOARDS_COUNT = 4
+STOCKS_PER_BOARD = 3
+
 REQUEST_HEADERS = {
     "Referer": "https://finance.sina.com.cn",
     "User-Agent": (
@@ -81,6 +34,10 @@ REQUEST_HEADERS = {
 _cache_lock = Lock()
 _cache_payload: dict[str, Any] | None = None
 _cache_expires_at = datetime.min
+
+_watchlist_lock = Lock()
+_watchlist_cache: list[dict[str, Any]] | None = None
+_watchlist_expires_at = datetime.min
 
 
 def get_dashboard_data() -> dict:
@@ -110,8 +67,195 @@ def get_dashboard_data() -> dict:
         return fallback
 
 
+# ---------------------------------------------------------------------------
+# Auto stock selection: hot boards → board leaders → watchlist
+# ---------------------------------------------------------------------------
+
+
+def _fetch_hot_boards() -> list[dict[str, Any]]:
+    session = requests.Session()
+    session.trust_env = False
+    response = session.get(BOARD_RANKING_URL, headers=REQUEST_HEADERS, timeout=10)
+    response.raise_for_status()
+    response.encoding = "gbk"
+
+    text = response.text
+    start = text.index("{")
+    end = text.rindex("}") + 1
+    data = json.loads(text[start:end])
+
+    boards: list[dict[str, Any]] = []
+    for code, val in data.items():
+        parts = val.split(",")
+        if len(parts) < 13:
+            continue
+        name = parts[1]
+        count = int(parts[2])
+        avg_change = float(parts[5])
+        leader_name = parts[12]
+        if count < 5:
+            continue
+        boards.append({
+            "code": code,
+            "name": name,
+            "count": count,
+            "avg_change": avg_change,
+            "leader_name": leader_name,
+        })
+
+    boards.sort(key=lambda x: x["avg_change"], reverse=True)
+    return boards
+
+
+def _get_top_boards_for_selection(boards: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return boards[:TOP_BOARDS_COUNT]
+
+
+def _fetch_board_leaders(board_code: str, board_name: str) -> list[dict[str, Any]]:
+    url = BOARD_STOCKS_URL.format(num=STOCKS_PER_BOARD * 2, node=board_code)
+    session = requests.Session()
+    session.trust_env = False
+    response = session.get(url, headers=REQUEST_HEADERS, timeout=10)
+    response.raise_for_status()
+    items = response.json()
+
+    leaders: list[dict[str, Any]] = []
+    for item in items:
+        symbol_raw = item.get("symbol", "")
+        name = item.get("name", "")
+        if symbol_raw.startswith("bj"):
+            continue
+        if "ST" in name or "st" in name:
+            continue
+        pct = float(item.get("changepercent", 0))
+        amount = float(item.get("amount", 0))
+        volume = float(item.get("volume", 0))
+        trade = float(item.get("trade", 0))
+        nmc = float(item.get("nmc", 0))
+        mktcap = float(item.get("mktcap", 0))
+        turnover_rate = float(item.get("turnoverratio", 0))
+
+        # nmc is 流通市值(万元), use to estimate float_shares for turnover calc
+        float_shares = int(nmc * 10000 / trade) if trade > 0 and nmc > 0 else 0
+
+        leaders.append({
+            "symbol": symbol_raw,
+            "name": name,
+            "theme": board_name,
+            "change_pct": pct,
+            "amount": amount,
+            "volume": volume,
+            "last_price": trade,
+            "nmc": nmc,
+            "mktcap": mktcap,
+            "turnover_rate": turnover_rate,
+            "float_shares": float_shares,
+        })
+
+        if len(leaders) >= STOCKS_PER_BOARD:
+            break
+
+    return leaders
+
+
+def _assign_tags(leaders_by_board: dict[str, list[dict[str, Any]]]) -> None:
+    for _board, stocks in leaders_by_board.items():
+        if not stocks:
+            continue
+        stocks.sort(key=lambda x: x["change_pct"], reverse=True)
+
+        top = stocks[0]
+        code = top["symbol"][2:]
+        threshold = 19.5 if _is_gem_or_star(code) else 9.5
+        if top["change_pct"] >= threshold:
+            top["tag"] = "身位龙"
+        else:
+            top["tag"] = "先锋"
+
+        if len(stocks) > 1:
+            by_amount = sorted(stocks[1:], key=lambda x: x["amount"], reverse=True)
+            by_amount[0]["tag"] = "中军"
+            for s in by_amount[1:]:
+                s.setdefault("tag", "辨识度")
+
+        for s in stocks:
+            s.setdefault("tag", "辨识度")
+
+
+_all_boards_cache: list[dict[str, Any]] | None = None
+_all_boards_expires_at = datetime.min
+
+
+def _build_watchlist() -> list[dict[str, Any]]:
+    global _watchlist_cache, _watchlist_expires_at, _all_boards_cache, _all_boards_expires_at
+    with _watchlist_lock:
+        if _watchlist_cache and datetime.now() < _watchlist_expires_at:
+            return _watchlist_cache
+
+    all_boards = _fetch_hot_boards()
+    if not all_boards:
+        raise RuntimeError("未获取到热门板块数据")
+
+    _all_boards_cache = all_boards
+    _all_boards_expires_at = datetime.now() + timedelta(seconds=WATCHLIST_CACHE_TTL_SECONDS)
+
+    hot_boards = _get_top_boards_for_selection(all_boards)
+
+    leaders_by_board: dict[str, list[dict[str, Any]]] = {}
+    seen_symbols: set[str] = set()
+    all_leaders: list[dict[str, Any]] = []
+
+    for board in hot_boards:
+        stocks = _fetch_board_leaders(board["code"], board["name"])
+        deduped: list[dict[str, Any]] = []
+        for s in stocks:
+            if s["symbol"] not in seen_symbols:
+                seen_symbols.add(s["symbol"])
+                deduped.append(s)
+        leaders_by_board[board["name"]] = deduped
+        all_leaders.extend(deduped)
+
+    _assign_tags(leaders_by_board)
+
+    watchlist: list[dict[str, Any]] = []
+    for item in all_leaders:
+        watchlist.append({
+            "symbol": item["symbol"],
+            "theme": item["theme"],
+            "tag": item["tag"],
+            "float_shares": item.get("float_shares", 0),
+            "mktcap": item.get("mktcap", 0),
+            "cost_price": None,
+        })
+
+    with _watchlist_lock:
+        _watchlist_cache = watchlist
+        _watchlist_expires_at = datetime.now() + timedelta(seconds=WATCHLIST_CACHE_TTL_SECONDS)
+
+    return watchlist
+
+
+# ---------------------------------------------------------------------------
+# Dashboard building
+# ---------------------------------------------------------------------------
+
+
+def _format_hot_boards() -> list[dict[str, Any]]:
+    boards = _all_boards_cache or []
+    return [
+        {
+            "name": b["name"],
+            "avg_change": round(b["avg_change"], 2),
+            "count": b["count"],
+            "leader_name": b["leader_name"],
+        }
+        for b in boards[:10]
+    ]
+
+
 def _build_live_dashboard() -> dict:
-    quotes = _fetch_sina_quotes(WATCHLIST)
+    watchlist = _build_watchlist()
+    quotes = _fetch_sina_quotes(watchlist)
     if not quotes:
         raise RuntimeError("未获取到有效实时行情")
 
@@ -123,11 +267,14 @@ def _build_live_dashboard() -> dict:
     overview = _build_overview(quotes, theme_items, alerts, sentiment)
     emotion_trend = _build_emotion_trend(sentiment)
 
+    hot_boards = _format_hot_boards()
+
     return {
         "generated_at": datetime.now().isoformat(timespec="seconds"),
         "overview": overview,
         "emotion_trend": emotion_trend,
         "themes": theme_items,
+        "hot_boards": hot_boards,
         "leaders": leaders,
         "alerts": alerts,
         "positions": positions,
@@ -135,7 +282,7 @@ def _build_live_dashboard() -> dict:
             "provider": "sina_realtime",
             "mode": "live",
             "is_live": True,
-            "message": "当前使用新浪公开行情接口实时刷新。",
+            "message": "当前使用新浪公开行情接口实时刷新，选股池自动更新。",
         },
     }
 
@@ -186,7 +333,10 @@ def _parse_sina_line(line: str, config_map: dict[str, dict[str, Any]]) -> dict[s
     ask1_price = _safe_float(fields[21])
     trade_time = f"{fields[30]} {fields[31]}"
     change_pct = ((last_price - prev_close) / prev_close * 100) if prev_close else 0.0
-    turnover_rate = volume * 100 / config["float_shares"] * 100 if config["float_shares"] else 0.0
+
+    float_shares = config["float_shares"]
+    turnover_rate = (volume / float_shares * 100) if float_shares else 0.0
+
     seal_amount = max(bid1_volume * bid1_price / 100000000, ask1_volume * ask1_price / 100000000)
 
     return {
@@ -207,7 +357,8 @@ def _parse_sina_line(line: str, config_map: dict[str, dict[str, Any]]) -> dict[s
         "seal_amount": round(seal_amount, 2),
         "trade_time": trade_time,
         "cost_price": config["cost_price"],
-        "float_shares": config["float_shares"],
+        "float_shares": float_shares,
+        "mktcap": config.get("mktcap", 0),
     }
 
 
@@ -250,7 +401,7 @@ def _build_leaders(quotes: list[dict[str, Any]]) -> list[dict[str, Any]]:
     leaders = []
     for quote in sorted_quotes[:6]:
         limit_threshold = _get_limit_up_threshold(quote["code"])
-        market_cap = quote["last_price"] * quote.get("float_shares", 0) / 100000000
+        market_cap = quote.get("mktcap", 0) / 10000
         leaders.append(
             {
                 "code": quote["code"],
