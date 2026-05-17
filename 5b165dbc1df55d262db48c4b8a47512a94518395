@@ -1,0 +1,30 @@
+web/backend/app/services/intraday_monitor.py
+  62f179d5e920d629 1-313
+web/frontend/src/style.css
+  62f179d5e920d629 666-742
+web/backend/app/main.py
+  62f179d5e920d629 7,28,31-33,43-53
+web/frontend/src/App.vue
+  62f179d5e920d629 91-101,111,206-215,536-553
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.14",
+  "base_commit_sha": "5b165dbc1df55d262db48c4b8a47512a94518395",
+  "prompts": {
+    "62f179d5e920d629": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "02b593c9-6bcd-4fcd-81b2-fb7d3e3cf39b",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "laimin <laimin@laimindeMacBook-Air.local>",
+      "messages": [],
+      "total_additions": 2412,
+      "total_deletions": 3923,
+      "accepted_lines": 451,
+      "overriden_lines": 0,
+      "messages_url": "https://gitai.gz.cvte.cn/cas/24badaa5ec03ca037f5f7409aa2a1316315b0443069fc2a24ae5fd8acb87234a"
+    }
+  }
+}
