@@ -3,30 +3,19 @@ from __future__ import annotations
 import logging
 import threading
 import time
-from collections import defaultdict
-from datetime import datetime, timedelta
+from datetime import datetime, time as dt_time, timedelta
 from typing import Any
 
-import requests
+from .live_data import _build_watchlist, _fetch_sina_quotes, _get_limit_up_threshold
 
 logger = logging.getLogger(__name__)
-
-MARKET_TOP_URL = (
-    "https://vip.stock.finance.sina.com.cn/quotes_service/api/json_v2.php"
-    "/Market_Center.getHQNodeData?page=1&num=50&sort=changepercent&asc=0"
-    "&node=hs_a&symbol=&_s_r_a=auto"
-)
-REQUEST_HEADERS = {
-    "Referer": "https://finance.sina.com.cn",
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
-    ),
-}
 
 TICK_INTERVAL = 10
 MAX_EVENTS = 50
 MAX_LIVE_POOL = 20
+SECTOR_ALERT_COOLDOWN = timedelta(minutes=5)
+WEAK_TO_STRONG_OPEN_LIMIT = 2.0
+WEAK_TO_STRONG_DEADLINE = dt_time(hour=9, minute=40)
 
 
 def _is_trading_time() -> bool:
@@ -43,17 +32,23 @@ def _is_trading_time() -> bool:
     return False
 
 
-def _limit_threshold(code: str) -> float:
-    if code.startswith("30") or code.startswith("688"):
-        return 19.5
-    return 9.5
+def _is_weak_to_strong_quick_board(
+    open_change_pct: float | None, change_pct: float, code: str, now: datetime
+) -> bool:
+    if open_change_pct is None:
+        return False
+    if open_change_pct >= WEAK_TO_STRONG_OPEN_LIMIT:
+        return False
+    if now.time() > WEAK_TO_STRONG_DEADLINE:
+        return False
+    return change_pct >= _get_limit_up_threshold(code)
 
 
 class StockState:
     __slots__ = (
         "symbol", "name", "code", "theme", "change_pct", "open_change_pct",
         "status", "prev_status", "first_limit_time", "break_count",
-        "amount", "seal_amount",
+        "amount", "seal_amount", "last_price", "tag",
     )
 
     def __init__(self, symbol: str, name: str, code: str, theme: str) -> None:
@@ -69,6 +64,8 @@ class StockState:
         self.break_count: int = 0
         self.amount: float = 0.0
         self.seal_amount: float = 0.0
+        self.last_price: float = 0.0
+        self.tag: str = ""
 
 
 class IntradayMonitor:
@@ -77,7 +74,7 @@ class IntradayMonitor:
         self._states: dict[str, StockState] = {}
         self._events: list[dict[str, Any]] = []
         self._live_pool: dict[str, dict[str, Any]] = {}
-        self._sector_history: dict[str, list[tuple[datetime, float]]] = defaultdict(list)
+        self._last_sector_alert_at: dict[str, datetime] = {}
         self._thread: threading.Thread | None = None
         self._running = False
 
@@ -112,26 +109,31 @@ class IntradayMonitor:
                     if now.hour >= 15 and now.minute >= 5:
                         with self._lock:
                             self._states.clear()
-                            self._sector_history.clear()
+                            self._live_pool.clear()
+                            self._last_sector_alert_at.clear()
             except Exception as exc:
                 logger.warning(f"Monitor tick error: {exc}")
             time.sleep(TICK_INTERVAL)
 
     def _tick(self) -> None:
-        stocks = self._fetch_top_stocks()
-        if not stocks:
+        watchlist = _build_watchlist()
+        quotes = _fetch_sina_quotes(watchlist)
+        if not quotes:
             return
 
+        watchlist_map = {item["symbol"]: item for item in watchlist}
+        now = datetime.now()
         now_str = datetime.now().strftime("%H:%M:%S")
         new_events: list[dict[str, Any]] = []
 
         with self._lock:
-            for item in stocks:
+            for item in quotes:
                 symbol = item["symbol"]
                 code = item["code"]
                 name = item["name"]
                 pct = item["change_pct"]
                 theme = item.get("theme", "")
+                config = watchlist_map.get(symbol, {})
 
                 state = self._states.get(symbol)
                 if not state:
@@ -141,11 +143,15 @@ class IntradayMonitor:
                 state.prev_status = state.status
                 state.change_pct = pct
                 state.amount = item.get("amount", 0)
+                state.seal_amount = item.get("seal_amount", 0)
+                state.last_price = item.get("last_price", 0)
+                state.tag = item.get("tag", config.get("tag", ""))
+                state.theme = theme
 
                 if state.open_change_pct is None:
                     state.open_change_pct = pct
 
-                threshold = _limit_threshold(code)
+                threshold = _get_limit_up_threshold(code)
                 if pct >= threshold:
                     new_status = "limit_up"
                 elif pct >= 6:
@@ -163,14 +169,16 @@ class IntradayMonitor:
                 if state.prev_status != "limit_up" and new_status == "limit_up":
                     if state.prev_status == "broken":
                         # 炸板回封
-                        state.break_count += 1
                         event = {
                             "type": "limit_up_reseal",
                             "symbol": symbol,
                             "name": name,
                             "code": code,
                             "theme": theme,
-                            "message": f"炸板回封（第{state.break_count}次），涨幅 {pct:.1f}%",
+                            "message": (
+                                f"炸板后再次回封，当前涨幅 {pct:.1f}%，"
+                                f"封单约 {state.seal_amount:.2f} 亿。"
+                            ),
                             "triggered_at": now_str,
                             "level": "high",
                         }
@@ -178,9 +186,11 @@ class IntradayMonitor:
                     else:
                         # 新封板
                         state.first_limit_time = now_str
-                        is_weak_to_strong = (
-                            state.open_change_pct is not None
-                            and state.open_change_pct < 2.0
+                        is_weak_to_strong = _is_weak_to_strong_quick_board(
+                            state.open_change_pct,
+                            pct,
+                            code,
+                            now,
                         )
                         if is_weak_to_strong:
                             event = {
@@ -189,7 +199,10 @@ class IntradayMonitor:
                                 "name": name,
                                 "code": code,
                                 "theme": theme,
-                                "message": f"弱转强封板！开盘涨幅仅 {state.open_change_pct:.1f}%，现已涨停 {pct:.1f}%",
+                                "message": (
+                                    f"弱转强秒板！开盘涨幅仅 {state.open_change_pct:.1f}%，"
+                                    f"当前封单约 {state.seal_amount:.2f} 亿。"
+                                ),
                                 "triggered_at": now_str,
                                 "level": "high",
                             }
@@ -200,7 +213,10 @@ class IntradayMonitor:
                                 "name": name,
                                 "code": code,
                                 "theme": theme,
-                                "message": f"盘中封板，涨幅 {pct:.1f}%，成交 {state.amount / 1e8:.1f}亿",
+                                "message": (
+                                    f"盘中封板，涨幅 {pct:.1f}%，"
+                                    f"成交 {state.amount / 1e8:.1f} 亿，封单 {state.seal_amount:.2f} 亿。"
+                                ),
                                 "triggered_at": now_str,
                                 "level": "high",
                             }
@@ -211,21 +227,17 @@ class IntradayMonitor:
                         self._live_pool[symbol] = {
                             "symbol": symbol,
                             "theme": theme or "盘中捕获",
-                            "tag": "盘中捕获",
-                            "float_shares": 0,
-                            "mktcap": 0,
-                            "cost_price": None,
+                            "tag": config.get("tag", "盘中捕获"),
+                            "float_shares": config.get("float_shares", 0),
+                            "mktcap": config.get("mktcap", 0),
+                            "cost_price": config.get("cost_price"),
                         }
 
                 elif state.prev_status == "limit_up" and new_status == "broken":
                     state.break_count += 1
 
-                # Track sector changes for sector surge detection
-                if theme:
-                    self._sector_history[theme].append((datetime.now(), pct))
-
             # Sector surge detection
-            sector_events = self._detect_sector_surge(now_str)
+            sector_events = self._detect_sector_surge(quotes, now, now_str)
             new_events.extend(sector_events)
 
             # Append events
@@ -233,80 +245,62 @@ class IntradayMonitor:
             if len(self._events) > MAX_EVENTS:
                 self._events = self._events[-MAX_EVENTS:]
 
-    def _detect_sector_surge(self, now_str: str) -> list[dict[str, Any]]:
+    def _detect_sector_surge(
+        self, quotes: list[dict[str, Any]], now: datetime, now_str: str
+    ) -> list[dict[str, Any]]:
         events: list[dict[str, Any]] = []
-        cutoff = datetime.now() - timedelta(minutes=5)
 
-        sector_counts: dict[str, int] = defaultdict(int)
-        sector_limit_counts: dict[str, int] = defaultdict(int)
-
-        for symbol, state in self._states.items():
-            if not state.theme:
+        groups: dict[str, list[dict[str, Any]]] = {}
+        for item in quotes:
+            theme = item.get("theme", "")
+            if not theme:
                 continue
-            if state.status == "limit_up":
-                sector_limit_counts[state.theme] += 1
-            if state.change_pct >= 5:
-                sector_counts[state.theme] += 1
+            groups.setdefault(theme, []).append(item)
 
-        for theme, count in sector_counts.items():
-            if count >= 3 and sector_limit_counts.get(theme, 0) >= 2:
-                # Avoid duplicate sector alerts within 5 minutes
-                recent_sector_events = [
-                    e for e in self._events
-                    if e["type"] == "sector_surge" and e["theme"] == theme
-                ]
-                if recent_sector_events:
-                    last_time = recent_sector_events[-1]["triggered_at"]
-                    # Simple dedup: skip if last alert was recent
-                    if last_time >= (datetime.now() - timedelta(minutes=5)).strftime("%H:%M:%S"):
-                        continue
+        for theme, members in groups.items():
+            if len(members) < 3:
+                continue
+            if self._is_sector_alert_in_cooldown(theme, now):
+                continue
 
-                events.append({
-                    "type": "sector_surge",
-                    "symbol": "--",
-                    "name": theme,
-                    "code": "--",
-                    "theme": theme,
-                    "message": f"{theme} 板块联动！{sector_limit_counts[theme]}只涨停，{count}只涨超5%",
-                    "triggered_at": now_str,
-                    "level": "medium",
-                })
+            ranked = sorted(members, key=lambda item: item["change_pct"], reverse=True)
+            leader = ranked[0]
+            strong_count = sum(1 for item in ranked if item["change_pct"] >= 5)
+            limit_count = sum(
+                1
+                for item in ranked
+                if item["change_pct"] >= _get_limit_up_threshold(item["code"])
+            )
+            followers = [item for item in ranked[1:] if item["change_pct"] >= 2.5]
+            if leader["change_pct"] < 5 or len(followers) < 2:
+                continue
+            if strong_count < 3 and limit_count < 1:
+                continue
+
+            follower_names = "、".join(item["name"] for item in followers[:3])
+            message = (
+                f"{leader['name']}领涨 {theme}，{follower_names}同步走强，"
+                f"板块内 {strong_count} 只涨超 5%，联动确认。"
+            )
+            events.append({
+                "type": "sector_surge",
+                "symbol": leader["symbol"],
+                "name": theme,
+                "code": "--",
+                "theme": theme,
+                "message": message,
+                "triggered_at": now_str,
+                "level": "high" if limit_count >= 2 else "medium",
+            })
+            self._last_sector_alert_at[theme] = now
 
         return events
 
-    def _fetch_top_stocks(self) -> list[dict[str, Any]]:
-        try:
-            session = requests.Session()
-            session.trust_env = False
-            response = session.get(MARKET_TOP_URL, headers=REQUEST_HEADERS, timeout=10)
-            response.raise_for_status()
-            items = response.json()
-
-            results: list[dict[str, Any]] = []
-            for item in items:
-                symbol = item.get("symbol", "")
-                name = item.get("name", "")
-                if symbol.startswith("bj"):
-                    continue
-                if "ST" in name or "st" in name:
-                    continue
-                code = item.get("code", "")
-                pct = float(item.get("changepercent", 0))
-                amount = float(item.get("amount", 0))
-
-                results.append({
-                    "symbol": symbol,
-                    "code": code,
-                    "name": name,
-                    "change_pct": pct,
-                    "amount": amount,
-                    "theme": "",
-                })
-
-            return results
-        except Exception as exc:
-            logger.warning(f"Fetch top stocks failed: {exc}")
-            return []
+    def _is_sector_alert_in_cooldown(self, theme: str, now: datetime) -> bool:
+        last_alert_at = self._last_sector_alert_at.get(theme)
+        if not last_alert_at:
+            return False
+        return now - last_alert_at < SECTOR_ALERT_COOLDOWN
 
 
 # Singleton

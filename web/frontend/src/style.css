@@ -50,6 +50,92 @@ a {
   padding: 20px 0 40px;
 }
 
+.signal-flash {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 180;
+  animation: signal-flash 1.4s ease-out forwards;
+}
+
+.signal-flash-high {
+  background: radial-gradient(circle at top, rgba(239, 68, 68, 0.22), transparent 60%);
+}
+
+.signal-flash-medium {
+  background: radial-gradient(circle at top, rgba(245, 158, 11, 0.18), transparent 60%);
+}
+
+.signal-flash-low {
+  background: radial-gradient(circle at top, rgba(59, 130, 246, 0.16), transparent 60%);
+}
+
+.signal-banner {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 220;
+  width: min(760px, calc(100% - 24px));
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  padding: 16px 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.18);
+}
+
+.signal-banner-high {
+  border-color: rgba(239, 68, 68, 0.28);
+  background: linear-gradient(135deg, rgba(254, 226, 226, 0.98), rgba(255, 255, 255, 0.97));
+}
+
+.signal-banner-medium {
+  border-color: rgba(245, 158, 11, 0.28);
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.98), rgba(255, 255, 255, 0.97));
+}
+
+.signal-banner-low {
+  border-color: rgba(59, 130, 246, 0.22);
+  background: linear-gradient(135deg, rgba(219, 234, 254, 0.98), rgba(255, 255, 255, 0.97));
+}
+
+.signal-banner-kicker {
+  margin-bottom: 4px;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.signal-banner strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.signal-banner p:last-child {
+  color: #475569;
+}
+
+.signal-dismiss {
+  flex-shrink: 0;
+  height: 38px;
+  padding: 0 14px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+  cursor: pointer;
+  font-weight: 600;
+}
+
 .main-header,
 .panel,
 .stat-card,
@@ -185,6 +271,27 @@ h2 {
 .refresh-button:hover {
   transform: translateY(-1px);
   box-shadow: 0 8px 20px rgba(249, 115, 22, 0.3);
+}
+
+.alert-button {
+  height: 44px;
+  padding: 0 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  background: rgba(239, 246, 255, 0.95);
+  color: #2563eb;
+  cursor: pointer;
+  font-weight: 600;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.alert-button:hover {
+  transform: translateY(-1px);
+  border-color: rgba(37, 99, 235, 0.35);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.15);
 }
 
 .feedback-card {
@@ -468,6 +575,20 @@ h2 {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
+@keyframes signal-flash {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 @media (max-width: 1366px) {
   .page-shell {
     width: min(100%, calc(100% - 24px));
@@ -528,6 +649,17 @@ h2 {
     gap: 12px;
   }
 
+  .header-right {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .alert-button,
+  .refresh-button {
+    flex: 1 1 180px;
+  }
+
   .main-nav ul {
     flex-wrap: wrap;
     gap: 4px;
@@ -548,6 +680,16 @@ h2 {
   .chart,
   .chart-short {
     height: 220px;
+  }
+
+  .signal-banner {
+    top: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .signal-dismiss {
+    width: 100%;
   }
 }
 

@@ -113,11 +113,28 @@ interface DashboardData {
 }
 
 type TabName = 'leader' | 'hotspot' | 'emotion' | 'position'
+type SignalLevel = EventItem['level'] | AlertItem['level']
+
+interface SignalBanner {
+  key: string
+  title: string
+  subtitle: string
+  message: string
+  level: SignalLevel
+}
+
+const SIGNAL_ALERTS_STORAGE_KEY = 'watchtower.signal-alerts.enabled'
 
 const dashboard = ref<DashboardData | null>(null)
 const loading = ref(true)
 const errorMessage = ref('')
 const activeTab = ref<TabName>('leader')
+const signalBanner = ref<SignalBanner | null>(null)
+const flashLevel = ref<SignalLevel | ''>('')
+const signalAlertsEnabled = ref(false)
+const browserNoticePermission = ref<NotificationPermission | 'unsupported'>(
+  typeof window !== 'undefined' && 'Notification' in window ? Notification.permission : 'unsupported',
+)
 
 const themeChartRef = ref<HTMLDivElement | null>(null)
 const emotionChartRef = ref<HTMLDivElement | null>(null)
@@ -129,6 +146,12 @@ let emotionChart: EChartsType | null = null
 let gaugeChart: EChartsType | null = null
 let emotionBarChart: EChartsType | null = null
 let refreshTimer: number | null = null
+let bannerTimer: number | null = null
+let flashTimer: number | null = null
+let audioContext: AudioContext | null = null
+let audioWakeBindingsActive = false
+const seenEventKeys = new Set<string>()
+let eventStreamPrimed = false
 
 const tabs: { key: TabName; label: string }[] = [
   { key: 'leader', label: '龙头战法' },
@@ -152,6 +175,12 @@ const statCards = computed(() => {
 
 const topLeader = computed(() => dashboard.value?.leaders[0] ?? null)
 const expandedTheme = ref<string | null>(null)
+const alertCapabilityText = computed(() => {
+  if (browserNoticePermission.value === 'granted') return '声音 + 弹窗已开启'
+  if (signalAlertsEnabled.value) return '已记住强提醒，点击恢复声音'
+  if (audioContext?.state === 'running') return '声音提醒已开启'
+  return '点击开启强提醒'
+})
 
 function toggleTheme(name: string): void {
   expandedTheme.value = expandedTheme.value === name ? null : name
@@ -207,10 +236,153 @@ function eventTypeLabel(type: string): string {
   const map: Record<string, string> = {
     limit_up_new: '新封板',
     limit_up_reseal: '炸板回封',
-    weak_to_strong: '弱转强',
+    weak_to_strong: '弱转强秒板',
     sector_surge: '板块联动',
   }
   return map[type] ?? type
+}
+
+function eventKey(event: EventItem): string {
+  return `${event.type}-${event.code}-${event.triggered_at}-${event.message}`
+}
+
+function dismissSignalBanner(): void {
+  signalBanner.value = null
+  flashLevel.value = ''
+  if (bannerTimer !== null) {
+    window.clearTimeout(bannerTimer)
+    bannerTimer = null
+  }
+  if (flashTimer !== null) {
+    window.clearTimeout(flashTimer)
+    flashTimer = null
+  }
+}
+
+function persistSignalAlertPreference(enabled: boolean): void {
+  signalAlertsEnabled.value = enabled
+  window.localStorage.setItem(SIGNAL_ALERTS_STORAGE_KEY, enabled ? '1' : '0')
+}
+
+function teardownAudioWakeBindings(): void {
+  if (!audioWakeBindingsActive) return
+  window.removeEventListener('pointerdown', handleAudioWake)
+  window.removeEventListener('keydown', handleAudioWake)
+  audioWakeBindingsActive = false
+}
+
+function registerAudioWakeBindings(): void {
+  if (audioWakeBindingsActive || !signalAlertsEnabled.value) return
+  window.addEventListener('pointerdown', handleAudioWake)
+  window.addEventListener('keydown', handleAudioWake)
+  audioWakeBindingsActive = true
+}
+
+async function ensureAudioReady(interactive = false): Promise<boolean> {
+  const AudioContextCtor = window.AudioContext
+  if (!AudioContextCtor) return false
+  audioContext ??= new AudioContextCtor()
+  if (interactive && audioContext.state === 'suspended') {
+    await audioContext.resume()
+  }
+  if (audioContext.state === 'running') {
+    teardownAudioWakeBindings()
+  }
+  return audioContext.state === 'running'
+}
+
+async function handleAudioWake(): Promise<void> {
+  const ready = await ensureAudioReady(true)
+  if (ready) {
+    teardownAudioWakeBindings()
+  }
+}
+
+async function enableSignalAlerts(): Promise<void> {
+  persistSignalAlertPreference(true)
+  const audioReady = await ensureAudioReady(true)
+  if (!audioReady) {
+    registerAudioWakeBindings()
+  }
+  if (!('Notification' in window)) {
+    browserNoticePermission.value = 'unsupported'
+    return
+  }
+  if (Notification.permission === 'default') {
+    browserNoticePermission.value = await Notification.requestPermission()
+    return
+  }
+  browserNoticePermission.value = Notification.permission
+}
+
+function playSignalTone(level: SignalLevel): void {
+  if (!audioContext || audioContext.state !== 'running') return
+  const oscillator = audioContext.createOscillator()
+  const gainNode = audioContext.createGain()
+  const now = audioContext.currentTime
+  const frequency = level === 'high' ? 1046.5 : level === 'medium' ? 880 : 659.25
+
+  oscillator.type = 'square'
+  oscillator.frequency.setValueAtTime(frequency, now)
+  gainNode.gain.setValueAtTime(0.001, now)
+  gainNode.gain.exponentialRampToValueAtTime(0.18, now + 0.02)
+  gainNode.gain.exponentialRampToValueAtTime(0.001, now + 0.32)
+
+  oscillator.connect(gainNode)
+  gainNode.connect(audioContext.destination)
+  oscillator.start(now)
+  oscillator.stop(now + 0.35)
+}
+
+function pushBrowserNotification(event: EventItem): void {
+  if (!('Notification' in window) || Notification.permission !== 'granted') return
+  new Notification(`${eventTypeLabel(event.type)}: ${event.name}`, {
+    body: event.message,
+    tag: eventKey(event),
+  })
+}
+
+function triggerSignalAlert(event: EventItem): void {
+  const subtitle = event.code === '--' ? event.name : `${event.name} ${event.code}`
+  signalBanner.value = {
+    key: eventKey(event),
+    title: eventTypeLabel(event.type),
+    subtitle,
+    message: event.message,
+    level: event.level,
+  }
+  flashLevel.value = event.level
+
+  if (bannerTimer !== null) window.clearTimeout(bannerTimer)
+  if (flashTimer !== null) window.clearTimeout(flashTimer)
+
+  bannerTimer = window.setTimeout(() => {
+    signalBanner.value = null
+  }, 8000)
+  flashTimer = window.setTimeout(() => {
+    flashLevel.value = ''
+  }, 1400)
+
+  playSignalTone(event.level)
+  pushBrowserNotification(event)
+}
+
+function processIncomingEvents(events: EventItem[]): void {
+  if (!eventStreamPrimed) {
+    events.forEach((event) => seenEventKeys.add(eventKey(event)))
+    eventStreamPrimed = true
+    return
+  }
+
+  const newEvents = events.filter((event) => !seenEventKeys.has(eventKey(event)))
+  newEvents.forEach((event) => seenEventKeys.add(eventKey(event)))
+  if (!newEvents.length) return
+
+  const latestImportantEvent = [...newEvents]
+    .reverse()
+    .find((event) => event.level === 'high' || event.type === 'sector_surge')
+
+  triggerSignalAlert(latestImportantEvent ?? newEvents[newEvents.length - 1])
 }
 
 function switchTab(tab: TabName): void {
@@ -224,7 +396,9 @@ async function fetchDashboard(): Promise<void> {
   try {
     const response = await fetch('/api/dashboard')
     if (!response.ok) throw new Error('仪表盘数据获取失败')
-    dashboard.value = (await response.json()) as DashboardData
+    const nextDashboard = (await response.json()) as DashboardData
+    processIncomingEvents(nextDashboard.events ?? [])
+    dashboard.value = nextDashboard
   } catch (error) {
     errorMessage.value = error instanceof Error ? error.message : '网络异常，请稍后重试'
   } finally {
@@ -436,6 +610,11 @@ watch(
 )
 
 onMounted(async () => {
+  signalAlertsEnabled.value = window.localStorage.getItem(SIGNAL_ALERTS_STORAGE_KEY) === '1'
+  if (signalAlertsEnabled.value) {
+    void ensureAudioReady(false)
+    registerAudioWakeBindings()
+  }
   await fetchDashboard()
   window.addEventListener('resize', handleResize)
   refreshTimer = window.setInterval(() => { void fetchDashboard() }, 15000)
@@ -444,6 +623,8 @@ onMounted(async () => {
 onBeforeUnmount(() => {
   window.removeEventListener('resize', handleResize)
   if (refreshTimer !== null) window.clearInterval(refreshTimer)
+  dismissSignalBanner()
+  teardownAudioWakeBindings()
   themeChart?.dispose()
   emotionChart?.dispose()
   gaugeChart?.dispose()
@@ -453,6 +634,15 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="page-shell">
+    <div v-if="flashLevel" class="signal-flash" :class="`signal-flash-${flashLevel}`"></div>
+    <div v-if="signalBanner" class="signal-banner" :class="`signal-banner-${signalBanner.level}`">
+      <div>
+        <p class="signal-banner-kicker">{{ signalBanner.title }}</p>
+        <strong>{{ signalBanner.subtitle }}</strong>
+        <p>{{ signalBanner.message }}</p>
+      </div>
+      <button type="button" class="signal-dismiss" @click="dismissSignalBanner">知道了</button>
+    </div>
     <header class="main-header">
       <div class="header-left">
         <nav class="main-nav">
@@ -473,6 +663,7 @@ onBeforeUnmount(() => {
           <span class="status-dot"></span>
           <span>{{ sourceBadge }}</span>
         </div>
+        <button class="alert-button" type="button" @click="enableSignalAlerts">{{ alertCapabilityText }}</button>
         <button class="refresh-button" type="button" @click="fetchDashboard">刷新数据</button>
       </div>
     </header>
